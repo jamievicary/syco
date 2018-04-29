@@ -1,0 +1,34 @@
+* {
+	font-family: Verdana, Geneva, sans-serif;
+}
+#left,#main {
+	background-color: #cde;
+}
+#left {
+	width: 300px;
+	margin: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+#logo {
+	width: 100%;
+	margin-top: 30px;
+}
+#main {
+	width: calc(100% - 330px);
+	position: absolute;
+	right: 0;
+	top: 0px;
+	bottom: 0px;
+	overflow: auto;
+	padding-left: 0px;
+	padding-right: 30px;
+}
+#title {
+
+}
+li {
+	margin: 5px
+}
