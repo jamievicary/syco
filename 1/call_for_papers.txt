@@ -1,8 +1,13 @@
 FIRST SYMPOSIUM ON COMPOSITIONAL STRUCTURES (SYCO 1)
+
 School of Computer Science, University of Birmingham
                20-21 September, 2018
 
-The Symposium on Compositional Structures is a new interdisciplinary series of meetings aiming to support the growing community of researchers interested in the phenomenon of compositionality, from both applied and abstract perspectives, and in particular where category theory serves as a unifying common language. We welcome submissions from researchers across computer science, mathematics, physics, philosophy, and beyond, with the aim of fostering discussion, disseminating new ideas, and spreading knowledge of open problems between fields. Submission is encouraged for both mature research and work in progress, and by both established academics and junior researchers, including students. The meeting does not have proceedings, so work can be submitted even if it has been previously submitted elsewhere.
+                  [URL GOES HERE]
+
+The Symposium on Compositional Structures is a new interdisciplinary series of meetings aiming to support the growing community of researchers interested in the phenomenon of compositionality, from both applied and abstract perspectives, and in particular where category theory serves as a unifying common language. We welcome submissions from researchers across computer science, mathematics, physics, philosophy, and beyond, with the aim of fostering friendly discussion, disseminating new ideas, and spreading knowledge between fields. Submission is encouraged for both mature research and work in progress, and by both established academics and junior researchers, including students.
+
+Submission is easy, with no format requirements or page restrictions. The meeting does not have proceedings, so work can be submitted even if it has been submitted or published elsewhere.
 
 While no list of topics could be exhaustive, SYCO welcomes submissions with a compositional focus related to any of the following areas, in particular from the perspective of category theory:
 
@@ -16,7 +21,11 @@ While no list of topics could be exhaustive, SYCO welcomes submissions with a co
 
 This new series aims to bring together the communities behind many previous successful events which have taken place over the last decade, including "Categories, Logic and Physics", "Categories, Logic and Physics (Scotland)", "Higher-Dimensional Rewriting and Applications", "String Diagrams in Computation, Logic and Physics", "Applied Category Theory", "Simons Workshop on Compositionality", and the "Peripatetic Seminar in Sheaves and Logic".
 
-The hope is for SYCO to become a regular fixture in the academic calendar, running regularly throughout the year, and becoming over time a standard venue for informal presentation and discussion of results. In the event that more good-quality submissions are received than can be accommodated in the timetable, we may choose to *defer* some submissions to a future meeting, rather than reject them. This would be done based on submission order, giving an incentive for early submission. Deferred submissions would be accepted for presentation at any future meeting without the need for peer review. This will allow us to ensure that speakers have enough time to present their ideas, without creating an unnecessarily competitive atmosphere.
+The steering committee hopes that SYCO will become a regular fixture in the academic calendar, running regularly throughout the year, and becoming over time a standard venue for presentation and discussion of results in an informal and friendly atmosphere. To help create this community, we will implement the following mechanisms.
+
+ - Open discussion. For a submission where the authors chooses to include an arXiv identifier, open discussion between authors and reviewers may take place on the open platform scirate.com, to inform the confidential reviewing process. This will give authors an opportunity to engage in open and natural discussion with reviewers, allowing authors to answer questions and clarify misunderstandings, with an emphasis on building academic relationships in a way that traditional closed reviewing prevents. The steering committee requests that discussions remain constructive and civil, with reviewers advised against expressing strong criticism of submissions in this forum.
+
+ - Paper deferrals. In the event that more good-quality submissions are received than can be accommodated in the timetable, we may choose to defer some submissions to a future meeting, rather than reject them. This would be done based on submission order, giving an incentive for early submission, and avoiding any need to make difficult choices between strong submissions. Deferred submissions would be accepted for presentation at any future SYCO meeting without the need for peer review. This will allow us to ensure that speakers have enough time to present their ideas, without creating an unnecessarily competitive atmosphere. Meetings would be held sufficiently frequently that a backlog of deferred papers does not build up.
 
 # INVITED SPEAKERS
 	
@@ -34,19 +43,15 @@ All times are anywhere-on-earth.
 
 # SUBMISSIONS
 
-Submissions are by EasyChair, through the following link:
-
- - https://easychair.org/conferences/?conf=syco1
-
-Submission may be by PDF, or by just giving an arXiv link. Submissions should present original results with sufficient detail and clarity for them to be assessed by the programme committee. We encourage the submission of work in progress, as well as mature results. There is no page limit or specific formatting requirement. There are no proceedings, so work can be submitted even if it has been previously published, or has been submitted for consideration elsewhere.
+Submissions should present research results in sufficient detail to allow them to be properly considered by members of the programme committee, who will assess papers with regards to significance, clarity, correctness, and scope. We encourage the submission of work in progress, as well as mature results. There are no proceedings, so work can be submitted even if it has been previously published, or has been submitted for consideration elsewhere. There is no specific formatting requirement, and no page limit, although for long submissions authors should understand that reviewers may not be able to read the entire document in detail.
 
  # FUNDING
 
-Some funding may be available to support travel and subsistence, with a priority for PhD students and junior researchers.
+Some funding is available to cover travel and subsistence costs, with a priority for PhD students and junior researchers. To apply for this funding, please contact the local organizer by the deadline given above.
 
  # PROGRAMME COMMITTEE
 
-The symposium managed by the following people, who will also serve as the programme committee.
+The symposium managed by the following people, who also serve as the programme committee.
 
  - Ross Duncan, University of Strathclyde
  - Chris Heunen, University of Edinburgh
