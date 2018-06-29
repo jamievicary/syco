@@ -1,0 +1,58 @@
+FIRST SYMPOSIUM ON COMPOSITIONAL STRUCTURES (SYCO 1)
+School of Computer Science, University of Birmingham
+               20-21 September, 2018
+
+The Symposium on Compositional Structures is a new interdisciplinary series of meetings aiming to support the growing community of researchers interested in the phenomenon of compositionality, from both applied and abstract perspectives, and in particular where category theory serves as a unifying common language. We welcome submissions from researchers across computer science, mathematics, physics, philosophy, and beyond, with the aim of fostering discussion, disseminating new ideas, and spreading knowledge of open problems between fields. Submission is encouraged for both mature research and work in progress, and by both established academics and junior researchers, including students. The meeting does not have proceedings, so work can be submitted even if it has been previously submitted elsewhere.
+
+While no list of topics could be exhaustive, SYCO welcomes submissions with a compositional focus related to any of the following areas, in particular from the perspective of category theory:
+
+ - logical methods in computer science, including classical and quantum programming, type theory, concurrency, natural language processing and machine learning;
+ - graphical calculi, including string diagrams, Petri nets and reaction networks;
+ - languages and frameworks, including process algebras, proof nets, type theory and game semantics;
+ - abstract algebra and pure category theory, including monoidal category theory, higher category theory, operads, polygraphs, and relationships to homotopy theory;
+ - quantum algebra, including quantum computation and representation theory;
+ - tools and techniques, including rewriting, formal proofs and proof assistants;
+ - industrial applications, including case studies and real-world problem descriptions.
+
+This new series aims to bring together the communities behind many previous successful events which have taken place over the last decade, including "Categories, Logic and Physics", "Categories, Logic and Physics (Scotland)", "Higher-Dimensional Rewriting and Applications", "String Diagrams in Computation, Logic and Physics", "Applied Category Theory", "Simons Workshop on Compositionality", and the "Peripatetic Seminar in Sheaves and Logic".
+
+The hope is for SYCO to become a regular fixture in the academic calendar, running regularly throughout the year, and becoming over time a standard venue for informal presentation and discussion of results. In the event that more good-quality submissions are received than can be accommodated in the timetable, we may choose to *defer* some submissions to a future meeting, rather than reject them. This would be done based on submission order, giving an incentive for early submission. Deferred submissions would be accepted for presentation at any future meeting without the need for peer review. This will allow us to ensure that speakers have enough time to present their ideas, without creating an unnecessarily competitive atmosphere.
+
+# INVITED SPEAKERS
+	
+David Corfield, Department of Philosophy, University of Kent: "The ubiquity of modal type theory"
+Jules Hedges, Department of Computer Science, University of Oxford: "Compositional game theory"
+
+# IMPORTANT DATES
+
+All times are anywhere-on-earth.
+
+ - Submission deadline: Sunday 5 August 2018
+ - Author notification: Monday 20 August 2018
+ - Travel support application deadline: Monday 27 August 2018
+ - Symposium dates: Thursday 20 September and Friday 21 September 2018
+
+# SUBMISSIONS
+
+Submissions are by EasyChair, through the following link:
+
+ - https://easychair.org/conferences/?conf=syco1
+
+Submission may be by PDF, or by just giving an arXiv link. Submissions should present original results with sufficient detail and clarity for them to be assessed by the programme committee. We encourage the submission of work in progress, as well as mature results. There is no page limit or specific formatting requirement. There are no proceedings, so work can be submitted even if it has been previously published, or has been submitted for consideration elsewhere.
+
+ # FUNDING
+
+Some funding may be available to support travel and subsistence, with a priority for PhD students and junior researchers.
+
+ # PROGRAMME COMMITTEE
+
+The symposium managed by the following people, who will also serve as the programme committee.
+
+ - Ross Duncan, University of Strathclyde
+ - Chris Heunen, University of Edinburgh
+ - Aleks Kissinger, Radboud University Nijmegen
+ - Samuel Mimram, École Polytechnique
+ - Simona Paoli, University of Leicester
+ - Mehrnoosh Sadrzadeh, Queen Mary
+ - Pawel Sobocinski, University of Southampton
+ - Jamie Vicary, University of Birmingham and University of Oxford (local organizer)
