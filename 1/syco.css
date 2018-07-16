@@ -34,8 +34,13 @@ td {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-td>img {
+img.speaker {
 	height: 200px;
+}
+img.sponsor {
+	height: 100px;
+	padding: 10px;
+	background-color: white;
 }
 h2 {
 	margin-top: 30px;
