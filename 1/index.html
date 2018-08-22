@@ -50,6 +50,29 @@ img.sponsor {
 h2 {
 	margin-top: 30px;
 }
+#schedule, #schedule>tbody>tr>td {
+	text-align: left;
+}
+#schedule>tbody>tr>td, #schedule>tbody>tr>th {
+	padding-left: 5px;
+}
+#schedule>tbody>tr>td {
+	border: 1px solid black;
+	border-spacing: 0px;
+}
+#schedule {
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+#schedule>tbody>tr {
+	height: 45px;
+}
+#schedule>tbody>tr>td:first {
+	width: 50px;
+}
+#schedule>tbody>tr>td:not(:first-child) {
+	width: 425px;
+}
 </style>
 <title>SYCO 1</title>
 </head>
@@ -133,20 +156,6 @@ and the <i>Peripatetic Seminar in Sheaves and Logic</i>.</p>
 	<li> Symposium dates: Thursday 20 September and Friday 21 September 2018 </li>
 </ul>
 
-<h2>Submissions</h2>
-
-<p>Submission is by EasyChair. To submit to <i>SYCO 1</i>, click on the this link:</p>
-
-<ul><li><a href="https://easychair.org/conferences/?conf=syco1">https://easychair.org/conferences/?conf=syco1</a></li></ul>
-
-<!--
-<p>If you would like the programme committee to consider open discussion of your paper (see <i>Open discussion</i> paragraph above), please append your paper's arXiv identifier XXXX.YYYY at the end of the "Title" field on the EasyChair submission page. Any discussion would then be at the page https://scirate.com/arxiv/XXXX.YYYY. If you create an account at <a href="http://scirate.com">http://scirate.com</a>, you can configure it to send you an email whenever anybody comments on one of your own papers.</p>
--->
-
-<p>Submissions should present research results in sufficient detail to allow them to be properly considered by members of the programme committee, who will assess papers with regards to significance, clarity, correctness, and scope. We encourage the submission of work in progress, as well as mature results. There are no proceedings, so work can be submitted even if it has been previously published, or has been submitted for consideration elsewhere. There is no specific formatting requirement, and no page limit, although for long submissions authors should be aware that reviewers may not be able to read the entire document in detail.</p>
-
-The call for papers is available <a href="call_for_papers.txt">here</a>.
-
 <h2>Sponsorship</h2>
 
 <p>We are pleased to acknowledge financial support from <a href="https://cambridgequantum.com/">Cambridge Quantum Computing</a> and the <a href="https://royalsociety.org/">Royal Society</a>.</p>
@@ -158,14 +167,30 @@ The call for papers is available <a href="call_for_papers.txt">here</a>.
 
 <h2>Schedule</h2>
 
-The full scientific programme will be posted soon.
+The talks will take place in the Murray Learning Centre, room LG14.
 
-<ul>
-	<li><b>The night before.</b> For those who are around on the evening of Wednesday 19 September, we will meet in a local pub for drinks and food.</li>
-	<li><b>Thursday 20 September.</b> Registration will begin at 11:00, and the last talk will finish at 17:30, followed by a drinks reception.</li>
-	<li><b>Friday 21 September.</b> The first talk will start at 09:30, and the last talk will finish at 17:30.
-</ul>
-
+<p>
+<table id="schedule" align="left">
+	<tr><th>Time</th><th>Thursday 20 September</th><th>Friday 21 September</th></tr>
+	<tr><td>09:30</td><td></td><td rowspan=2>Jules Hedges, "Compositional game theory" (invited talk)</td></tr>
+	<tr><td>10:00</td><td></td></tr>
+	<tr><td>10:30</td><td></td><td>Lucius Schoenbaum, "Foundations of an extension of category theory"</td></tr>
+	<tr><td>11:00</td><td>REGISTRATION</td><td>BREAK</td></tr>
+	<tr><td>11:30</td><td rowspan=2>David Corfield, "The ubiquity of modal type theory" (invited talk)</td><td>Lukas Heidemann, "Visualization and verification of geometrical proofs"</td></tr>
+	<tr><td>12:00</td><td>Exequiel Rivas, "Relating idioms, arrows and monads from monoidal adjunctions"</td></tr>
+	<tr><td>12:30</td><td>Kohei Kishida, "An allegorical semantics of modal logic"</td><td>Apiwat Chantawibul and Pawel Sobocinski, "Monoidal multiplexing"</td></tr>
+	<tr><td>13:00</td><td rowspan=2>LUNCH</td><td rowspan=2>LUNCH</td></tr>
+	<tr><td>13:30</td></tr>
+	<tr><td>14:00</td><td>Joe Moeller, "Noncommutative network models"</td><td>Michael Stay and Lucius Gregory Meredith, "How to derive a type system from a term calculus, a collection, and a distributive law"</td></tr>
+	<tr><td>14:30</td><td>Paolo Perrone and Tobias Fritz, "Monads, partial evaluations, and rewriting"</td><td>Brendan Fong, David Spivak and Remy Tuyeras, "Backprop as functor: a compositional perspective on supervised learning"</td></tr>
+	<tr><td>15:00</td><td>Aaron Sloman, "Biologically evolved forms of compositionality"</td><td>Robin Cockett, Cole Comfort and Priyaa Srinivasan, "Dagger mix categories"</td></tr>
+	<tr><td>15:30</td><td>BREAK</td><td>BREAK</td></tr>
+	<tr><td>16:00</td><td>Branko Nikolic, "Cauchy completeness and causal spaces"</td><td>Andre Kornell, "Quantum sets"</td></tr>
+	<tr><td>16:30</td><td>Robin Kaarsgaard and Robert Gl&uuml;ck, "Reversibility as a compositional phenomenon"</td><td>Simon Willerton, "The Legendre-Fenchel transform from a category theoretic perspective"</td></tr>
+	<tr><td>17:00</td><td>Ross Duncan, Cambridge Quantum Computing industry presentation (not peer reviewed)</td><td>Tarmo Uustalu, "Container combinatorics: monads and more"</td></tr>
+	<tr><td>17:30</td><td>DRINKS RECEPTION</td></tr>
+</table>
+</p>
 
 <h2>Registration</h2>
 
@@ -198,6 +223,20 @@ The full scientific programme will be posted soon.
 <h2>Funding</h2>
 
 Some funding is available to cover travel and subsistence costs, with a priority for PhD students and junior researchers. To apply for this funding, please contact the local organizer Jamie Vicary at <a href="mailto:j.o.vicary@bham.ac.uk?subject=SYCO 1 funding request">j.o.vicary@bham.ac.uk</a> with subject line "SYCO 1 funding request" by the deadline given above, with a short statement of your current status, travel costs and funding required.
+
+<h2>Submissions</h2>
+
+<p>Submission is by EasyChair. To submit to <i>SYCO 1</i>, click on the this link:</p>
+
+<ul><li><a href="https://easychair.org/conferences/?conf=syco1">https://easychair.org/conferences/?conf=syco1</a></li></ul>
+
+<!--
+<p>If you would like the programme committee to consider open discussion of your paper (see <i>Open discussion</i> paragraph above), please append your paper's arXiv identifier XXXX.YYYY at the end of the "Title" field on the EasyChair submission page. Any discussion would then be at the page https://scirate.com/arxiv/XXXX.YYYY. If you create an account at <a href="http://scirate.com">http://scirate.com</a>, you can configure it to send you an email whenever anybody comments on one of your own papers.</p>
+-->
+
+<p>Submissions should present research results in sufficient detail to allow them to be properly considered by members of the programme committee, who will assess papers with regards to significance, clarity, correctness, and scope. We encourage the submission of work in progress, as well as mature results. There are no proceedings, so work can be submitted even if it has been previously published, or has been submitted for consideration elsewhere. There is no specific formatting requirement, and no page limit, although for long submissions authors should be aware that reviewers may not be able to read the entire document in detail.</p>
+
+The call for papers is available <a href="call_for_papers.txt">here</a>.
 
 <h2>Programme committee</h2>
 
