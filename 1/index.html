@@ -47,6 +47,9 @@ img.sponsor {
 	padding: 10px;
 	background-color: white;
 }
+#photos>tbody>tr>td>img {
+	height: 300px;
+}
 h2 {
 	margin-top: 30px;
 }
@@ -72,6 +75,31 @@ h2 {
 }
 #schedule>tbody>tr>td:not(:first-child) {
 	width: 425px;
+}
+div.photos>div>a>img {
+	height: 300px;
+	margin-bottom: 5px;
+}
+div.photos {
+	text-align: left;
+}
+div.photos>div {
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+div.group_photo>div {
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+div.group_photo>div>a>img {
+	width: 960px;
+	margin-bottom: 5px;
 }
 </style>
 <title>SYCO 1</title>
@@ -121,6 +149,8 @@ and the <i>Peripatetic Seminar in Sheaves and Logic</i>.</p>
 
 <p>The steering committee hopes that <i>SYCO</i> will become a regular fixture in the academic calendar, running regularly throughout the year, and becoming over time a recognized venue for presentation and discussion of results in an informal and friendly atmosphere. To help create this community, and to avoid the need to make difficult choices between strong submissions, in the event that more good-quality submissions are received than can be accommodated in the timetable, the programme committee may choose to <i>defer</i> some submissions to a future meeting, rather than reject them. This would be done based largely on submission order, giving an incentive for early submission, but would also take into account other requirements, such as ensuring a broad scientific programme. Deferred submissions can be re-submitted to any future <i>SYCO</i> meeting, where they will be prioritised for inclusion in the programme, and where they will not need to be re-reviewed. This will allow us to ensure that speakers have enough time to present their ideas, without creating competition between submissions. Meetings would be held sufficiently frequently to avoid a backlog of deferred papers.</p>
 
+<p><a href="http://events.cs.bham.ac.uk/syco/1/">Click here for information about the next <i>SYCO</i> meeting.</a></p>
+
 <!--
 <p><i>Open discussion.</i> For a submission where the authors chooses to include an arXiv identifier, open discussion between authors and reviewers may take place on the open platform <a href="https://scirate.com">scirate.com</a>, to inform the confidential reviewing process. This will give authors an opportunity to engage in open and natural discussion with reviewers, allowing authors to answer questions and clarify misunderstandings, with an emphasis on building academic relationships in a way that traditional closed reviewing prevents. The steering committee requests that discussions remain constructive and civil, with reviewers advised against expressing strong criticism of submissions in this forum.</p>
 -->
@@ -152,8 +182,8 @@ and the <i>Peripatetic Seminar in Sheaves and Logic</i>.</p>
 	<li><del><b> Submission deadline: Monday 13 August 2018 (extended), midnight <a href="https://www.timeanddate.com/time/zones/aoe">anywhere-on-earth</a>.</b></del></li>
 	<li><del> Author notification: Monday 20 August 2018 </del></li>
 	<li><del> Travel support application deadline: Monday 27 August 2018 </del></li>
-	<li><del>Registration deadline: Thursday 13 September 2018</del><br><i>Late registration is possible, please follow the registration instructions as normal.</i></li>
-	<li> Symposium dates: Thursday 20 September and Friday 21 September 2018 </li>
+	<li><del>Registration deadline: Thursday 13 September 2018</del></li>
+	<li><del>Symposium dates: Thursday 20 September and Friday 21 September 2018</del> </li>
 </ul>
 
 <h2>Schedule</h2>
@@ -170,23 +200,53 @@ and the <i>Peripatetic Seminar in Sheaves and Logic</i>.</p>
 	<tr><th>Time</th><th>Thursday 20 September</th><th>Friday 21 September</th></tr>
 	<tr><td>09:30</td><td></td><td rowspan=2>Jules Hedges, "Compositional game theory" (invited talk)</td></tr>
 	<tr><td>10:00</td><td></td></tr>
-	<tr><td>10:30</td><td rowspan=2>REGISTRATION</td><td>Filippo Bonchi, Jens Seeber and Pawel Sobocinski, "Graphical conjunctive queries"</td></tr>
+	<tr><td>10:30</td><td rowspan=2>REGISTRATION</td><td>Filippo Bonchi, Jens Seeber and Pawel Sobocinski, "Graphical conjunctive queries" <a href="slides/seeber.pdf">(slides)</a></td></tr>
 	<tr><td>11:00</td><td>BREAK</td></tr>
-	<tr><td>11:30</td><td rowspan=2>David Corfield, "The ubiquity of modal type theory" (invited talk)</td><td>Lukas Heidemann, "Visualization and verification of geometrical proofs"</td></tr>
-	<tr><td>12:00</td><td>Exequiel Rivas, "Relating idioms, arrows and monads from monoidal adjunctions"</td></tr>
-	<tr><td>12:30</td><td>Kohei Kishida, "An allegorical semantics of modal logic"</td><td>Apiwat Chantawibul and Pawel Sobocinski, "Monoidal multiplexing"</td></tr>
+	<tr><td>11:30</td><td rowspan=2>David Corfield, "The ubiquity of modal type theory" (invited talk)</td><td>Lukas Heidemann, "Visualization and verification of geometrical proofs" <a href="slides/heidemann.pdf">(slides)</a></td></tr>
+	<tr><td>12:00</td><td>Exequiel Rivas, "Relating idioms, arrows and monads from monoidal adjunctions" <a href="slides/rivas.pdf">(slides)</a></td></tr>
+	<tr><td>12:30</td><td>Kohei Kishida, "An allegorical semantics of modal logic" <a href="slides/kishida.pdf">(slides)</a></td><td>Apiwat Chantawibul and Pawel Sobocinski, "Monoidal multiplexing"</td></tr>
 	<tr><td>13:00</td><td rowspan=2>LUNCH</td><td rowspan=2>LUNCH</td></tr>
 	<tr><td>13:30</td></tr>
-	<tr><td>14:00</td><td>Joe Moeller, "Noncommutative network models"</td><td>Michael Stay and Lucius Gregory Meredith, "How to derive a type system from a term calculus, a collection, and a distributive law"</td></tr>
-	<tr><td>14:30</td><td>Paolo Perrone and Tobias Fritz, "Monads, partial evaluations, and rewriting"</td><td>Brendan Fong, David Spivak and Remy Tuyeras, "Backprop as functor: a compositional perspective on supervised learning"</td></tr>
-	<tr><td>15:00</td><td>Aaron Sloman, "Biologically evolved forms of compositionality"</td><td>Robin Cockett, Cole Comfort and Priyaa Srinivasan, "Dagger mix categories"</td></tr>
+	<tr><td>14:00</td><td>Joe Moeller, "Noncommutative network models"</td><td>Michael Stay and Lucius Gregory Meredith, "How to derive a type system from a term calculus, a collection, and a distributive law" <a href="slides/stay.pdf">(slides)</a></td></tr>
+	<tr><td>14:30</td><td>Paolo Perrone and Tobias Fritz, "Monads, partial evaluations, and rewriting" <a href="slides/perrone.pdf">(slides)</a></td><td>Brendan Fong, David Spivak and Remy Tuyeras, "Backprop as functor: a compositional perspective on supervised learning" <a href="slides/fong.pdf">(slides)</a></td></tr>
+	<tr><td>15:00</td><td>Aaron Sloman, "Biologically evolved forms of compositionality" <a href="slides/sloman.pdf">(slides)</a></td><td>Robin Cockett, Cole Comfort and Priyaa Srinivasan, "Dagger mix categories" <a href="slides/srinivasan.pdf">(slides)</a></td></tr>
 	<tr><td>15:30</td><td>BREAK</td><td>BREAK</td></tr>
-	<tr><td>16:00</td><td>Benjamin Musto, David Reutter and Dominic Verdon, "A compositional approach to quantum functions"</td><td>Andre Kornell, "Quantum sets"</td></tr>
+	<tr><td>16:00</td><td>Benjamin Musto, David Reutter and Dominic Verdon, "A compositional approach to quantum functions" <a href="slides/reutter.pdf">(slides)</a></td><td>Andre Kornell, "Quantum sets" <a href="slides/kornell.pdf">(slides)</a></td></tr>
 	<tr><td>16:30</td><td>Robin Kaarsgaard and Robert Gl&uuml;ck, "Reversibility as a compositional phenomenon"</td><td>Simon Willerton, "The Legendre-Fenchel transform from a category theoretic perspective"</td></tr>
-	<tr><td>17:00</td><td>Ross Duncan and Seyon Sivarajah, Cambridge Quantum Computing industry presentation (not peer reviewed)</td><td>Tarmo Uustalu, "Container combinatorics: monads and more"</td></tr>
+	<tr><td>17:00</td><td>Ross Duncan and Seyon Sivarajah, Cambridge Quantum Computing industry presentation (not peer reviewed)</td><td>Tarmo Uustalu, "Container combinatorics: monads and more" <a href="slides/uustalu.pdf">(slides)</a></td></tr>
 	<tr><td>17:30</td><td>DRINKS RECEPTION</td></tr>
 </table>
 </p>
+
+<h2>Photos</h2>
+
+Here are some photographs of the event.
+
+<div class="group_photo">
+	<div><a href="photos/group_original.jpg"><img src="photos/group_small.jpg"></a></div>
+	</div>
+
+<div class="photos">
+	<div><a href="photos/corfield_original.jpg"><img src="photos/corfield_small.jpg"></a><br>David Corfield</div>
+	<div><a href="photos/duncan_original.jpg"><img src="photos/duncan_small.jpg"></a><br>Ross Duncan</div>
+	<div><a href="photos/fong_original.jpg"><img src="photos/fong_small.jpg"></a><br>Brendan Fong</div>
+	<div><a href="photos/hedges_original.jpg"><img src="photos/hedges_small.jpg"></a><br>Jules Hedges</div>
+	<div><a href="photos/heidemann_original.jpg"><img src="photos/heidemann_small.jpg"></a><br>Lukas Heidemann</div>
+	<div><a href="photos/kaarsgaard_original.jpg"><img src="photos/kaarsgaard_small.jpg"></a><br>Robin Kaarsgaard</div>
+	<div><a href="photos/kornell_original.jpg"><img src="photos/kornell_small.jpg"></a><br>Andre Kornell</div>
+	<div><a href="photos/moeller_original.jpg"><img src="photos/moeller_small.jpg"></a><br>Joseph Moeller</div>
+	<div><a href="photos/perrone_original.jpg"><img src="photos/perrone_small.jpg"></a><br>Paolo Perrone</div>	
+	<div><a href="photos/reutter_original.jpg"><img src="photos/reutter_small.jpg"></a><br>David Reutter</div>	
+	<div><a href="photos/rivas_original.jpg"><img src="photos/rivas_small.jpg"></a><br>Exequiel Rivas</div>	
+	<div><a href="photos/seeber_original.jpg"><img src="photos/seeber_small.jpg"></a><br>Jens Seeber</div>	
+	<div><a href="photos/sivarajah_original.jpg"><img src="photos/sivarajah_small.jpg"></a><br>Seyon Sivarajah</div>	
+	<div><a href="photos/sobocinski_original.jpg"><img src="photos/sobocinski_small.jpg"></a><br>Pawel Sobocinski</div>	
+	<div><a href="photos/srinivasan_original.jpg"><img src="photos/srinivasan_small.jpg"></a><br>Priyaa Srinivasan</div>	
+	<div><a href="photos/stay_original.jpg"><img src="photos/stay_small.jpg"></a><br>Mike Stay</div>
+	<div><a href="photos/uustalu_original.jpg"><img src="photos/uustalu_small.jpg"></a><br>Tarmu Uustalu</div>
+	<div><a href="photos/willerton_original.jpg"><img src="photos/willerton_small.jpg"></a><br>Simon Willerton</div>
+</div>
+
 
 <h2>Sponsorship</h2>
 
