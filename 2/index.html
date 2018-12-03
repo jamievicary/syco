@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="utf-8"/>
 <style>
 * {
 	font-family: Verdana, Geneva, sans-serif;
@@ -34,6 +36,11 @@ body {
 #title {
 
 }
+#table.logoTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 li {
 	margin: 5px
 }
@@ -97,8 +104,12 @@ font-size: small;
 #schedule>tbody>tr>td.empty
 {
   background-color: #dec;
-  border: 0px;
+  border: none;
     }
+#iframe.gmap {
+  border: none;
+  overflow: hidden;
+}
 
 .emphasise {
   color: red;
@@ -112,23 +123,21 @@ font-size: small;
 <div id="grid">
 <div id="a"></div>
 <div id="c">
-<center>
-	<table>
-		<tr>
-			<td><img id="logo" src="logo_web.svg"></img></td>
-			<td>
-				<h1>Second Symposium on Compositional Structures (SYCO 2)</h1>
-				<p><b><i>University of Strathclyde<br>17-18 December, 2018</i></b></p>
-			</td>
-		</tr>
-	</table>
-</center>
+  <table id="logoTable">
+    <tr>
+      <td><img id="logo" src="logo_web.svg" alt="SYCO logo"></td>
+      <td>
+	<h1>Second Symposium on Compositional Structures (SYCO 2)</h1>
+	<p><b><i>University of Strathclyde<br>17-18 December, 2018</i></b></p>
+      </td>
+    </tr>
+  </table>
 
 <p>The <i>Symposium on Compositional Structures</i> is a new interdisciplinary series of meetings aiming to support the growing community of researchers interested in the phenomenon of compositionality, from both applied and abstract perspectives, and in particular where category theory serves as a unifying common language. We welcome submissions from researchers across computer science, mathematics, physics, philosophy, and beyond, with the aim of fostering friendly discussion, disseminating new ideas, and spreading knowledge between fields. Submission is encouraged for both mature research and work in progress, and by both established academics and junior researchers, including students.</p>
 
 <p>Submission is easy, with no format requirements or page restrictions. The meeting does not have proceedings, so work can be submitted even if it has been submitted or published elsewhere. You could submit work-in-progress, or a recently completed paper, or even a PhD or Masters thesis.</p>
 
-<p>While no list of topics could be exhaustive, <i>SYCO</i> welcomes submissions with a compositional focus related to any of the following areas, in particular from the perspective of category theory:
+<p>While no list of topics could be exhaustive, <i>SYCO</i> welcomes submissions with a compositional focus related to any of the following areas, in particular from the perspective of category theory:</p>
 <ul>
 <li><b>logical methods in computer science</b>, including classical and quantum programming, type theory, concurrency, natural language processing and machine learning;</li>
 <li><b>graphical calculi</b>, including string diagrams, Petri nets and reaction networks;</li>
@@ -138,7 +147,7 @@ operads, polygraphs, and relationships to homotopy theory;</li>
 <li><b>quantum algebra</b>, including quantum computation and representation theory;</li>
 <li><b>tools and techniques</b>, including rewriting, formal proofs and proof assistants, and game theory;</li>
 <li><b>industrial applications</b>, including case studies and real-world problem descriptions.</li>
-</ul></p>
+</ul>
 
 <p>This new series aims to bring together the communities behind many previous successful events which have taken place
 over the last decade, including
@@ -156,22 +165,22 @@ and the <i>Peripatetic Seminar in Sheaves and Logic</i>.</p>
 <h2 id="invitedSpeakers">Invited speakers</h2>
 
 <table>
-	<tr>
-		<td><img class="speaker" src="cirstea.jpeg"/></td>
-		<td><img class="speaker" src="lewis.jpeg"/></td>
-	</tr>
-	<tr>
-		<td><a href="https://www.ecs.soton.ac.uk/people/cc2">Corina Cirstea</a></td>
-		<td><a href="http://www.uva.nl/en/profile/l/e/m.a.f.lewis/m.a.f.lewis.html">Martha Lewis</a></td>
-	</tr>
-	<tr>
-		<td>Department of Electronics and Computer Science, University of Southampton</td>
-		<td>Institute for Logic, Language and Computation,  University of Amsterdam</td>
-	</tr>
- 	<tr>
-		<td><i></i></td>
-		<td><i>Compositionality in Semantic Spaces</i></td>
-	<tr>
+  <tr>
+    <td><img class="speaker" src="cirstea.jpeg" alt="Corina Cirstea"/></td>
+    <td><img class="speaker" src="lewis.jpeg" alt="Martha Lewis"/></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.ecs.soton.ac.uk/people/cc2">Corina Cirstea</a></td>
+    <td><a href="http://www.uva.nl/en/profile/l/e/m.a.f.lewis/m.a.f.lewis.html">Martha Lewis</a></td>
+  </tr>
+  <tr>
+    <td>Department of Electronics and Computer Science, University of Southampton</td>
+    <td>Institute for Logic, Language and Computation,  University of Amsterdam</td>
+  </tr>
+  <tr>
+    <td><i></i></td>
+    <td><i>Compositionality in Semantic Spaces</i></td>
+  </tr>
 </table>
 
 <h2 id="acceptedPapers">Accepted presentations</h2>
@@ -194,8 +203,7 @@ A list of accepted presentations can be found <a href="accepted.html">here</a>.
 
 <p>The talks will take place in room <strong>MC301</strong>, on the 3rd floor of the <a href="https://goo.gl/maps/NfE47ZmQJsQ2"><strong>McCance Building</strong></a> of the University of Strathclyde. The registration, coffee breaks, and drinks reception will be just outside this room.</p>
 
-<p>
-<table id="schedule" align="left">
+<table id="schedule">
   <thead>
     <tr><th>Time</th><th>Monday 17 December</th><th>Tuesday 18 September</th></tr>
   </thead>
@@ -279,14 +287,15 @@ A list of accepted presentations can be found <a href="accepted.html">here</a>.
     <tr>
       <td>17:30&ndash;18:00</td>
       <td>Aleks Kissinger and John van de Wetering: "PyZX"</td>
+      <td class="empty"></td>
     </tr>
     <tr>
       <td>18:00&ndash;18:30</td>
       <td>DRINKS RECEPTION</td>
+      <td class="empty"></td>
     </tr>
   <tbody>
 </table>
-</p>
 
 <h2 id="registration">Registration</h2>
 
@@ -296,11 +305,11 @@ A list of accepted presentations can be found <a href="accepted.html">here</a>.
 
 <p>We are pleased to acknowledge financial support from <a href="https://cambridgequantum.com/">Cambridge Quantum Computing</a>, <a href="https://sicsa.ac.uk">SICSA</a> and <a href="https://epsrc.ukri.org/">EPSRC</a>.</p>
 
-<p><table><tr>
-<td><a href="https://cambridgequantum.com/"><img class="sponsor" src="sponsors/cqc.jpeg"></a></td>
-<td><a href="https://sicsa.ac.uk"><img class="sponsor" src="sponsors/sicsa.jpeg"></a></td>
-<td><a href="https://epsrc.ukri.org/"><img class="sponsor" src="sponsors/epsrc.jpeg"></a></td>
-</tr></table></p>
+<table><tr>
+<td><a href="https://cambridgequantum.com/"><img class="sponsor" src="sponsors/cqc.jpeg" alt="Cambridge Quantum Computing logo"></a></td>
+<td><a href="https://sicsa.ac.uk"><img class="sponsor" src="sponsors/sicsa.jpeg" alt="SICSA logo"></a></td>
+<td><a href="https://epsrc.ukri.org/"><img class="sponsor" src="sponsors/epsrc.jpeg" alt="EPSRC logo"></a></td>
+</tr></table>
 
 <h2 id="localInfo">Local information</h2>
 
@@ -313,9 +322,8 @@ A list of accepted presentations can be found <a href="accepted.html">here</a>.
   below the map for a larger picture):</p>
 
 <p>
-<iframe src="https://www.google.com/maps/d/embed?mid=1lzQ95ZBPDV1O3c_zSg-ie5tANyffV_Ch" width="720" height="480" frameborder="0" scrolling="no"
-	marginheight="0" marginwidth="0"></iframe>
-</br><small>View <a href="https://www.google.com/maps/d/viewer?mid=1lzQ95ZBPDV1O3c_zSg-ie5tANyffV_Ch">a larger map</a>. There is also
+<iframe src="https://www.google.com/maps/d/embed?mid=1lzQ95ZBPDV1O3c_zSg-ie5tANyffV_Ch" width="720" height="480" class="gmap"></iframe>
+<br/><small>View <a href="https://www.google.com/maps/d/viewer?mid=1lzQ95ZBPDV1O3c_zSg-ie5tANyffV_Ch">a larger map</a>. There is also
   an <a href="http://www.strath.ac.uk/maps/mccancebuilding/">official
   university map</a>.</small>
 </p>
@@ -350,7 +358,7 @@ A list of accepted presentations can be found <a href="accepted.html">here</a>.
 
 <h2 id="deferrral">Deferral</h2>
 
-The intention is for <i>SYCO</i> to be a community meeting, where people have enough time to explain their ideas, and without an unnecessarily competitive atmosphere. To encourage this, in the event that more submissions are received of an acceptable standard than can be accommodated in the timetable, the programme committee may choose to <i>defer</i> some submissions to a future meeting, rather than reject them. This would be done based largely on submission order, giving an incentive for early submission, but would also take into account other requirements, such as ensuring a broad scientific programme. Deferred submissions can then be re-submitted to any future <i>SYCO</i> meeting, where they will be prioritised for inclusion in the programme, and where they will not need to be re-reviewed. Meetings will be held sufficiently frequently to avoid a backlog of deferred papers.</p>
+<p>The intention is for <i>SYCO</i> to be a community meeting, where people have enough time to explain their ideas, and without an unnecessarily competitive atmosphere. To encourage this, in the event that more submissions are received of an acceptable standard than can be accommodated in the timetable, the programme committee may choose to <i>defer</i> some submissions to a future meeting, rather than reject them. This would be done based largely on submission order, giving an incentive for early submission, but would also take into account other requirements, such as ensuring a broad scientific programme. Deferred submissions can then be re-submitted to any future <i>SYCO</i> meeting, where they will be prioritised for inclusion in the programme, and where they will not need to be re-reviewed. Meetings will be held sufficiently frequently to avoid a backlog of deferred papers.</p>
 
 <h2 id="submissions">Submissions</h2>
 
@@ -368,13 +376,12 @@ The intention is for <i>SYCO</i> to be a community meeting, where people have en
 
 <p>The travel support application deadline has now passed.</p>
 
-<p>Some funding is available to cover travel and subsistence costs, with a priority for PhD students and junior researchers. To apply for this funding, please contact the local organizer Fredrik Nordvall Forsberg at <a href="mailto:fredrik.nordvall-forsberg@strath.ac.uk?subject=SYCO 2 funding request">fredrik.nordvall-forsberg@strath.ac.uk</a> with a short statement of your current status, travel costs and funding required. The application deadline is Thursday 29 November, in the week after author notifications.</p>
+<p>Some funding is available to cover travel and subsistence costs, with a priority for PhD students and junior researchers. To apply for this funding, please contact the local organizer Fredrik Nordvall Forsberg at <a href="mailto:fredrik.nordvall-forsberg@strath.ac.uk">fredrik.nordvall-forsberg@strath.ac.uk</a> with a short statement of your current status, travel costs and funding required. The application deadline is Thursday 29 November, in the week after author notifications.</p>
 
 <h2 id="participants">Participants</h2>
 
 <p>So far 27 total participants (18 students) [26 listed below].</p>
 
-<p>
 <div>Fatimah Ahmadi, University of Oxford</div>
 <div>Malin Altenmüller, University of Strathclyde</div>
 <div>Bob Atkey, University of Strathclyde</div>
@@ -402,7 +409,6 @@ The intention is for <i>SYCO</i> to be a community meeting, where people have en
 <div>James Wood, University of Strathclyde</div>
 <div>Stefan Zetzsche, University College London</div>
 <div>John van de Wetering, Radboud University Nijmegen</div>
-</p>
 
 <h2 id="pc">Programme committee</h2>
 
@@ -415,7 +421,7 @@ The intention is for <i>SYCO</i> to be a community meeting, where people have en
 <li><a href="https://www.cs.ru.nl/A.Kissinger/">Aleks Kissinger</a>, Radboud University Nijmegen</li>
 <li><a href="https://twitter.com/elianalorch?lang=en">Eliana Lorch</a>, University of Oxford</li>
 <li><a href="http://www.cs.bath.ac.uk/~gam23/">Guy McCusker</a>, University of Bath</li>
-<li><a href="http://www.lix.polytechnique.fr/Labo/Samuel.Mimram//">Samuel Mimram</a>, &Eacutecole Polytechnique</li>
+<li><a href="http://www.lix.polytechnique.fr/Labo/Samuel.Mimram//">Samuel Mimram</a>, &Eacute;cole Polytechnique</li>
 <li><a href="http://www.cs.bham.ac.uk/~kxm538/">Koko Muroya</a>, RIMS, Kyoto University & University of Birmingham</li>
 <li><a href="http://www.eecs.qmul.ac.uk/~pbo/">Paulo Oliva</a>, Queen Mary</li>
 <li><a href="https://www.math.ucla.edu/~otter/">Nina Otter</a>, UCLA</li>
