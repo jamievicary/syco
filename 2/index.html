@@ -70,16 +70,41 @@ h2 {
 #schedule>tbody>tr {
 	height: 45px;
 }
-#schedule>tbody>tr>td:first {
-	width: 50px;
+#schedule>tbody>tr>td:first-child {
+width: 90px;
+font-size: small;
 }
 #schedule>tbody>tr>td:not(:first-child) {
-	width: 425px;
+	width: 410px;
 }
+
+#schedule>tbody>tr:nth-child(odd)
+    { background-color: #ded;
+    }
+
+#schedule>tbody>:nth-child(even)
+    { background-color: #edffed;
+}
+
+#schedule>tbody>tr>td.odd
+{ background-color: #ded;
+}
+
+#schedule>tbody>tr>td.even
+{ background-color: #edffed;
+}
+
+#schedule>tbody>tr>td.empty
+{
+  background-color: #dec;
+  border: 0px;
+    }
+
 .emphasise {
   color: red;
   font-weight: bold;
 }
+
 </style>
 <title>SYCO 2</title>
 </head>
@@ -143,12 +168,10 @@ and the <i>Peripatetic Seminar in Sheaves and Logic</i>.</p>
 		<td>Department of Electronics and Computer Science, University of Southampton</td>
 		<td>Institute for Logic, Language and Computation,  University of Amsterdam</td>
 	</tr>
-<!--
  	<tr>
-		<td><i>Title</i></td>
-		<td><i>Title</i></td>
+		<td><i></i></td>
+		<td><i>Compositionality in Semantic Spaces</i></td>
 	<tr>
--->
 </table>
 
 <h2 id="acceptedPapers">Accepted presentations</h2>
@@ -167,9 +190,103 @@ A list of accepted presentations can be found <a href="accepted.html">here</a>.
 	<li> Symposium dates: Monday 17 December and Tuesday 18 December 2018 </li>
 </ul>
 
-<h2 id="schedule">Schedule</h2>
+<h2 id="programme">Schedule</h2>
 
-To be announced. We aim to start at 11.30 on the Monday, and finish at 17.30 on the Tuesday, to make it possible to travel in the morning and evening respectively if needed.
+<p>The talks will take place in room <strong>MC301</strong>, on the 3rd floor of the <a href="https://goo.gl/maps/NfE47ZmQJsQ2"><strong>McCance Building</strong></a> of the University of Strathclyde. The registration, coffee breaks, and drinks reception will be just outside this room.</p>
+
+<p>
+<table id="schedule" align="left">
+  <thead>
+    <tr><th>Time</th><th>Monday 17 December</th><th>Tuesday 18 September</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>09:00&ndash;09:30</td>
+      <td  rowspan=3 class="empty"></td>
+      <td rowspan=2 class="even">Martha Lewis, "Compositionality in Semantic Spaces" (invited talk)</td>
+    </tr>
+    <tr>
+      <td>09:30&ndash;10:00</td>
+    </tr>
+    <tr>
+      <td>10:00&ndash;10:30</td>
+      <td>Benjamin Dupont: "Diagrammatic rewriting modulo isotopy"</td>
+    </tr>
+    <tr>
+      <td>10:30&ndash;11:00</td>
+      <td rowspan=2>REGISTRATION AND COFFEE</td>
+      <td>COFFEE BREAK</td>
+    </tr>
+    <tr>
+      <td>11:00&ndash;11:30</td>
+      <td>Xuexing Lu, Yu Ye and Sen Hu: "A graphical calculus for semi-groupal categories"</td>
+    </tr>
+    <tr>
+      <td>11:30&ndash;12:00</td>
+      <td rowspan=2 class="odd">Corina Cirstea, <i>TBA</i> (invited talk)</td>
+      <td>Sander Uijlen: "On process matrices and non-signalling processes"</td>
+    </tr>
+    <tr>
+      <td>12:00&ndash;12:30</td>
+      <td>Bruno Gavranović: "Generative Adversarial Networks, Databases and Automatic Differentiation"</td>
+    </tr>
+    <tr>
+      <td>12:30&ndash;13:00</td>
+      <td>Mehrnoosh Sadrzadeh, Matthew Purver and Ruth Kempson, "Exploring Semantic Incrementality with Dynamic Syntax and Vector Space Semantics"</td>
+      <td>Dominic Verdon: "Coherence for braided and symmetric pseudomonoids"</td>
+    </tr>
+    <tr>
+      <td>13:00&ndash;13:30</td>
+      <td rowspan=3>LUNCH</td>
+      <td rowspan=3>LUNCH</td>
+    </tr>
+    <tr>
+      <td>13:30&ndash;14:00</td>
+    </tr>
+    <tr>
+      <td>14:00&ndash;14:30</td>
+    </tr>
+    <tr>
+      <td>14:30&ndash;15:00</td>
+      <td>Mathieu Huot and Sam Staton: "Universal Properties in Quantum Theory"</td>
+      <td>Christopher Dean: "Higher Modules and Directed Identity Types"</td>
+    </tr>
+    <tr>
+      <td>15:00&ndash;15:30</td>
+      <td>Bob Coecke, Anthony Munson, Kang Feng Ng and Quanlong Wang: "A general overview of some ZX-calculus completeness results"</td>
+      <td>Robin Cockett, Cole Comfort and Priyaa Varshinee Srinivasan: "Quantum Channels for Mixed Unitary Categories"</td>
+    </tr>
+    <tr>
+      <td>15:30&ndash;16:00</td>
+      <td>Gijs Wijnholds and Mehrnoosh Sadrzadeh: "Classical Copying versus Quantum Entanglement in Natural Language: the Case of VP-ellipsis"</td>
+      <td>Filippo Bonchi, Jens Seeber and Pawel Sobocinski: "Completeness for Cartesian bicategories"</td>
+    </tr>
+    <tr>
+      <td>16:00&ndash;16:30</td>
+      <td>COFFEE BREAK</td>
+      <td>COFFEE BREAK</td>
+    </tr>
+    <tr>
+      <td>16:30&ndash;17:00</td>
+      <td>Filippo Bonchi, Joshua Holland, Robin Piedeleu, Pawel Sobocinski and Fabio Zanasi: "Picturing Resources in Concurrency: from Linear to Additive Relations"</td>
+      <td>Paul Blain Levy, Sergey Goncharov and Lutz Schröder: "Traced concategories"</td>
+    </tr>
+    <tr>
+      <td>17:00&ndash;17:30</td>
+      <td>Sean Tull: "Superpositions and Categorical Quantum Reconstructions"</td>
+      <td>Benjamin Musto and Jamie Vicary: "Orthogonality for quantum Latin isometry squares"</td>
+    </tr>
+    <tr>
+      <td>17:30&ndash;18:00</td>
+      <td>Aleks Kissinger and John van de Wetering: "PyZX"</td>
+    </tr>
+    <tr>
+      <td>18:00&ndash;18:30</td>
+      <td>DRINKS RECEPTION</td>
+    </tr>
+  <tbody>
+</table>
+</p>
 
 <h2 id="registration">Registration</h2>
 
