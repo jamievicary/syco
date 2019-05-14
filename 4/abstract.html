@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <style>
+
+  * {
+   font-family: Verdana, Geneva, sans-serif;
+ }
+
+ #grid {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   display: grid;
+   grid-column-gap: 10px;
+   grid-template-columns: auto 1000px auto;
+ }
+
+ #logo {
+   width: 200px;
+   margin-right: -50px;
+   border-width: 1px;
+   border-color: black;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+
+ #c {
+   overflow: auto;
+   text-align: justify;
+ }
+
+ #title {
+
+ }
+
+ #table.logoTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+	margin: 5px
+}
+
+td {
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+img.speaker {
+	height: 200px;
+}
+
+img.sponsor {
+	height: 80px;
+	padding: 8px;
+	background-color: white;
+}
+
+h2 {
+	margin-top: 30px;
+}
+
+#schedule, #schedule>tbody>tr>td {
+	text-align: left;
+}
+
+#schedule>tbody>tr>td, #schedule>tbody>tr>th {
+	padding-left: 5px;
+}
+
+#schedule>tbody>tr>td {
+	border: 1px solid black;
+	border-spacing: 0px;
+}
+
+#schedule {
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+#schedule>tbody>tr {
+	height: 45px;
+}
+
+#schedule>tbody>tr>td:first-child {
+  width: 90px;
+  font-size: small;
+}
+
+#schedule>tbody>tr>td:not(:first-child) {
+	width: 410px;
+}
+
+#grid {
+ background-color: #ffeca8;
+}
+
+#schedule>tbody>tr:nth-child(odd) {
+	background-color: #def;
+}
+
+#schedule>tbody>:nth-child(even) {
+	background-color: #bcd;
+}
+
+#schedule>tbody>tr>td.odd {
+	background-color: #def;
+}
+
+#schedule>tbody>tr>td.even {
+	background-color: #bcd;
+}
+
+#schedule>tbody>tr>td.empty {
+  background-color: #cde;
+  border: none;
+}
+
+div.photos>div>a>img {
+	height: 140px;
+	margin-bottom: 5px;
+}
+
+div.photos {
+	text-align: left;
+}
+
+div.photos>div {
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.group_photo>div {
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.group_photo>div>a>img {
+	width: 960px;
+	margin-bottom: 5px;
+}
+
+#iframe.gmap {
+  border: none;
+  overflow: hidden;
+}
+
+.emphasise {
+  color: red;
+  font-weight: bold;
+}
+
+</style>
+<title>SYCO 4: Abstracts</title>
+</head>
+<body>
+  <div id="grid">
+    <div id="a"></div>
+    <div id="c">
+      <table id="logoTable">
+        <tr>
+          <td><img id="logo" src="logo_web.svg" alt="SYCO logo"></td>
+          <td>
+           <h1>Fourth Symposium on Compositional Structures (SYCO 4)</h1>
+           <p><b><i>Chapman University, California, USA<br>22-23 May 2019</i></b></p>
+         </td>
+       </tr>
+     </table>
+
+<h2>Abstracts</h2>
+
+Invited talks (in the order of presentation):
+
+<ul>
+<li id="baez">John Baez, <b>Props in Network Theory</b>
+<p>To describe systems composed of interacting parts, scientists and engineers draw diagrams of networks: flow charts, Petri nets, electrical circuit diagrams, signal-flow graphs, chemical reaction networks, Feynman diagrams and the like. All these different diagrams fit into a common framework: the mathematics of symmetric monoidal categories. Two complementary approaches are presentations of props using generators and relations (which are more algebraic in flavor) and structured cospan categories (which are more geometrical). In this talk we focus on the former. A "prop" is a strict symmetric monoidal category whose objects are tensor powers of a single generating object. We will see that props are a flexible tool for describing many kinds of networks.</p>
+</li>
+<li id="otter">Nina Otter, <b>A Unified Framework for Equivalences in Social Networks</b>
+<p>One of the main concerns in social network science is the study of social positions and roles. By "position" social scientists usually mean a collection of actors who have similar ties to other actors, while a "role" is a specific pattern of ties among actors or positions. Since the 1970s a lot of research has been done to develop these concepts in a rigorous way. Motivated by the need to generalise these ideas to multilayer networks, in joint work in progress with Mason Porter we are developing a categorical formulation of positional and role analysis.</p>
+<p>In this talk I will give an overview of the main concepts and questions in positional and role analysis, and I will present some recent results.</p>
+</li>
+<li id="fritz">Tobias Fritz, <b>Categorical Probability: Results and Challenges</b>
+<p>
+In this programmatic overview talk, I will give an overview of categorical approaches to probability theory from a probabilist's perspective. I will touch upon the why, the what and the how, sketch a personal perspective on the current state of the art, and outline some major challenges for achieving further abstraction in probability.</p>
+</li>
+</ul>
+
+Contributed talks (in the order of presentation):
+
+<ul>
+<li id="master">Jade Master, <b>Generalized Petri Nets</b>
+<p>We give a definition of Q-Net; a generalization of Petri nets based on a Lawvere theory Q for which many existing variants of Petri nets are a special case. This definition is functorial with respect to change in Lawvere theory and we exploit this to explore the relationships between different kinds of Q-nets. To justify our definition of Q-net, we construct a family of adjunctions for each Lawvere theory explicating the way in which Q-nets present free models of Q in Cat. This gives a functorial description of the operational semantics for an arbitrary category of Q-nets. We show how this can be used to construct the semantics for Petri nets, pre-nets, integer nets, and elementary net systems.</p>
+</li>
+<li id="williams">Christian Williams and John Baez, <b>Enriched Lawvere Theories for Operational Semantics</b>
+<p>Enriched Lawvere theories are a generalization of Lawvere theories that allow there to be not merely a set of operations of each given arity, but a graph, or an object of some other category. Enriched theories can be used to equip systems with operational semantics, and maps between enriching categories can serve to translate between different forms of operational and denotational semantics. We use a definition of Lucyshyn-Wright which allows for theories to be parameterized by a monoidal subcategory of arities, and show that presentation of enriched Lawvere theories is simplified by restricting to natural number arities. We illustrate these ideas with the SKI combinator calculus, a variable-free version of the lambda calculus, presented as a graph-enriched theory.</p>
+</li>
+<li id="courser">Kenny Courser and John Baez, <b>Structured Cospans</b>
+<p>Category theory has played a prominent role in recent developments aimed at providing a suitable framework to better study `open networks': that is, networks with inputs and outputs. Here we introduce cospans with extra structure as a way of describing open networks.</p>
+</li>
+<li id="cicala">Daniel Cicala, <b>Rewriting Structured Cospans</b>
+<p>To foster the study of networks on an abstract level, we further study the formalism of \emph{structured cospans} introduced by Baez and Courser. A structured cospan is a diagram of the form $ La \to x \gets Lb $ built from a geometric morphism with left exact left adjoint $ L \dashv R \from \X \to \A $. We show that this construction is functorial and results in a topos with structured cospans for objects. Additionally, structured cospans themselves are compositional. Combining these two perspectives, we define a double category of structured cospans. We then leverage adhesive categories to create a theory of rewriting for structured cospans. We generalize the result from graph rewriting stating that a graph grammar induces the same rewrite relation as its underlying graph grammar. We use this fact to prove our main result, a complete characterization of the rewriting relation for a topos $ \X $ using double categories. This provides a compositional framework for rewriting systems.</p>
+</li>
+<li id="balco">Samuel Balco and Alexander Kurz, <b>Nominal String Diagrams</b>
+<p>We introduce nominal string diagrams as, string diagrams internal in the category of nominal sets. This requires us to take nominal sets as a monoidal category, not with the cartesian product, but with the separated product. To this end, we develop the beginnings of a theory of monoidal categories internal in a symmetric monoidal category. As an instance, we obtain a notion of a nominal PROP as a PROP internal in nominal sets. A 2-dimensional calculus of simultaneous substitutions is an application.</p>
+</li>
+<li id="morton">Jeffrey Morton, <b>2-Group Actions and Double Categories</b>
+<p>As group actions on sets give rise to transformation groupoids, actions of categorical groups on categories give rise to transformation structures as well. These are double categories, which encode the action. We describe this construction, with a geometric application in the context of the moduli spaces arising from higher gauge theory.</p>
+</li>
+<li id="shulman">Michael Shulman, <b>All (∞,1)-Toposes Have Strict Univalent Universes</b>
+<p>We prove the conjecture that any Grothendieck (∞,1)-topos can be presented by a Quillen model category that interprets homotopy type theory with strict univalent universes. Thus, homotopy type theory can be used as a formal language for reasoning internally to (∞,1)-toposes, just as higher-order logic is used for 1-toposes. As part of the proof, we give a new, more explicit, characterization of the fibrations in injective model structures on presheaf categories. In particular, we show that they generalize the coflexible algebras of 2-monad theory.</p>
+</li>
+<li id="kishida">Kohei Kishida, Soroush Rafiee Rad, Joshua Sack and Shengyang Zhong, <b>Categorical Equivalence between Orthocomplemented Quantales and Complete Orthomodular Lattices</b>
+<p>This paper provides a categorical equivalence between two types of quantum structures. One is a complete orthomodular lattice, which is used for reasoning about testable properties of a quantum system. The other is an orthomodular dynamic algebra, which is a quantale used for reasoning about quantum actions. The result extends to more restrictive lattices than orthomodular lattices, and includes Hilbert lattices of closed subspaces of a Hilbert space. These other lattice structures have connections to a wide range of different quantum structures; hence our equivalence establishes a categorical connection between quantales and a great variety of quantum structures.</p>
+</li>
+<li id="comfort">Cole Comfort, <b>Circuit Relations for Real Stabilizers: Towards TOF+H</b>
+<p>The real stabilizer fragment of quantum mechanics was shown to have a complete axiomatization in terms of the angle-free fragment of the ZX-calculus. This fragment of the ZX-calculus&mdash;although abstractly elegant&mdash;is stated in terms of identities, such as spider fusion which generally do not have interpretations as circuit transformations. We complete the category CNOT generated by the controlled not gate and the computational ancillary bits, presented by circuit relations, to the real stabilizer fragment of quantum mechanics. This is performed first, by adding the Hadamard gate and the scalar √2 as generators. We then construct translations to and from the angle-free fragment of the ZX-calculus, showing that they are inverses. We remove the generator √2 and then prove that the axioms are still complete for the remaining generators. This yields a category which is not compact closed, where the yanking identities hold up to a non-invertible, non-zero scalar. We then discuss how this could potentially lead to a complete axiomatization, in terms of circuit relations, for the approximately universal fragment of quantum mechanics generated by the Toffoli gate, Hadamard gate and computational ancillary bits.</p>
+</li>
+<li id="biesel">Owen Biesel, <b>Duality for Algebras of the Connected Planar Wiring Diagrams Operad</b>
+<p>Maximum flow rate on a planar graph correspond to distance on the dual graph, and resistance correspond to inverse resistance. Does every interpretation of edge weights on a planar graph have a corresponding dual interpretation? Yes! We construct an operad of "connected planar wiring diagrams" whose algebras include connected circular planar weighted graphs, voltage-current relationships, planar metrics, flow patterns, planar partitions, and more. We show that the category of algebras over this operad has a duality automorphism, carrying graphs to dual graphs, distances to flows, and resistances to inverse resistances. Furthermore, we show that several known operations, such as producing the response matrix or electroid of a resistor network, are morphisms of algebras over this operad, and that Lam's "electroids" and Alman, Lian, and Tran's "electrical positroids" are isomorphic as operad algebras.</p>
+</li>
+<li id="moeller">Joe Moeller and Christina Vasilakopoulou, <b>Monoidal Grothendieck Construction</b>
+<p>We lift the standard equivalence between fibrations and indexed categories to an equivalence between monoidal fibrations and monoidal indexed categories, namely weak monoidal pseudofunctors to the 2-category of categories. In doing so, we investigate the relation between this global monoidal structure where the total category is monoidal and the fibration strictly preserves the structure, and a fibrewise one where the fibres are monoidal and the reindexing functors strongly preserve the structure, first hinted by Shulman. In particular, when the domain is cocartesian monoidal, lax monoidal structures on a functor to Cat bijectively correspond to lifts of the functor to MonCat. Finally, we give some indicative examples where this correspondence appears, spanning from the fundamental and family fibrations to network models and systems.</p>
+</li>
+<li id="beohar">Harsh Beohar and Sebastian Küpper, <b>Bisimulation Maps in Presheaf Categories</b>
+<p>The category of presheaves on a (small) category is a suitable semantic universe to study behaviour of various dynamical systems. In particular, presheaves can be used to record the executions of a system and their morphisms correspond to simulation maps for various kinds of state-based systems. In this paper, we introduce a notion of bisimulation maps between presheaves (or executions) to capture well known behavioural equivalences in an abstract way. We demonstrate the versatility of this framework by working out the characterisations for standard bisimulation, ∀-fair bisimulation, and branching bisimulation.</p>
+</li>
+<li id="macadam">Benjamin MacAdam, Jonathan Gallagher and Rory Lucyshyn-Wright, <b>Scalars in Tangent Categories</b>
+<p>Classically, single variabe calculus is built out of a topological commutative ring R. From there, differential calculus may be extended to finite-dimensional vector spaces over R, and the chain rule of the derivative makes a functor T(f) :== ⟨D[f],π_1f⟩. From there, one moves to manifolds, which are topological spaces that are "locally" a vector space V, and one has a category of spaces with a tangent bundle functor T that "locally" looks like the derivative. Tangent categories reverse this story. A tangent category has an endofunctor T which axiomatizes the structure of the tangent bundle on the category of smooth manifolds. Differential objects are commutative monoids satisfying axioms so that they may play the role of vector spaces, and provide a suitable setting for differential calculus. We note that differential objectsdifferential objects are commutative monoids, not R-modules, because there need not be a commutative ring in a tangent category - in fact the tangent bundle need not have an additive inverse. In this paper we introduce a differential object that classifies points of a differential object with a linear map $V$, which we call a unit. It follows quickly that a unit must be a commutative rig with bilinear multiplication (a commutative ring if the tangent bundle has negatives) which satisfies many property of the ring of scalars in the category of smooth manifolds. In this paper we develop the theory of a tangent category with a unit. We first show that every differential object is an R-module, and then develop the theory of R-modules in the tangent category. We then take modules which satisfy a property similar to the Kock-Lawvere property of synthetic differential geometry, which we call Kock- Lawvere modules (KL modules). We then show that the category of KL-modules are equivalent to the category of differential objects. In the case that the tangent category has negatives, we extend this result to show that the category of KL-modules is a completion of R-modules. We then move to the enriched perspective of tangent categories introduced by Garner and Leung, and show that every presheaf tangent category has a unit and that the category of KL-modules is a reflective subcategory of R-modules even when the category does not have negatives. Finally, we build an enriched sketch which we conjecture is the sketch of differential objects. This paper is still a work in progress.</p>
+</li>
+<li id="gallagher">Jonathan Gallagher, Benjamin MacAdam and Geoff Cruttwell, <b>Towards Formalizing and Extending Differential Programming via Tangent Categories</b>
+<p>This is a progress report on work in progress. Our goal in this project is to understand the categorical structure used by Plotkin in describing a semantics for his "Simple Differential Programming Language" into smooth, partial functions on finite dimensional real vector spaces. We will show that Plotkin's language and interpretation can be repackaged using categorical machinery called restriction tangent categories. We will show that any functor that preserves join restriction tangent structure, will preserve the semantics of Plotkin's language into smooth partial functions. Using this fact, we give extensions to the semantics into join restriction tangent categories that contain smooth manifolds and function spaces of smooth total maps. We will also see that there is an interesting subtlety that comes up when trying to include objects of partial smooth function spaces.</p>
+</li>
+<li id="sprunger">David Sprunger and Shin-Ya Katsumata, <b>Differential Categories, Recurrent Neural networks, and Machine learning</b>
+<p>We review recent results using Cartesian differential categories to model backpropagation through time, a training technique from machine learning used with recurrent neural networks. We show that the property of being a Cartesian differential category is preserved by a variant of a stateful construction--$St(C)$--commonly used in signal flow graphs. Using an abstracted version of backpropagation through time, we lift the differential operator on $C$ to one on $St(C)$.</p>
+</li>
+</ul>
+
+          </div>
+          <div id="d"></div>
+        </div>
+      </body>
