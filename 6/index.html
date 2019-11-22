@@ -79,6 +79,59 @@ h2 {
   font-weight: bold;
 }
 
+#schedule, #schedule>tbody>tr>td {
+	text-align: left;
+}
+
+#schedule>tbody>tr>td, #schedule>tbody>tr>th {
+	padding-left: 5px;
+}
+
+#schedule>tbody>tr>td {
+	border: 1px solid black;
+	border-spacing: 0px;
+}
+
+#schedule {
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+#schedule>tbody>tr {
+	height: 45px;
+}
+
+#schedule>tbody>tr>td:first-child {
+  width: 90px;
+  font-size: small;
+}
+
+#schedule>tbody>tr>td:not(:first-child) {
+	width: 410px;
+}
+
+
+#schedule>tbody>tr:nth-child(odd) {
+	background-color: #def;
+}
+
+#schedule>tbody>:nth-child(even) {
+	background-color: #bcd;
+}
+
+#schedule>tbody>tr>td.odd {
+	background-color: #def;
+}
+
+#schedule>tbody>tr>td.even {
+	background-color: #bcd;
+}
+
+#schedule>tbody>tr>td.empty {
+  background-color: #cde;
+  border: none;
+}
+
 </style>
 <title>SYCO 6</title>
 </head>
@@ -151,7 +204,106 @@ h2 {
 
        <h2 id="programme">Schedule</h2>
 
-<p>To be announced.</p>
+<p>
+  
+  <table id="schedule">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday 16 December</th>
+        <th>Tuesday 17 December</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:30–10:00</td>
+        <td rowspan="1" class="empty"></td>
+        <td rowspan="2" class="odd">Jennifer Hackett, "Cost and Compositionality" (invited talk) </td>
+      </tr>
+      <tr>
+        <td>10:00–10:30</td>
+        <td rowspan="1" class="empty"></td>
+      </tr>
+      <tr>
+        <td>10:30–11:00</td>
+        <td rowspan="2" class="odd">REGISTRATION</td>
+        <td class="even">Quanlong Wang, "An algebraic axiomatisation of ZX-calculus"
+        </td>
+      </tr>
+      <tr>
+        <td>11:00–11:30</td>
+        <td class="odd">BREAK</td>
+      </tr>
+      <tr>
+        <td>11:30–12:00</td>
+        <td rowspan="2" class="even">Gabriella Böhm, "A unified treatment of quantum symmetries"
+          (invited talk) 
+        </td>
+        <td class="even">Dorette Pronk and Laura Scull, "New Results on Bicategories of Fractions Applied to Orbifolds" </td>
+      </tr>
+      <tr>
+        <td>12:00–12:30</td>
+        <td class="odd">Amar Hadzihasanovic, "Representable diagrammatic sets as a model of weak higher categories" </td>
+      </tr>
+      <tr>
+        <td>12:30–13:00</td>
+        <td class="odd">Filippo Bonchi, Robin Piedeleu, Pawel Sobocinski and Fabio Zanasi, "Contextual Equivalence for Signal Flow Graphs" </td>
+        <td rowspan="3" class="even">LUNCH</td>
+      </tr>
+      <tr>
+        <td>13:00–13:30</td>
+        <td rowspan="3," class="even">LUNCH</td>
+      </tr>
+      <tr>
+        <td>13:30–14:00</td>
+      </tr>
+      <tr>
+        <td>14:00–14:30</td>
+        <td class="odd">Drew Moshier and Steve Vickers, "Cartesian bicategories and their Karoubi envelopes" </td>
+      </tr>
+      <tr>
+        <td>14:30–15:00</td>
+        <td class="odd">Dan Shiebler, Alexis Toumi and Mehrnoosh Sadrzadeh, "Incremental Monoidal Grammars" </td>
+        <td class="even">Morgan Rogers and Jens Hemelaer, "Monoid Properties as Topos-Theoretic Invariants" </td>
+      </tr>
+      <tr>
+        <td>15:00–15:30</td>
+        <td class="even">Vincent Wang, "Graphical Grammar + Graphical Completion of Monoidal Categories" </td>
+        <td class="odd">BREAK</td>
+      </tr>
+  
+      <tr>
+        <td>15:30–16:00</td>
+        <td class="odd">BREAK</td>
+        <td class="even">John Stell, "Mathematical Morphology on Graphs: The role of relations on hypergraphs."</td>
+      </tr>
+      <tr>
+        <td>16:00–16:30</td>
+        <td class="even">Louis Parlant, "Monoidal Monads and Preservation of Equations" </td>
+        <td class="odd">Guillaume Boisseau, "String diagrams for optics" </td>
+      </tr>
+      <tr>
+        <td>16:30–17:00</td>
+        <td class="odd">Maaike Zwart and Dan Marsden, "Composite Theories, and how to use them to prove no-go theorems for distributive laws"</td>
+      </tr>
+      <tr>
+        <td>17:00–17:30</td>
+        <td class="even">Callum Reader, "Probability Monads for Enriched Categories" </td>
+      </tr>
+      <tr>
+        <td>TBA</td>
+        <td class="odd">WINE RECEPTION AND PhD FAIR</td>
+      </tr>
+      <tr>
+        <td>TBA</td>
+        <td class="even">PUB DINNER</td>
+      </tr>
+    </tbody>
+    <tbody>
+    </tbody>
+  </table>
+
+</p>
 
         <h2 id="registration">Registration</h2>
 
