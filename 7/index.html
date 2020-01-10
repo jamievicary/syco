@@ -8,6 +8,10 @@
    font-family: Verdana, Geneva, sans-serif;
  }
 
+body {
+	background-color: #ffc370;
+}
+
  #grid {
    width: 100%;
    display: grid;
@@ -62,10 +66,6 @@ h2 {
 	margin-top: 30px;
 }
 
-#grid {
-	background-color: #ffc370;
-}
-
 #iframe.gmap {
   border: none;
   overflow: hidden;
@@ -78,8 +78,9 @@ h2 {
 	  
 @media only screen and (max-width: 1020px) {
 	#grid {
-		grid-column-gap: 0;
-   		grid-template-columns: 100%;
+		display: table-cell;
+		width: 100%;
+		padding: 0 1em;
 	}
 }
 </style>
