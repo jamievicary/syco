@@ -37,6 +37,12 @@ body {
 
  }
 
+ #alert {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+ 
  #table.logoTable {
   margin-left: auto;
   margin-right: auto;
@@ -71,6 +77,37 @@ h2 {
   overflow: hidden;
 }
 
+#schedule, #schedule>tbody>tr>td {
+	text-align: left;
+}
+
+#schedule>tbody>tr>td, #schedule>tbody>tr>th {
+	padding-left: 5px;
+}
+
+#schedule>tbody>tr>td {
+	border: 1px solid black;
+	border-spacing: 0px;
+}
+
+#schedule {
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+#schedule>tbody>tr {
+	height: 45px;
+}
+
+#schedule>tbody>tr>td:first-child {
+  width: 90px;
+  font-size: small;
+}
+
+#schedule>tbody>tr>td:not(:first-child) {
+	width: 410px;
+}
+
 .emphasise {
   color: red;
   font-weight: bold;
@@ -95,11 +132,15 @@ h2 {
           <td><img id="logo" src="logo_web.svg" alt="SYCO logo"></td>
           <td>
            <h1>Seventh Symposium on Compositional Structures (SYCO 7)</h1>
-           <p><b><i>Tallinn University of Technology, Estonia<br>30-31 March 2020</i></b></p>
+           <p><b><i>Estonian Academy of Sciences, Tallinn, Estonia<br><span class="emphasise">Date to be announced</span></i></b></p>
          </td>
        </tr>
      </table>
 
+<div id="alert">
+	<h2>IMPORTANT NOTICE</h2>
+	<p>In response to travel restrictions and other effects of the 2020 coronavirus outbreak in Europe, <br /> the meeting is POSTPONED until further notice.</p>
+</div>
      <p>The <i>Symposium on Compositional Structures</i> is a series of interdisciplinary meetings aiming to support the growing community of researchers interested in the phenomenon of compositionality, from both applied and abstract perspectives, and in particular where category theory serves as a unifying common language. We welcome submissions from researchers across computer science, mathematics, physics, philosophy, and beyond, with the aim of fostering friendly discussion, disseminating new ideas, and spreading knowledge between fields. Submission is encouraged for both mature research and work in progress, and by both established academics and junior researchers, including students.</p>
 
      <p>Submission is easy, with no format requirements or page restrictions. The meeting does not have proceedings, so work can be submitted even if it has been submitted or published elsewhere. You could submit work-in-progress, or a recently completed paper, or even a PhD or Masters thesis.</p>
@@ -131,28 +172,121 @@ h2 {
 
       <h2 id="invitedSpeakers">Invited speakers</h2>
       
-	    <p>
-	    	To be announced.
-	    </p>
+<table width="100%">
+	<tr>
+		<td><img class="speaker" src="klin.jpg"/></td>
+		<td><img class="speaker" src="tasson.jpg"/></td>
+	</tr>
+	<tr>
+		<td><a href="https://www.mimuw.edu.pl/~klin/">Bartek Klin</a></td>
+		<td><a href="https://www.irif.fr/~tasson/">Christine Tasson</a></td>
+	</tr>
+	<tr>
+		<td>University of Warsaw</td>
+		<td>IRIF, Universit&eacute; de Paris</td>
+	</tr>
+	<tr>
+		<td><i>Monadic monadic second order logic</i></td>
+		<td><i>The linear-non-linear substitution 2-monad</i></td> 
+	</tr>
+</table>
     
       <h2 id="dates">Important dates</h2>
 
       <p>All deadlines are 23:59 <a href="https://www.timeanddate.com/time/zones/aoe">anywhere-on-earth</a> on the given dates.
 
         <ul>
-         <li>Submission deadline: Monday 10 February 2020</li>
-         <li>Author notification: Monday 17 February 2020</li>
-         <li>Registration: To be announced</li>
-         <li>Symposium dates: Monday 30 and Tuesday 31 March 2020</li>
+         <li><strike>Submission deadline: Monday 10 February 2020</strike></li>
+         <li><strike>Author notification: Monday 17 February 2020</strike></li>
+         <li>Registration: TBD</li>
+         <li>Symposium dates: TBD</li>
         </ul>
 
        <h2 id="programme">Schedule</h2>
-
-<p>To be announced.</p>
+To be announced.
+<!--
+	<table id="schedule">
+	<thead>
+		<tr>
+			<th>Time</th>
+			<th>Monday 30 March</th>
+			<th>Tuesday 31 March</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>9:30–10:00</td>
+			<td></td>
+			<td rowspan="2">Christine Tasson, <i>The linear-non-linear substitution 2-monad</i> (Invited talk)</td>
+		</tr>
+		<tr>
+			<td>10:00–10:30</td>
+			<td rowspan="2">Registration and Coffee</td>
+		</tr>
+		<tr>
+			<td>10:30–11:00</td>
+			<td>Dylan McDermott, Alan Mycroft, <i>On the relation between call-by-value and call-by-name</i></td>
+		</tr>
+		<tr>
+			<td>11:00–11:30</td>
+			<td rowspan="2">Bartek Klin, <i>Monadic monadic second order logic</i> (Invited talk)</td>
+			<td>Coffee</td>
+		</tr>
+		<tr>
+			<td>11:30–12:00</td>
+			<td>Julian Salamanca T&eacute;llez, <i>Distributive laws over the powerset</i></td>
+		</tr>
+		<tr>
+			<td>12:00–12:30</td>
+			<td>Vikraman Choudhury, <i>Tracking intensional resources using weighted sets and comonads</i></td>
+			<td>Nick Hu, <i>External traced monoidal categories</i></td>
+		</tr>
+		<tr>
+			<td>12:30–14:00</td>
+			<td>Lunch</td>
+			<td>Lunch</td> 
+		</tr>
+		<tr>
+			<td>14:00–14:30</td>
+			<td>Violeta Martins de Freitas, <i>Life in arrows: an introduction to applied category theory</i></td>
+			<td>Maxime Lucas, <i>Rewriting strategies as contracting homotopies</i></td>
+		</tr>
+		<tr>
+			<td>14:30–15:00</td>
+			<td>Tobias Fritz, Eigil Fjeldgren Rischel, <i>The zero-one laws of Kolmogorov and Hewitt-Savage in categorical probability</i></td>
+			<td>Olivier Peltre, <i>Homological algebra for message-passing algorithms</i></td>
+		</tr>
+		<tr>
+			<td>15:00–15:30</td>
+			<td>Elena di Lavore, <i>A proposal for subgame perfection in compositional game theory</i></td>
+			<td>Coffee</td>
+		</tr>
+		<tr>
+			<td>15:30–16:00</td>
+			<td>Coffee</td>
+			<td>Michael Moortgat, Mehrnoosh Sadrzadeh, Gijs Wijnholds, <i>A Frobenius algebraic analysis for parasitic gaps</i></td>
+		</tr>
+		<tr>
+			<td>16:00–16:30</td>
+			<td>Alex Rice, <i>Coinductive invertibility in higher categories</i></td>
+			<td>Sivert Aasn&aelig;ss, <i>Contextuality for circuits</i></td>
+		</tr>
+		<tr>
+			<td>16:30–17:00</td>
+			<td>Niels van der Weide, <i>Constructing finitary 1-truncated higher inductive types as groupoid quotients</i></td>
+			<td rowspan="2"></td>
+		</tr>
+		<tr>
+			<td>17:00–17:30</td>
+			<td>Lukas Heidemann, <i>Frames in pretriangulated dg-categories</i></td>
+		</tr>
+	</tbody>
+	</table>
+--> 
 
         <h2 id="registration">Registration</h2>
 
-<p>To be announced.</p>
+<p>Registration is currently closed.</p>
 
         <h2 id="localInformation">Local information</h2>
 
@@ -162,13 +296,13 @@ h2 {
 
 <p>To be announced.</p>
 
-          <h2 id="deferrral">Deferral</h2>
+          <h2 id="deferral">Deferral</h2>
 
           <p>The intention is for <i>SYCO</i> to be a community meeting, where people have enough time to explain their ideas, and with a friendly and non-competitive atmosphere. To encourage this, in the event that more submissions are received of an acceptable standard than can be accommodated in the timetable, the programme committee may choose to <i>defer</i> some submissions to a future meeting, rather than reject them. This would be done based largely on submission order, giving an incentive for early submission, but would also take into account other requirements, such as ensuring a broad and inclusive scientific programme. Deferred submissions can then be re-submitted to any future <i>SYCO</i> meeting, where they will be prioritised for inclusion in the programme, and where they will not need to be re-reviewed. Meetings are held sufficiently frequently to avoid a backlog of deferred papers.</p>
 
           <h2 id="submissions">Submissions</h2>
 
-          <p>Submission is by EasyChair, via the <a href="https://easychair.org/conferences/?conf=syco7"><i>SYCO 7</i> submission page</a>.</p>
+          <p>Submissions are now closed.</p>
 
             <p>Submissions should present research results in sufficient detail to allow them to be properly considered by members of the programme committee, who will assess their interest to the <i>SYCO</i> community. We encourage the submission of work in progress, as well as mature results. There are no proceedings, so work can be submitted even if it has been previously published, or has been submitted for consideration elsewhere. There is no specific formatting requirement, and no page limit, although for long submissions authors should be aware that reviewers will not be able to read the entire document in detail. Think creatively&mdash;you could submit a recent paper, draft notes of a project in progress, or even a recent Masters or PhD thesis.</p>
 
@@ -181,7 +315,7 @@ h2 {
 			<li><a href="https://www.dornchristoph.com/">Christoph Dorn</a>, University of Oxford</li>
 			<li><a href="http://personal.strath.ac.uk/ross.duncan/">Ross Duncan</a>, University of Strathclyde</li>
 			<li><a href="http://www.brendanfong.com/">Brendan Fong</a>, MIT</li>
-			<li><a href="https://www.irif.fr/~ahadziha/">Amar Hadzihasanovic</a>, IRIF, Université de Paris (chair)</li>
+			<li><a href="https://www.irif.fr/~ahadziha/">Amar Hadzihasanovic</a>, IRIF, Universit&eacute; de Paris (chair)</li>
 			<li><a href="http://homepages.inf.ed.ac.uk/cheunen/">Chris Heunen</a>, University of Edinburgh</li>
 			<li><a href="https://www.lambdabetaeta.eu/">Alex Kavvos</a>, Aarhus University</li>
 			<li><a href="https://www.irif.fr/~kerjean/">Marie Kerjean</a>, INRIA Bretagne Atlantique, &Eacute;quipe Gallinette</li>
