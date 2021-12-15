@@ -10,6 +10,8 @@
 
 body {
 	background-color: #E0BBE4;
+	padding: 1.5em;
+	margin: 0;
 }
 
  #grid {
@@ -29,7 +31,6 @@ body {
  }
 
  #c {
-   overflow: auto;
    text-align: justify;
  }
 
@@ -117,12 +118,10 @@ div.group_photo>div {
 	display: inline-block;
 	text-align: center;
 	margin-top: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
 }
 
 div.group_photo>div>a>img {
-	width: 960px;
+	width: 100%;
 	margin-bottom: 5px;
 }
 
@@ -130,8 +129,12 @@ div.group_photo>div>a>img {
 	#grid {
 		display: table-cell;
 		width: 100%;
-		padding: 0 1em;
+		padding: 0 0em;
 	}
+}
+
+#map {
+	width: 100%;
 }
 </style>
 <title>SYCO 8</title>
@@ -323,7 +326,6 @@ div.group_photo>div>a>img {
 		</tr>
 	</tbody>
 	</table> 
-
         <h2>Conference photo</h2>
 <div class="group_photo">
   <div>
@@ -344,7 +346,7 @@ div.group_photo>div>a>img {
         	
         	<p>The meeting will take place in the Crown Hall of the historical <a href="https://opetajatemaja.ee/en/">Teachers' House</a> (Õpetajate Maja), in the heart of the Old Town of Tallinn.</p>
         	
-        	<iframe src="https://www.google.com/maps/d/u/0/embed?mid=11MsspIiT0O3gS6o7WDGOVot-SdMEg43W" width="640" height="480"></iframe>
+        	<iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=11MsspIiT0O3gS6o7WDGOVot-SdMEg43W" width="640" height="480"></iframe>
         	
         	<p>The annual <a href="https://www.visitestonia.com/en/tallinn-christmas-market">Christmas Market</a> will be taking place at the same time, right in front of the conference venue.</p>
         	
