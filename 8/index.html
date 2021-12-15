@@ -112,7 +112,20 @@ h2 {
   color: red;
   font-weight: bold;
 }
-	  
+
+div.group_photo>div {
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.group_photo>div>a>img {
+	width: 960px;
+	margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 1020px) {
 	#grid {
 		display: table-cell;
@@ -137,9 +150,9 @@ h2 {
        </tr>
      </table>
 	    
-	 <div id="alert">
+<!--	 <div id="alert">
 	<p>We are closely monitoring the coronavirus situation in Estonia. <br> Our current policy is in the "local information" section below.</p>
-</div>
+</div> -->
 
      <p>The <i>Symposium on Compositional Structures</i> is a series of interdisciplinary meetings aiming to support the growing community of researchers interested in the phenomenon of compositionality, from both applied and abstract perspectives, and in particular where category theory serves as a unifying common language. We welcome submissions from researchers across computer science, mathematics, physics, philosophy, and beyond, with the aim of fostering friendly discussion, disseminating new ideas, and spreading knowledge between fields. Submission is encouraged for both mature research and work in progress, and by both established academics and junior researchers, including students.</p>
 
@@ -199,7 +212,7 @@ h2 {
         <ul>
          <li><strike>Submission deadline: Monday 25 October 2021</strike></li>
          <li><strike>Author notification: Wednesday 3 November 2021</strike></li>
-         <li>Registration: Monday 6 December 2021</li>
+         <li><strike>Registration: Monday 6 December 2021</strike></li>
          <li>Symposium dates: Monday 13 and Tuesday 14 December 2021</li>
         </ul>
 
@@ -299,26 +312,30 @@ h2 {
 		</tr>
 		<tr>
 			<td>16:00–16:30</td>
-			<td>Lukas Heidemann, <i>Frames in pretriangulated dg-categories</i></td>
+			<td><strike>Lukas Heidemann, <i>Frames in pretriangulated dg-categories</i></strike><br />
+			Elena Di Lavore, Wilmer Leal and Valeria de Paiva, <i>Dialectica Petri nets</i></td>
 			<td>Dylan McDermott and Alan Mycroft, <i>On the relation between call-by-value and call-by-name</i></td>
 		</tr>
 		<tr>
 			<td>16:30–17:00</td>
-			<td>Elena Di Lavore, Wilmer Leal and Valeria de Paiva, <i>Dialectica Petri nets</i></td>
-			<td>Olivier Peltre, <i>Homological algebra for message-passing algorithms</i></td>
-		</tr>
-		<tr>
-			<td>17:00–17:30</td>
 			<td>George Kaye, Dan Ghica and David Sprunger, <i>Normalisation by evaluation for digital circuits</i></td>
-			<td></td>
+			<td>Olivier Peltre, <i>Homological algebra for message-passing algorithms</i></td>
 		</tr>
 	</tbody>
 	</table> 
 
+        <h2>Conference photo</h2>
+<div class="group_photo">
+  <div>
+    <a href="conference_photo.jpg">
+      <img src="conference_photo.jpg" alt="conference photo">
+    </a>
+  </div>
+</div>
+
         <h2 id="registration">Registration</h2>
 
-		<p>Please register by filling in the <a href="https://forms.gle/jim83aaCaT4GFKEu8">registration form</a>. <br>
-	The registration deadline is Monday 6 December 2021, there is no registration fee. </p>    
+		<p>Registration is now closed. </p>    
 
         <h2 id="localInformation">Local information</h2>
         	<p>The local organiser is <a href="https://ioc.ee/~amar/">Amar Hadzihasanovic</a> (<a href="mailto:amar@cs.ioc.ee">amar@cs.ioc.ee</a>).</p>
@@ -342,35 +359,6 @@ h2 {
         	<h4>Online participation</h4>
         	
         	<p>The meeting will have an online component and all talks will be broadcast on Zoom. Registered online participants will be contacted by e-mail, closer to the meeting date, with the virtual coordinates.</p>
-        	
-		<h3>COVID-19 situation in Estonia</h3>
-	    
-	        <p>UPDATE (30/11): The number of cases in Estonia is still steadily declining, so for now things are still looking good locally.
-                   We are aware of the new Omicron variant. According to the WHO it is too early to draw any conclusions on how dangerous it is compared to the Delta variant. 
-                   For fully vaccinated people there are as yet no indications of concern, but we invite everyone to check their own country's regulations regarding travelling.</p>
-
-		<p>UPDATE (17/11): The number of cases is dropping again. We will of course keep monitoring the situation, but for now things are looking up! </p>
-	    
-		<p>UPDATE (05/11): In the last weeks, there has been a concerning rise in the number of 
-COVID-19 cases and hospitalisations in Estonia. A considerable
-majority of serious cases concern the unvaccinated, and so far
-the government of Estonia has not introduced major restrictions on
-those who can prove recovery and/or vaccination with an EU-approved
-vaccine.</p>
-
-		<p> In light of that, at the moment we are carrying on with the event
-in a hybrid form, as planned, and inviting those who are willing,
-and have proof of recovery and/or vaccination, to participate in person.</p>
-
-<p> At the moment, for the UK, EU, and Schengen countries, proof of
-vaccination or recovery, and the filling of a passenger locator form,
-is sufficient to avoid self-isolation on arrival to Estonia.
-Please consult the <a href="https://vm.ee/en/information-countries-and-self-isolation-requirements-passengers">government web page</a> for the latest regulations. </p>
-
-<p> In the unlikely event of new restrictions that make it impossible
-to hold the event as planned, we will send out an update on mailing
-lists and on this website no later than the beginning of
-December. </p>
 
         <h2 id="registration">Participants</h2>
         
@@ -404,9 +392,11 @@ December. </p>
         	<li>Gordon Plotkin, Google research</li>
         	<li>Grégoire Sergeant-Perthuis, University of Geneva</li>
         	<li>Guillaume Boisseau, University of Oxford</li>
+        	<li>Jade Master, University of Strathclyde</li>
         	<li>Jakob von Raumer, Karlsruhe Institute of Technology</li>
         	<li>Jeremy Gibbons, University of Oxford</li>
         	<li>Joao Paixao, UFRJ (Federal University of Rio de Janeiro)</li>
+        	<li>John van de Wetering, Radboud University Nijmegen</li>
         	<li>Joseph Martin, University of Sheffield</li>
         	<li>Joshua Wrigley, University of Insubria</li>
         	<li>Jules Hedges, University of Strathclyde</li>
@@ -420,8 +410,9 @@ December. </p>
         	<li>Marius Henry, ETH Zürich</li>
         	<li>Martti Karvonen, University of Ottawa</li>
         	<li>Matt Earnshaw, Tallinn University of Technology</li>
-        	<li>Matteo Spadetto, University of Leeds</li>
         	<li>Matt Wilson, Oxford University</li>
+        	<li>Matteo Spadetto, University of Leeds</li>
+        	<li>Matteo Capucci, University of Strathclyde</li>
         	<li>Michael Heather, Cambridge University</li>
         	<li>Miloslav Štěpán, Masaryk University</li>
         	<li>Niccolò Veltri, Tallinn University of Technology</li>
@@ -446,15 +437,20 @@ December. </p>
         	<li>Simona Paoli, University of Aberdeen</li>
         	<li>Stefan Zetzsche, University College London</li>
         	<li>Takuo Matsuoka</li>
+        	<li>Tanguy Massacrier, Tallinn University of Technology</li>
         	<li>Tarmo Uustalu, Reykjavik University</li>
         	<li>Tomáš Gonda, University of Innsbruck</li>
+        	<li>Tony Zorman, TU Dresden</li>
         	<li>Uli Fahrenberg, EPITA Rennes, France</li>
+        	<li>Ulrik Buchholtz, TU Darmstadt</li>
         	<li>Vaibhav Sutrave, University of California, Santa Cruz</li>
         	<li>Valeria de Paiva, Topos Institute, Berkeley, USA</li>
         	<li>Vikraman Choudhury, University of Glasgow</li>
         	<li>Vincent Wang-Maścianica, University of Oxford & Compositional Intelligence, Cambridge Quantum</li>
         	<li>Vladimir Zamdzhiev, Inria</li>
+        	<li>Wilmer Leal, Max Planck Institute for Mathematics in the Sciences</li>
         	<li>Xuanrui Qi, Nagoya University</li>
+        	<li>Yasuaki Morita, Reykjavik University</li>
         	<li>Younesse Kaddar, University of Oxford</li>
         	<li>Zev Shirazi, Cambridge University</li>
         </ul>
@@ -471,7 +467,7 @@ December. </p>
 
           <h2 id="submissions">Submissions</h2>
 	    
-	    <p>Submission is by EasyChair, via the <a href="https://easychair.org/conferences/?conf=syco8"><i>SYCO 8</i> submission page</a>.</p>
+	    <p>Submission is now closed.</p>
 
             <p>Submissions should present research results in sufficient detail to allow them to be properly considered by members of the programme committee, who will assess their interest to the <i>SYCO</i> community. We encourage the submission of work in progress, as well as mature results. There are no proceedings, so work can be submitted even if it has been previously published, or has been submitted for consideration elsewhere. There is no specific formatting requirement, and no page limit, although for long submissions authors should be aware that reviewers will not be able to read the entire document in detail. Think creatively&mdash;you could submit a recent paper, draft notes of a project in progress, or even a recent Masters or PhD thesis.</p>
 
