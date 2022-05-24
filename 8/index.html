@@ -10,6 +10,8 @@
 
 body {
 	background-color: #E0BBE4;
+	padding: 1.5em;
+	margin: 0;
 }
 
  #grid {
@@ -29,7 +31,6 @@ body {
  }
 
  #c {
-   overflow: auto;
    text-align: justify;
  }
 
@@ -112,13 +113,28 @@ h2 {
   color: red;
   font-weight: bold;
 }
-	  
+
+div.group_photo>div {
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+div.group_photo>div>a>img {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 1020px) {
 	#grid {
 		display: table-cell;
 		width: 100%;
-		padding: 0 1em;
+		padding: 0 0em;
 	}
+}
+
+#map {
+	width: 100%;
 }
 </style>
 <title>SYCO 8</title>
@@ -132,10 +148,14 @@ h2 {
           <td><img id="logo" src="logo_web.svg" alt="SYCO logo"></td>
           <td>
            <h1>Eighth Symposium on Compositional Structures (SYCO 8)</h1>
-           <p><b><i>Estonian Academy of Sciences, Tallinn, Estonia<br><span>Date to be announced</span></i></b></p>
+           <p><b><i>Tallinn University of Technology, Tallinn, Estonia<br><span>13-14 December 2021</span></i></b></p>
          </td>
        </tr>
      </table>
+	    
+<!--	 <div id="alert">
+	<p>We are closely monitoring the coronavirus situation in Estonia. <br> Our current policy is in the "local information" section below.</p>
+</div> -->
 
      <p>The <i>Symposium on Compositional Structures</i> is a series of interdisciplinary meetings aiming to support the growing community of researchers interested in the phenomenon of compositionality, from both applied and abstract perspectives, and in particular where category theory serves as a unifying common language. We welcome submissions from researchers across computer science, mathematics, physics, philosophy, and beyond, with the aim of fostering friendly discussion, disseminating new ideas, and spreading knowledge between fields. Submission is encouraged for both mature research and work in progress, and by both established academics and junior researchers, including students.</p>
 
@@ -168,125 +188,288 @@ h2 {
 
       <h2 id="invitedSpeakers">Invited speakers</h2>
       
-<p>To be announced.</p>    
-
-	 <h2 id="dates">Accepted papers</h2>
-	 
-	 
-<p>To be announced.</p>    
-
-      <h2 id="dates">Important dates</h2>
+<table width="100%">
+	<tr>
+		<td><img class="speaker" src="vdWetering.jpg"/></td>
+		<td><img class="speaker" src="tasson.jpg"/></td>
+	</tr>
+	<tr>
+		<td><a href="http://vdwetering.name/">John van de Wetering</a></td>
+		<td><a href="https://www.irif.fr/~tasson/">Christine Tasson</a></td>
+	</tr>
+	<tr>
+		<td>Radboud University Nijmegen</td>
+		<td>Sorbonne Université</td>
+	</tr>
+	<tr>
+		<td><i>Categorical approaches to reconstructing quantum theory</i></td>
+		<td><i>A multicategorical approach to mixed linear-non-linear substitution</i></td>
+	</tr>
+		
+</table>   
+	    
+	          <h2 id="dates">Important dates</h2>
 
       <p>All deadlines are 23:59 <a href="https://www.timeanddate.com/time/zones/aoe">anywhere-on-earth</a> on the given dates.
 
         <ul>
-         <li>Submission deadline: To be announced</li>
-         <li>Author notification: To be announced</li>
-         <li>Registration: To be announced</li>
-         <li>Symposium dates: To be announced</li>
+         <li><strike>Submission deadline: Monday 25 October 2021</strike></li>
+         <li><strike>Author notification: Wednesday 3 November 2021</strike></li>
+         <li><strike>Registration: Monday 6 December 2021</strike></li>
+         <li>Symposium dates: Monday 13 and Tuesday 14 December 2021</li>
         </ul>
+
+	 <h2 id="dates">Accepted papers</h2>
+	 
+	 
+         <ul>
+	   <li>Stefan Zetzsche, Gerco van Heerdt, Matteo Sammartino and Alexandra Silva <br> &nbsp; <i>Canonical automata via distributive law homomorphisms</i></li>
+	   <li>Simon Henry and Nicholas Meadows <br> &nbsp; <i>Higher Theories and Monads</i></li>
+	   <li>Paulina Goedicke and Jamie Vicary <br> &nbsp; <i>A Category Theoretical Description of Block Designs and Quantum Designs</i></li>
+	   <li>Vincent Wang-Mascianica and Bob Coecke <br> &nbsp; <i>Talking Space: Inference from spatial linguistic meanings</i></li>
+           <li>Lukas Heidemann <br> &nbsp; <i>Frames in pretriangulated dg-categories</i></li>
+	   <li>Elena Di Lavore, Wilmer Leal and Valeria de Paiva <br> &nbsp; <i>Dialectica Petri nets</i></li>
+	   <li>George Kaye, Dan Ghica and David Sprunger <br> &nbsp; <i>Normalisation by evaluation for digital circuits</i></li>
+	   <li>Guillaume Boisseau and Robin Piedeleu <br> &nbsp; <i>Graphical Piecewise-Linear Algebra</i></li>
+	   <li>Liliane-Joy Dandy, Emmanuel Jeandel and Vladimir Zamdzhiev <br> &nbsp; <i>Qimaera: Type-safe (Variational) Quantum Programming in Idris</i></li>
+	   <li>Matt Wilson and Augustin Vanrietvelde <br> &nbsp; <i>Composable constraints</i></li>
+	   <li>Davide Trotta, Matteo Spadetto and Valeria de Paiva <br> &nbsp; <i>Dialectica Logical Principles</i></li>
+	   <li>Simon Fortier-Garceau <br> &nbsp; <i>Interventions and Counterfactuals for Categorical Models of Causality</i></li>
+	   <li>Vikraman Choudhury <br> &nbsp; <i>Weighted sets and modalities</i></li>
+	   <li>Elena Di Lavore and Pawel Sobocinski <br> &nbsp; <i>Monoidal width</i></li>
+           <li>Dylan McDermott and Alan Mycroft <br> &nbsp; <i>On the relation between call-by-value and call-by-name</i></li>
+           <li>Olivier Peltre <br> &nbsp; <i>Homological algebra for message-passing algorithms</i></li>
+	 </ul>     
+
 
        <h2 id="programme">Schedule</h2>
 
-To be announced.
-
-<!--
 	<table id="schedule">
 	<thead>
 		<tr>
 			<th>Time</th>
-			<th>Monday 30 March</th>
-			<th>Tuesday 31 March</th>
+			<th>Monday 13 December</th>
+			<th>Tuesday 14 December</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>9:30–10:00</td>
 			<td></td>
-			<td rowspan="2">Christine Tasson, <i>The linear-non-linear substitution 2-monad</i> (Invited talk)</td>
+			<td rowspan="2">Invited talk: John van de Wetering, <i>Categorical approaches to reconstructing quantum theory</i></td>
 		</tr>
 		<tr>
 			<td>10:00–10:30</td>
-			<td rowspan="2">Registration and Coffee</td>
+			<td></td>
 		</tr>
 		<tr>
 			<td>10:30–11:00</td>
-			<td>Dylan McDermott, Alan Mycroft, <i>On the relation between call-by-value and call-by-name</i></td>
+			<td rowspan="2">Registration and Coffee </td>
+			<td>Guillaume Boisseau and Robin Piedeleu, <i>Graphical Piecewise-Linear Algebra</i></td>
 		</tr>
 		<tr>
 			<td>11:00–11:30</td>
-			<td rowspan="2">Bartek Klin, <i>Monadic monadic second order logic</i> (Invited talk)</td>
-			<td>Coffee</td>
+			<td>BREAK</td>
 		</tr>
 		<tr>
 			<td>11:30–12:00</td>
-			<td>Julian Salamanca T&eacute;llez, <i>Distributive laws over the powerset</i></td>
+			<td rowspan="2">Invited talk: Christine Tasson, <i>A multicategorical approach to mixed linear-non-linear substitution</i></td>
+			<td>Liliane-Joy Dandy, Emmanuel Jeandel and Vladimir Zamdzhiev , <i>Qimaera: Type-safe (Variational) Quantum Programming in Idris</i></td>
 		</tr>
 		<tr>
 			<td>12:00–12:30</td>
-			<td>Vikraman Choudhury, <i>Tracking intensional resources using weighted sets and comonads</i></td>
-			<td>Nick Hu, <i>External traced monoidal categories</i></td>
+			<td>Matt Wilson and Augustin Vanrietvelde, <i>Composable constraints</i></td>
 		</tr>
 		<tr>
-			<td>12:30–14:00</td>
-			<td>Lunch</td>
-			<td>Lunch</td> 
+			<td>12:30–13:00</td>
+			<td>Stefan Zetzsche, Gerco van Heerdt, Matteo Sammartino and Alexandra Silva, <i>Canonical automata via distributive law homomorphisms</i></td>
+			<td>Davide Trotta, Matteo Spadetto and Valeria de Paiva, <i>Dialectica Logical Principles</i></td> 
+		</tr>
+		<tr>
+			<td>13:00–13:30</td>
+			<td rowspan="2">LUNCH</td>
+			<td rowspan="2">LUNCH</td>
+		</tr>
+		<tr>
+			<td>13:30–14:00</td>
 		</tr>
 		<tr>
 			<td>14:00–14:30</td>
-			<td>Violeta Martins de Freitas, <i>Life in arrows: an introduction to applied category theory</i></td>
-			<td>Maxime Lucas, <i>Rewriting strategies as contracting homotopies</i></td>
+			<td>Simon Henry and Nicholas Meadows, <i>Higher Theories and Monads</i></td>
+			<td>Simon Fortier-Garceau, <i>Interventions and Counterfactuals for Categorical Models of Causality</i></td>
 		</tr>
 		<tr>
 			<td>14:30–15:00</td>
-			<td>Tobias Fritz, Eigil Fjeldgren Rischel, <i>The zero-one laws of Kolmogorov and Hewitt-Savage in categorical probability</i></td>
-			<td>Olivier Peltre, <i>Homological algebra for message-passing algorithms</i></td>
+			<td>Paulina Goedicke and Jamie Vicary, <i>A Category Theoretical Description of Block Designs and Quantum Designs</i></td>
+			<td>Vikraman Choudhury, <i>Weighted sets and modalities</i></td>
 		</tr>
 		<tr>
 			<td>15:00–15:30</td>
-			<td>Elena di Lavore, <i>A proposal for subgame perfection in compositional game theory</i></td>
-			<td>Coffee</td>
+			<td>Vincent Wang-Mascianica and Bob Coecke, <i>Talking Space: Inference from spatial linguistic meanings</i></td>
+			<td>Elena Di Lavore and Pawel Sobocinski, <i>Monoidal width</i></td>
 		</tr>
 		<tr>
 			<td>15:30–16:00</td>
-			<td>Coffee</td>
-			<td>Michael Moortgat, Mehrnoosh Sadrzadeh, Gijs Wijnholds, <i>A Frobenius algebraic analysis for parasitic gaps</i></td>
+			<td>BREAK</td>
+			<td>BREAK</td>
 		</tr>
 		<tr>
 			<td>16:00–16:30</td>
-			<td>Alex Rice, <i>Coinductive invertibility in higher categories</i></td>
-			<td>Sivert Aasn&aelig;ss, <i>Contextuality for circuits</i></td>
+			<td><strike>Lukas Heidemann, <i>Frames in pretriangulated dg-categories</i></strike><br />
+			Elena Di Lavore, Wilmer Leal and Valeria de Paiva, <i>Dialectica Petri nets</i></td>
+			<td>Dylan McDermott and Alan Mycroft, <i>On the relation between call-by-value and call-by-name</i></td>
 		</tr>
 		<tr>
 			<td>16:30–17:00</td>
-			<td>Niels van der Weide, <i>Constructing finitary 1-truncated higher inductive types as groupoid quotients</i></td>
-			<td rowspan="2"></td>
-		</tr>
-		<tr>
-			<td>17:00–17:30</td>
-			<td>Lukas Heidemann, <i>Frames in pretriangulated dg-categories</i></td>
+			<td>George Kaye, Dan Ghica and David Sprunger, <i>Normalisation by evaluation for digital circuits</i></td>
+			<td>Olivier Peltre, <i>Homological algebra for message-passing algorithms</i></td>
 		</tr>
 	</tbody>
-	</table>
---> 
+	</table> 
+        <h2>Conference photo</h2>
+<div class="group_photo">
+  <div>
+    <a href="conference_photo.jpg">
+      <img src="conference_photo.jpg" alt="conference photo">
+    </a>
+  </div>
+</div>
 
         <h2 id="registration">Registration</h2>
 
-<p>To be announced.</p>    
+		<p>Registration is now closed. </p>    
 
         <h2 id="localInformation">Local information</h2>
+        	<p>The local organiser is <a href="https://ioc.ee/~amar/">Amar Hadzihasanovic</a> (<a href="mailto:amar@cs.ioc.ee">amar@cs.ioc.ee</a>).</p>
+        	
+        	<h4>Conference venue</h4>
+        	
+        	<p>The meeting will take place in the Crown Hall of the historical <a href="https://opetajatemaja.ee/en/">Teachers' House</a> (Õpetajate Maja), in the heart of the Old Town of Tallinn.</p>
+        	
+        	<iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=11MsspIiT0O3gS6o7WDGOVot-SdMEg43W" width="640" height="480"></iframe>
+        	
+        	<p>The annual <a href="https://www.visitestonia.com/en/tallinn-christmas-market">Christmas Market</a> will be taking place at the same time, right in front of the conference venue.</p>
+        	
+        	<p>Coffee and lunch will be served on location during the meeting hours. Beyond that, the Old Town offers plenty of cafés and restaurants. Within walking distance, the <a href="https://en.astri.ee/bjt/">Balti Jaam market</a> has a selection of food stalls, and <a href="https://telliskivi.cc/en/">Telliskivi creative city</a> has bars, cafés, and independent shops.</p>
+        	
+        	<h4>Access</h4>
+        	
+        	<p>Tallinn is conveniently served by <a href="https://www.tallinn-airport.ee/en/">Tallinn airport</a>, which is reachable in about 20 minutes from the city centre with public transport (tram line 4 and bus line 2).</p> 
+        	
+        	<p>Electronic tickets for public transport can be purchased with the <em>Pilet.ee</em> app (<a href="https://play.google.com/store/apps/details?id=ee.ut.ridango.android.pilet&hl=en&gl=US">Android</a>, <a href="https://apps.apple.com/ee/app/pilet-ee/id1079460463">iPhone</a>). Alternatively, there are rechargeable travel cards that can be purchased in every <a href="https://rkiosk.ee/">R-kiosk</a>. Affordable private rides are provided by <a href="https://bolt.eu/en/cities/tallinn/">Bolt</a>.</p>
+        
+        	<h4>Online participation</h4>
+        	
+        	<p>The meeting will have an online component and all talks will be broadcast on Zoom. Registered online participants will be contacted by e-mail, closer to the meeting date, with the virtual coordinates.</p>
 
-<p>To be announced.</p>
-
+        <h2 id="registration">Participants</h2>
+        
+        <p>The following people, among others, are participating either on-site or online:
+        <ul>
+        	<li>Amar Hadzihasanovic, Tallinn University of Technology</li>
+        	<li>Andreas Röhler, Freelance</li>
+        	<li>Anton Melnyk, Printify Software Developer</li>
+        	<li>Antonin Delpeuch, University of Oxford</li>
+        	<li>Arka Ghosh, University of Warsaw</li>
+        	<li>Arpan Agrawal, Chennai Mathematical Institute</li>
+        	<li>Augustin Vanrietvelde, Imperial College London / University of Oxford</li>
+        	<li>Bryce Clarke, Macquarie University</li>
+        	<li>Calin Tataru, University of Cambridge</li>
+        	<li>Chad Nester, Tallinn University of Technology</li>
+        	<li>Cheng-Syuan Wan, Tallinn University of Technology</li>
+        	<li>Cole Comfort, University of Oxford</li>
+        	<li>Daniele Palombi, Sapienza - University of Rome</li>
+        	<li>Davide Trotta, University of Pisa</li>
+        	<li>Denis Firsov, Tallinn University of Technology</li>
+        	<li>Diana Kessler, Tallinn University of Technology</li>
+        	<li>Dylan McDermott, Reykjavik University</li>
+  	     <li>Edith Flora Joel, Vilnius University</li>
+        	<li>Edward Morehouse, Tallinn University of Technology</li>
+        	<li>Elena Di Lavore, Tallinn University of Technology</li>
+        	<li>Elina Shakhnovich</li>
+        	<li>Fosco Loregian, Tallinn University of Technology</li>
+        	<li>Francisco Rios, Dalhousie University</li>
+        	<li>George Kaye, University of Birmingham</li>
+        	<li>Gerco van Heerdt, University College London</li>
+        	<li>Gordon Plotkin, Google research</li>
+        	<li>Grégoire Sergeant-Perthuis, University of Geneva</li>
+        	<li>Guillaume Boisseau, University of Oxford</li>
+        	<li>Jade Master, University of Strathclyde</li>
+        	<li>Jakob von Raumer, Karlsruhe Institute of Technology</li>
+        	<li>Jeremy Gibbons, University of Oxford</li>
+        	<li>Joao Paixao, UFRJ (Federal University of Rio de Janeiro)</li>
+        	<li>John van de Wetering, Radboud University Nijmegen</li>
+        	<li>Joseph Martin, University of Sheffield</li>
+        	<li>Joshua Wrigley, University of Insubria</li>
+        	<li>Jules Hedges, University of Strathclyde</li>
+        	<li>Leo Lobski, University College London</li>
+        	<li>Liliane-Joy Dandy, Ecole Polytechnique (France) and EPFL (Switzerland)</li>
+        	<li>Louis Lemonnier, LMF - Université Paris-Saclay</li>
+        	<li>Lukas Heidemann, University of Oxford</li>
+        	<li>Maaike Zwart, IT University of Copenhagen</li>
+        	<li>Marco Maggesi, University of Florence, Italy</li>
+        	<li>Mario Román, Tallinn University of Technology</li>
+        	<li>Marius Henry, ETH Zürich</li>
+        	<li>Martti Karvonen, University of Ottawa</li>
+        	<li>Matt Earnshaw, Tallinn University of Technology</li>
+        	<li>Matt Wilson, Oxford University</li>
+        	<li>Matteo Spadetto, University of Leeds</li>
+        	<li>Matteo Capucci, University of Strathclyde</li>
+        	<li>Michael Heather, Cambridge University</li>
+        	<li>Miloslav Štěpán, Masaryk University</li>
+        	<li>Niccolò Veltri, Tallinn University of Technology</li>
+        	<li>Nicholas Meadows, Haifa University</li>
+        	<li>Nicolai Kraus, University of Nottingham</li>
+        	<li>Niels Voorneveld, Tallinn University of Technology</li>
+        	<li>Nuiok Dicaire, University of Edinburgh</li>
+     	<li>Olivier Peltre, Université d'Artois</li>
+        	<li>Paolo Perrone, University of Oxford</li>
+        	<li>Paulina Goedicke, University of Hamburg</li>
+        	<li>Pawel Sobocinski, Tallinn University of Technology</li>
+        	<li>Pedro Rocha, NOVA University of Lisbon</li>
+        	<li>Philip Scott, University of Ottawa (Mathematics & Statistics)</li>
+        	<li>Philipp Joram, Tallinn University of Technology</li>
+        	<li>Robin Kaarsgaard, University of Edinburgh</li>
+        	<li>Robin Piedeleu, University College London</li>
+        	<li>S. C. Steenkamp, University of Cambridge</li>
+        	<li>Samin Ishtiaq, Riverlane</li>
+        	<li>Silvio Capobianco, Tallinn University of Technology</li>
+        	<li>Simon Burton, Jagiellonian University</li>
+        	<li>Simon Fortier-Garceau, University of Ottawa</li>
+        	<li>Simona Paoli, University of Aberdeen</li>
+        	<li>Stefan Zetzsche, University College London</li>
+        	<li>Takuo Matsuoka</li>
+        	<li>Tanguy Massacrier, Tallinn University of Technology</li>
+        	<li>Tarmo Uustalu, Reykjavik University</li>
+        	<li>Tomáš Gonda, University of Innsbruck</li>
+        	<li>Tony Zorman, TU Dresden</li>
+        	<li>Uli Fahrenberg, EPITA Rennes, France</li>
+        	<li>Ulrik Buchholtz, TU Darmstadt</li>
+        	<li>Vaibhav Sutrave, University of California, Santa Cruz</li>
+        	<li>Valeria de Paiva, Topos Institute, Berkeley, USA</li>
+        	<li>Vikraman Choudhury, University of Glasgow</li>
+        	<li>Vincent Wang-Maścianica, University of Oxford & Compositional Intelligence, Cambridge Quantum</li>
+        	<li>Vladimir Zamdzhiev, Inria</li>
+        	<li>Wilmer Leal, Max Planck Institute for Mathematics in the Sciences</li>
+        	<li>Xuanrui Qi, Nagoya University</li>
+        	<li>Yasuaki Morita, Reykjavik University</li>
+        	<li>Younesse Kaddar, University of Oxford</li>
+        	<li>Zev Shirazi, Cambridge University</li>
+        </ul>
+        </p>
+        
         <h2 id="sponsorship">Sponsorship</h2>
 
-<p>To be announced.</p>
+	<p>The meeting is supported by the ESF funded Estonian IT Academy research measure (project 2014-2020.4.05.19-0001).</p>
+	<img src="sotsiaalfond.jpg" alt="Europa Liit - Euroopa Sotsiaalfond & Eesti tuleviku heaks" />
 
           <h2 id="deferral">Deferral</h2>
 
           <p>The intention is for <i>SYCO</i> to be a community meeting, where people have enough time to explain their ideas, and with a friendly and non-competitive atmosphere. To encourage this, in the event that more submissions are received of an acceptable standard than can be accommodated in the timetable, the programme committee may choose to <i>defer</i> some submissions to a future meeting, rather than reject them. This would be done based largely on submission order, giving an incentive for early submission, but would also take into account other requirements, such as ensuring a broad and inclusive scientific programme. Deferred submissions can then be re-submitted to any future <i>SYCO</i> meeting, where they will be prioritised for inclusion in the programme, and where they will not need to be re-reviewed. Meetings are held sufficiently frequently to avoid a backlog of deferred papers.</p>
 
           <h2 id="submissions">Submissions</h2>
+	    
+	    <p>Submission is now closed.</p>
 
             <p>Submissions should present research results in sufficient detail to allow them to be properly considered by members of the programme committee, who will assess their interest to the <i>SYCO</i> community. We encourage the submission of work in progress, as well as mature results. There are no proceedings, so work can be submitted even if it has been previously published, or has been submitted for consideration elsewhere. There is no specific formatting requirement, and no page limit, although for long submissions authors should be aware that reviewers will not be able to read the entire document in detail. Think creatively&mdash;you could submit a recent paper, draft notes of a project in progress, or even a recent Masters or PhD thesis.</p>
 
@@ -295,7 +478,26 @@ To be announced.
 
             <h2 id="pc">Programme committee</h2>
 
-<p>To be announced.</p>    
+            <ul>
+              <li><a href="http://personal.strath.ac.uk/ross.duncan/">Ross Duncan</a>, University of Strathclyde</li>
+	      <li><a href="https://agoy.fr/">Alexandre Goy</a>, MICS, CentraleSupélec</li>
+              <li><a href="https://ioc.ee/~amar/">Amar Hadzihasanovic</a>, Tallinn University of Technology</li>
+	      <li><a href="https://julesh.com/">Jules Hedges</a>, University of Strathclyde</li>	    
+	      <li><a href="http://homepages.inf.ed.ac.uk/cheunen/">Chris Heunen</a>, University of Edinburgh</li>
+              <li><a href="https://www.cs.ox.ac.uk/people/aleks.kissinger/">Aleks Kissinger</a>, University of Oxford</li>
+              <li><a href="https://sites.google.com/view/jadeedenstarmaster/home">Jade Master</a>, University of Strathclyde</li>
+	      <li><a href="https://www.cs.ox.ac.uk/people/dan.marsden/">Dan Marsden</a>, University of Oxford</li>    
+	      <li><a href="https://hjmb.co.uk/">Hector Miller-Bakewell</a></li>
+	      <li><a href="http://www.lix.polytechnique.fr/Labo/Samuel.Mimram//">Samuel Mimram</a>, &Eacute;cole Polytechnique</li>
+	      <li><a href="https://www.kurims.kyoto-u.ac.jp/~kmuroya/">Koko Muroya</a>, Kyoto University</li>
+              <li><a href="https://www.abdn.ac.uk/people/Simona.Paoli">Simona Paoli</a>, University of Aberdeen</li>
+              <li><a href="https://msadrzadeh.com/">Mehrnoosh Sadrzadeh</a>, University College London</li>
+	      <li><a href="https://sites.google.com/view/msarazola/home">Maru Sarazola</a>, Johns Hopkins University</li>	    
+              <li><a href="https://www.ioc.ee/~pawel/">Pawel Sobocinski</a>, Tallinn University of Technology</li>
+	      <li><a href="https://thalis.math.upatras.gr/~cvasilak/">Christina Vasilakopoulou</a>, University of Patras</li>
+              <li><a href="https://www.cl.cam.ac.uk/~jv258/">Jamie Vicary</a>, University of Cambridge</li>
+              <li><a href="https://maaikezwart.com/">Maaike Zwart</a>, IT University of Copenhagen (chair)</li>
+            </ul>    
 
             <h2 id="sc">Steering committee</h2>
 
@@ -306,10 +508,10 @@ To be announced.
               <li><a href="https://quantum.univ-grenoble-alpes.fr/fostering-the-ecosystem/our-chairs-of-excellence/quantum-computing/horsman-dominic-734445.htm">Dominic Horsman</a>, University of Grenoble</li>
               <li><a href="https://www.cs.ox.ac.uk/people/aleks.kissinger/">Aleks Kissinger</a>, University of Oxford</li>
               <li><a href="http://www.lix.polytechnique.fr/Labo/Samuel.Mimram//">Samuel Mimram</a>, &Eacute;cole Polytechnique</li>
-              <li><a href="https://www2.le.ac.uk/departments/mathematics/extranet/staff-material/staff-profiles/simona-paoli">Simona Paoli</a>, University of Leicester</li>
+              <li><a href="https://www.abdn.ac.uk/people/Simona.Paoli">Simona Paoli</a>, University of Aberdeen</li>
               <li><a href="https://msadrzadeh.com/">Mehrnoosh Sadrzadeh</a>, University College London</li>
               <li><a href="https://www.ioc.ee/~pawel/">Pawel Sobocinski</a>, Tallinn University of Technology</li>
-              <li><a href="https://www.cs.bham.ac.uk/~vicaryjo/">Jamie Vicary</a>, University of Birmingham and University of Oxford</li>
+              <li><a href="https://www.cl.cam.ac.uk/~jv258/">Jamie Vicary</a>, University of Cambridge</li>
             </ul>
 
           </div>
