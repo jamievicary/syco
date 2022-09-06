@@ -1,415 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <style>
+  <head>
+    <meta charset="utf-8"/>
+    <style>
 
-  * {
-   font-family: Verdana, Geneva, sans-serif;
- }
+      * {
+          font-family: Verdana, Geneva, sans-serif;
+      }
 
-body {
-	background-color: #dde485;
-}
+      body {
+          background-color: #dde485;
+      }
 
- #grid {
-   width: 100%;
-   display: grid;
-   grid-column-gap: 10px;
-   grid-template-columns: auto 1000px auto;
- }
+      #grid {
+          width: 100%;
+          display: grid;
+          grid-column-gap: 10px;
+          grid-template-columns: auto 1000px auto;
+      }
 
- #logo {
-   width: 200px;
-   margin-right: -50px;
-   border-width: 1px;
-   border-color: black;
-   margin-top: 20px;
-   margin-bottom: 20px;
- }
+      #logo {
+          width: 200px;
+          margin-right: -50px;
+          border-width: 1px;
+          border-color: black;
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
 
- #c {
-   overflow: auto;
-   text-align: justify;
- }
+      #c {
+          overflow: auto;
+          text-align: justify;
+      }
 
- #title {
+      #title {
 
- }
+      }
 
- #alert {
-  text-align: center;
-  color: red;
-  font-weight: bold;
-}
- 
- #table.logoTable {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-li {
-	margin: 5px
-}
-
-td {
-	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-img.speaker {
-	height: 400px;
-}
-
-img.sponsor {
-	height: 100px;
-	padding: 8px;
-	background-color: white;
-}
-
-h2 {
-	margin-top: 30px;
-}
-
-#iframe.gmap {
-  border: none;
-  overflow: hidden;
-}
-
-#schedule, #schedule>tbody>tr>td {
-	text-align: left;
-}
-
-#schedule>tbody>tr>td, #schedule>tbody>tr>th {
-	padding-left: 5px;
-}
-
-#schedule>tbody>tr>td {
-	border: 1px solid black;
-	border-spacing: 0px;
-}
-
-#schedule {
-	border-collapse: collapse;
-	margin-bottom: 30px;
-}
-
-#schedule>tbody>tr {
-	height: 45px;
-}
-
-#schedule>tbody>tr>td:first-child {
-  width: 90px;
-  font-size: small;
-}
-
-#schedule>tbody>tr>td:not(:first-child) {
-	width: 410px;
-}
-
-.emphasise {
-  color: red;
-  font-weight: bold;
-}
-	  
-@media only screen and (max-width: 1020px) {
-	#grid {
-		display: table-cell;
-		width: 100%;
-		padding: 0 1em;
-	}
-}
-
-</style>
-<title>SYCO 9</title>
-</head>
-<body>
-  <div id="grid">
-    <div id="a"></div>
-    <div id="c">
-      <table id="logoTable">
-        <tr>
-          <td><img id="logo" src="logo_web.svg" alt="SYCO logo"></td>
-          <td>
-           <h1>Ninth Symposium on Compositional Structures (SYCO 9)</h1>
-           <p><b><i>Como, Italy<br><span>8-9 September 2022</span></i></b></p>
-         </td>
-       </tr>
-     </table>
-	<p><b>UPDATE.</b> <a href="https://forms.gle/NURaeCEVsfpfZTJp9">Registration is now open!</a></p>
-	<p><b>UPDATE.</b> <a href="https://easychair.org/my/conference?conf=syco9">Submission is now open!</a></p>
-
-     <p>The <i>Symposium on Compositional Structures</i> is a series of interdisciplinary meetings aiming to support the growing community of researchers interested in the phenomenon of compositionality, from both applied and abstract perspectives, and in particular where category theory serves as a unifying common language. We welcome submissions from researchers across computer science, mathematics, physics, philosophy, and beyond, with the aim of fostering friendly discussion, disseminating new ideas, and spreading knowledge between fields. Submission is encouraged for both mature research and work in progress, and by both established academics and junior researchers, including students.</p>
-
-     <p>Submission is easy, with no format requirements or page restrictions. The meeting does not have proceedings, so work can be submitted even if it has been submitted or published elsewhere. You could submit work-in-progress, or a recently completed paper, or even a PhD or Masters thesis.</p>
-
-     <p>While no list of topics could be exhaustive, <i>SYCO</i> welcomes submissions with a compositional focus related to any of the following areas, in particular from the perspective of category theory:</p>
-     <ul>
-      <li><b>logical methods in computer science</b>, including classical and quantum programming, type theory, concurrency, natural language processing and machine learning;</li>
-      <li><b>graphical calculi</b>, including string diagrams, Petri nets and reaction networks;</li>
-      <li><b>languages and frameworks</b>, including process algebras, proof nets, type theory and game semantics;</li>
-      <li><b>abstract algebra and pure category theory</b>, including monoidal category theory, higher category theory,
-      operads, polygraphs, and relationships to homotopy theory;</li>
-      <li><b>quantum algebra</b>, including quantum computation and representation theory;</li>
-      <li><b>tools and techniques</b>, including rewriting, formal proofs and proof assistants, and game theory;</li>
-      <li><b>industrial applications</b>, including case studies and real-world problem descriptions.</li>
-    </ul>
-
-    <p>This new series aims to bring together the communities behind many previous successful events which have taken place
-      over the last decade, including
-      <i><a href="http://categorieslogicphysics.wikidot.com/archive">Categories, Logic and Physics</a></i>,
-      <i><a href="http://conferences.inf.ed.ac.uk/clapscotland">Categories, Logic and Physics (Scotland)</a></i>,
-      <i><a href="http://hdra.gforge.inria.fr/">Higher-Dimensional Rewriting and Applications</a></i>,
-      <i><a href="http://string2017.cs.ru.nl/">String Diagrams in Computational, Logic and Physics</a></i>,
-      <i><a href="https://www.lorentzcenter.nl/lc/web/2018/969/info.php3?wsid=969">Applied Category Theory</a></i>,
-      <i><a href="https://simons.berkeley.edu/workshops/logic2016-3">Simons Workshop on Compositionality</a></i>,
-      the <i><a href="https://www2.le.ac.uk/departments/mathematics/extranet/staff-material/staff-profiles/simona-paoli/yorkshire-and-midlands-category-theory-seminar-yamcats">Yorkshire and Midlands Category Theory Seminar</a></i>
-      and the <i>Peripatetic Seminar in Sheaves and Logic</i>.</p>
-
-      <p>This event follows <i><a href="../1/">SYCO 1</a></i> in Birmingham, <i><a href="../2/">SYCO 2</a></i> in Strathclyde, <i><a href="../3/">SYCO 3</a></i> in Oxford, <i><a href="../4/">SYCO 4</a></i> in California, <i><a href="../5/">SYCO 5</a></i> in Birmingham, <i><a href="../6/">SYCO 6</a></i> in Leicester, and <i><a href="../8/">SYCO 8</a></i> in Tallinn.</p>
-
-      <h2 id="invitedSpeakers">Invited speakers</h2>
+      #alert {
+          text-align: center;
+          color: red;
+          font-weight: bold;
+      }
       
-<table width="100%">
-	<tr>
-		<td><img class="speaker" src="OliviaCaramello.jpg"/></td>
-		<td><img class="speaker" src="RobertFurber.jpg"/></td>
-	</tr>
-	<tr>
-		<td><a href="https://www.oliviacaramello.com/index.html">Olivia Caramello</a></td>
-		<td><a href="https://homepages.inf.ed.ac.uk/rfurber/">Robert Furber</a></td>
-	</tr>
-	<tr>
-		<td>University of Insubria</td>
-		<td>University of Edinburgh</td>
-	</tr>
-	<tr>
-		<td><i>Title: Relative toposes as a generalization of locales</i></td>
-		<td><i>Title: A Probability Monad on Measure Spaces</i></td>
-	</tr>
-		
-</table>    
+      #table.logoTable {
+          margin-left: auto;
+          margin-right: auto;
+      }
 
-	 <h2 id="dates">Accepted papers</h2>
-	 <ul>
-		 <li>Jakob von Raumer<br> &nbsp; <i>String Diagrams for Strings and Rings</i></li>
-		 <li>Matthew Earnshaw and Paweł Sobociński<br> &nbsp; <i>Regular Monoidal Languages</i></li>
-		 <li>Paolo Perrone<br> &nbsp; <i>Lifting weights: enriched lenses between transport plans</i></li>
-	         <li>Simona Paoli<br> &nbsp; <i>Weak Globularity: a New Paradigm to Weaken Higher Categorical Structures</i></li>
-		 <li>Siddharth Bhat, Elena Di Lavore, Pim de Haan, Miguel Lopez, Mario Román, Nicoletta Sabadini, Ruben Van Belle<br> &nbsp; <i>Cyclic Causal Networks via Partial Markov Categories</i></li>
-		 <li>Malin Altenmüller and Ross Duncan<br> &nbsp; <i>A Category of Plane Graphs</i></li>
-		 <li>Sebastian Stengele, Tobias Reinhart, Tomáš Gonda and Gemma De Las Cuevas<br> &nbsp; <i>A Framework for Universality Across Disciplines</i></li>
-		 <li>Morgan Rogers<br> &nbsp; <i>Continuous monoid homomorphisms and geometric morphisms</i></li>
-		 <li>Calin Tataru<br> &nbsp; <i>Cubicalisation: an algorithm for generating cubical meshes from homotopy.io diagrams</i></li>
-		 <li>Niels Voorneveld<br> &nbsp; <i>Cylinder Diagrams: Visualizing Multi-Parameter Natural Transformations</i></li>
-		 <li>Mattia G. Bergomi and Pietro Vertechi<br> &nbsp; <i>Neural network layers as parametric spans</i></li>
-		 <li>Gabriele Lobbia, Ivan Di Liberti and Lurdes Sousa<br> &nbsp; <i>Kan Injectivity and KZ-monads</i></li>
-		 <li>Lia Yeh<br> &nbsp; <i>Conversation Logic: The Interplay of Negation, Conjunction, Disjunction, and Lexical Entailment</i></li>
-		 <li>Dylan Braithwaite and Jules Hedges<br> &nbsp; <i>Dependent Bayesian Lenses: Categories of Bidirectional Markov Kernels with Canonical Bayesian Inversion</i></li>
-	 </ul> 
+      li {
+          margin: 5px
+      }
 
-      <h2 id="dates">Important dates</h2>
+      td {
+          text-align: center;
+          padding-left: 20px;
+          padding-right: 20px;
+      }
 
-      <p>All deadlines are 23:59 <a href="https://www.timeanddate.com/time/zones/aoe">anywhere-on-earth</a> on the given dates.
+      img.speaker {
+          height: 400px;
+      }
 
+      img.sponsor {
+          height: 100px;
+          padding: 8px;
+          background-color: white;
+      }
+
+      h2 {
+          margin-top: 30px;
+      }
+
+      #iframe.gmap {
+          border: none;
+          overflow: hidden;
+      }
+
+      #schedule, #schedule>tbody>tr>td {
+          text-align: left;
+      }
+
+      #schedule>tbody>tr>td, #schedule>tbody>tr>th {
+          padding-left: 5px;
+      }
+
+      #schedule>tbody>tr>td {
+          border: 1px solid black;
+          border-spacing: 0px;
+      }
+
+      #schedule {
+          border-collapse: collapse;
+          margin-bottom: 30px;
+      }
+
+      #schedule>tbody>tr {
+          height: 45px;
+      }
+
+      #schedule>tbody>tr>td:first-child {
+          width: 90px;
+          font-size: small;
+      }
+
+      #schedule>tbody>tr>td:not(:first-child) {
+          width: 410px;
+      }
+
+      .emphasise {
+          color: red;
+          font-weight: bold;
+      }
+      
+      @media only screen and (max-width: 1020px) {
+          #grid {
+              display: table-cell;
+              width: 100%;
+              padding: 0 1em;
+          }
+      }
+
+    </style>
+    <title>SYCO 9</title>
+  </head>
+  <body>
+    <div id="grid">
+      <div id="a"></div>
+      <div id="c">
+        <table id="logoTable">
+          <tr>
+            <td><img id="logo" src="logo_web.svg" alt="SYCO logo"></td>
+            <td>
+              <h1>Ninth Symposium on Compositional Structures (SYCO 9)</h1>
+              <p><b><i>Como, Italy<br><span>8-9 September 2022</span></i></b></p>
+            </td>
+          </tr>
+        </table>
+        <p><b>UPDATE.</b> <a href="https://forms.gle/NURaeCEVsfpfZTJp9">Registration is now open!</a></p>
+        <p><b>UPDATE.</b> <a href="https://easychair.org/my/conference?conf=syco9">Submission is now open!</a></p>
+
+        <p>The <i>Symposium on Compositional Structures</i> is a series of interdisciplinary meetings aiming to support the growing community of researchers interested in the phenomenon of compositionality, from both applied and abstract perspectives, and in particular where category theory serves as a unifying common language. We welcome submissions from researchers across computer science, mathematics, physics, philosophy, and beyond, with the aim of fostering friendly discussion, disseminating new ideas, and spreading knowledge between fields. Submission is encouraged for both mature research and work in progress, and by both established academics and junior researchers, including students.</p>
+
+        <p>Submission is easy, with no format requirements or page restrictions. The meeting does not have proceedings, so work can be submitted even if it has been submitted or published elsewhere. You could submit work-in-progress, or a recently completed paper, or even a PhD or Masters thesis.</p>
+
+        <p>While no list of topics could be exhaustive, <i>SYCO</i> welcomes submissions with a compositional focus related to any of the following areas, in particular from the perspective of category theory:</p>
         <ul>
-         <li><strike>Submission deadline: Monday 1 August 2022</strike></li>
-         <li><strike>Author notification: Monday 8 August 2022</strike></li>
-         <li>Registration deadline: Thursday 1 September 2022</li>
-         <li>Symposium dates: Thursday 8 and Friday 9 September 2022</li>
+          <li><b>logical methods in computer science</b>, including classical and quantum programming, type theory, concurrency, natural language processing and machine learning;</li>
+          <li><b>graphical calculi</b>, including string diagrams, Petri nets and reaction networks;</li>
+          <li><b>languages and frameworks</b>, including process algebras, proof nets, type theory and game semantics;</li>
+          <li><b>abstract algebra and pure category theory</b>, including monoidal category theory, higher category theory,
+            operads, polygraphs, and relationships to homotopy theory;</li>
+          <li><b>quantum algebra</b>, including quantum computation and representation theory;</li>
+          <li><b>tools and techniques</b>, including rewriting, formal proofs and proof assistants, and game theory;</li>
+          <li><b>industrial applications</b>, including case studies and real-world problem descriptions.</li>
         </ul>
 
-       <h2 id="programme">Schedule</h2>
+        <p>This new series aims to bring together the communities behind many previous successful events which have taken place
+          over the last decade, including
+          <i><a href="http://categorieslogicphysics.wikidot.com/archive">Categories, Logic and Physics</a></i>,
+          <i><a href="http://conferences.inf.ed.ac.uk/clapscotland">Categories, Logic and Physics (Scotland)</a></i>,
+          <i><a href="http://hdra.gforge.inria.fr/">Higher-Dimensional Rewriting and Applications</a></i>,
+          <i><a href="http://string2017.cs.ru.nl/">String Diagrams in Computational, Logic and Physics</a></i>,
+          <i><a href="https://www.lorentzcenter.nl/lc/web/2018/969/info.php3?wsid=969">Applied Category Theory</a></i>,
+          <i><a href="https://simons.berkeley.edu/workshops/logic2016-3">Simons Workshop on Compositionality</a></i>,
+          the <i><a href="https://www2.le.ac.uk/departments/mathematics/extranet/staff-material/staff-profiles/simona-paoli/yorkshire-and-midlands-category-theory-seminar-yamcats">Yorkshire and Midlands Category Theory Seminar</a></i>
+          and the <i>Peripatetic Seminar in Sheaves and Logic</i>.</p>
 
-<table id="schedule">
-	<thead>
-		<tr>
-			<th>Time</th>
-			<th>Thursday 8 September</th>
-			<th>Friday 9 September</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>9:30–10:00</td>
-			<td></td>
-			<td rowspan="2">Invited talk: Olivia Caramello, <i>Relative toposes as a generalization of locales</i></td>
-		</tr>
-		<tr>
-			<td>10:00–10:30</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>10:30–11:00</td>
-			<td rowspan="2">Registration and Coffee </td>
-			<td>Morgan Rogers, <i>Continuous monoid homomorphisms and geometric morphisms</i></td>
-		</tr>
-		<tr>
-			<td>11:00–11:30</td>
-			<td>BREAK</td>
-		</tr>
-		<tr>
-			<td>11:30–12:00</td>
-			<td rowspan="2">Invited talk: Robert Furber, <i>A Probability Monad on Measure Spaces</i></td>
-			<td>Calin Tataru, <i>Cubicalisation: an algorithm for generating cubical meshes from homotopy.io diagrams</i></td>
-		</tr>
-		<tr>
-			<td>12:00–12:30</td>
-			<td>Niels Voorneveld, <i>Cylinder Diagrams: Visualizing Multi-Parameter Natural Transformations</i></td>
-		</tr>
-		<tr>
-			<td>12:30–13:00</td>
-			<td>Jakob von Raumer, <i>String Diagrams for Strings and Rings</i></td>
-			<td>Mattia G. Bergomi and Pietro Vertechi, <i>Neural network layers as parametric spans</i></td> 
-		</tr>
-		<tr>
-			<td>13:00–13:30</td>
-			<td rowspan="2">LUNCH</td>
-			<td rowspan="2">LUNCH</td>
-		</tr>
-		<tr>
-			<td>13:30–14:00</td>
-		</tr>
-		<tr>
-			<td>14:00–14:30</td>
-			<td>Matthew Earnshaw and Paweł Sobociński, <i>Regular Monoidal Languages</i></td>
-			<td>Gabriele Lobbia, Ivan Di Liberti and Lurdes Sousa, <i>Kan Injectivity and KZ-monads</i></td>
-		</tr>
-		<tr>
-			<td>14:30–15:00</td>
-			<td>Paolo Perrone, <i>Lifting weights: enriched lenses between transport plans</i></td>
-			<td>Lia Yeh, <i>Conversation Logic: The Interplay of Negation, Conjunction, Disjunction, and Lexical Entailment</i></td>
-		</tr>
-		<tr>
-			<td>15:00–15:30</td>
-			<td>Simona Paoli, <i>Weak Globularity: a New Paradigm to Weaken Higher Categorical Structures</i></td>
-			<td>Dylan Braithwaite and Jules Hedges, <i>Dependent Bayesian Lenses: Categories of Bidirectional Markov Kernels with Canonical Bayesian Inversion</i></td>
-		</tr>
-		<tr>
-			<td>15:30–16:00</td>
-			<td>BREAK</td>
-			<td>BREAK</td>
-		</tr>
-		<tr>
-			<td>16:00–16:30</td>
-			<td>Siddharth Bhat, Elena Di Lavore, Pim de Haan, Miguel Lopez, Mario Román, Nicoletta Sabadini, Ruben Van Belle, <i>Cyclic Causal Networks via Partial Markov Categories</i></td>
-		</tr>
-		<tr>
-			<td>16:30–17:00</td>
-			<td>Malin Altenmüller and Ross Duncan, <i>A Category of Plane Graphs</i></td>
-		</tr>
-		<tr>
-			<td>17:00–17:30</td>
-			<td>Sebastian Stengele, Tobias Reinhart, Tomáš Gonda and Gemma De Las Cuevas, <i>A Framework for Universality Across Disciplines</i></td>
-		</tr>
-	</tbody>
-	</table> 
+        <p>This event follows <i><a href="../1/">SYCO 1</a></i> in Birmingham, <i><a href="../2/">SYCO 2</a></i> in Strathclyde, <i><a href="../3/">SYCO 3</a></i> in Oxford, <i><a href="../4/">SYCO 4</a></i> in California, <i><a href="../5/">SYCO 5</a></i> in Birmingham, <i><a href="../6/">SYCO 6</a></i> in Leicester, and <i><a href="../8/">SYCO 8</a></i> in Tallinn.</p>
 
-        <h2 id="registration">Registration</h2>
+        <h2 id="invitedSpeakers">Invited speakers</h2>
+
+        <table width="100%">
+          <tr>
+            <td><img class="speaker" src="OliviaCaramello.jpg"/></td>
+            <td><img class="speaker" src="RobertFurber.jpg"/></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.oliviacaramello.com/index.html">Olivia Caramello</a></td>
+            <td><a href="https://homepages.inf.ed.ac.uk/rfurber/">Robert Furber</a></td>
+          </tr>
+          <tr>
+            <td>University of Insubria</td>
+            <td>University of Edinburgh</td>
+          </tr>
+          <tr>
+            <td><i>Title: Relative toposes as a generalization of locales</i></td>
+            <td><i>Title: A Probability Monad on Measure Spaces</i></td>
+          </tr>
+
+        </table>
+
+        <h2 id="dates">Accepted papers</h2>
+        <ul>
+          <li>Jakob von Raumer<br> &nbsp; <i>String Diagrams for Strings and Rings</i></li>
+          <li>Matthew Earnshaw and Paweł Sobociński<br> &nbsp; <i>Regular Monoidal Languages</i></li>
+          <li>Paolo Perrone<br> &nbsp; <i>Lifting weights: enriched lenses between transport plans</i></li>
+          <li>Simona Paoli<br> &nbsp; <i>Weak Globularity: a New Paradigm to Weaken Higher Categorical Structures</i></li>
+          <li>Siddharth Bhat, Elena Di Lavore, Pim de Haan, Miguel Lopez, Mario Román, Nicoletta Sabadini, Ruben Van Belle<br> &nbsp; <i>Cyclic Causal Networks via Partial Markov Categories</i></li>
+          <li>Malin Altenmüller and Ross Duncan<br> &nbsp; <i>A Category of Plane Graphs</i></li>
+          <li>Sebastian Stengele, Tobias Reinhart, Tomáš Gonda and Gemma De Las Cuevas<br> &nbsp; <i>A Framework for Universality Across Disciplines</i></li>
+          <li>Morgan Rogers<br> &nbsp; <i>Continuous monoid homomorphisms and geometric morphisms</i></li>
+          <li>Calin Tataru<br> &nbsp; <i>Cubicalisation: an algorithm for generating cubical meshes from homotopy.io diagrams</i></li>
+          <li>Niels Voorneveld<br> &nbsp; <i>Cylinder Diagrams: Visualizing Multi-Parameter Natural Transformations</i></li>
+          <li>Mattia G. Bergomi and Pietro Vertechi<br> &nbsp; <i>Neural network layers as parametric spans</i></li>
+          <li>Gabriele Lobbia, Ivan Di Liberti and Lurdes Sousa<br> &nbsp; <i>Kan Injectivity and KZ-monads</i></li>
+          <li>Lia Yeh<br> &nbsp; <i>Conversation Logic: The Interplay of Negation, Conjunction, Disjunction, and Lexical Entailment</i></li>
+          <li>Dylan Braithwaite and Jules Hedges<br> &nbsp; <i>Dependent Bayesian Lenses: Categories of Bidirectional Markov Kernels with Canonical Bayesian Inversion</i></li>
+        </ul>
+
+        <h2 id="dates">Important dates</h2>
+
+        <p>All deadlines are 23:59 <a href="https://www.timeanddate.com/time/zones/aoe">anywhere-on-earth</a> on the given dates.
+
+          <ul>
+            <li><strike>Submission deadline: Monday 1 August 2022</strike></li>
+            <li><strike>Author notification: Monday 8 August 2022</strike></li>
+            <li>Registration deadline: Thursday 1 September 2022</li>
+            <li>Symposium dates: Thursday 8 and Friday 9 September 2022</li>
+          </ul>
+
+          <h2 id="programme">Schedule</h2>
+
+          <table id="schedule">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Thursday 8 September</th>
+                <th>Friday 9 September</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9:30–10:00</td>
+                <td></td>
+                <td rowspan="2">Invited talk: Olivia Caramello, <i>Relative toposes as a generalization of locales</i></td>
+              </tr>
+              <tr>
+                <td>10:00–10:30</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10:30–11:00</td>
+                <td rowspan="2">Registration and Coffee </td>
+                <td>Morgan Rogers, <i>Continuous monoid homomorphisms and geometric morphisms</i></td>
+              </tr>
+              <tr>
+                <td>11:00–11:30</td>
+                <td>BREAK</td>
+              </tr>
+              <tr>
+                <td>11:30–12:00</td>
+                <td rowspan="2">Invited talk: Robert Furber, <i>A Probability Monad on Measure Spaces</i></td>
+                <td>Calin Tataru, <i>Cubicalisation: an algorithm for generating cubical meshes from homotopy.io diagrams</i></td>
+              </tr>
+              <tr>
+                <td>12:00–12:30</td>
+                <td>Niels Voorneveld, <i>Cylinder Diagrams: Visualizing Multi-Parameter Natural Transformations</i></td>
+              </tr>
+              <tr>
+                <td>12:30–13:00</td>
+                <td>Jakob von Raumer, <i>String Diagrams for Strings and Rings</i></td>
+                <td>Mattia G. Bergomi and Pietro Vertechi, <i>Neural network layers as parametric spans</i></td>
+              </tr>
+              <tr>
+                <td>13:00–13:30</td>
+                <td rowspan="2">LUNCH</td>
+                <td rowspan="2">LUNCH</td>
+              </tr>
+              <tr>
+                <td>13:30–14:00</td>
+              </tr>
+              <tr>
+                <td>14:00–14:30</td>
+                <td>Matthew Earnshaw and Paweł Sobociński, <i>Regular Monoidal Languages</i></td>
+                <td>Gabriele Lobbia, Ivan Di Liberti and Lurdes Sousa, <i>Kan Injectivity and KZ-monads</i></td>
+              </tr>
+              <tr>
+                <td>14:30–15:00</td>
+                <td>Paolo Perrone, <i>Lifting weights: enriched lenses between transport plans</i></td>
+                <td>Lia Yeh, <i>Conversation Logic: The Interplay of Negation, Conjunction, Disjunction, and Lexical Entailment</i></td>
+              </tr>
+              <tr>
+                <td>15:00–15:30</td>
+                <td>Simona Paoli, <i>Weak Globularity: a New Paradigm to Weaken Higher Categorical Structures</i></td>
+                <td>Dylan Braithwaite and Jules Hedges, <i>Dependent Bayesian Lenses: Categories of Bidirectional Markov Kernels with Canonical Bayesian Inversion</i></td>
+              </tr>
+              <tr>
+                <td>15:30–16:00</td>
+                <td>BREAK</td>
+                <td>BREAK</td>
+              </tr>
+              <tr>
+                <td>16:00–16:30</td>
+                <td>Siddharth Bhat, Elena Di Lavore, Pim de Haan, Miguel Lopez, Mario Román, Nicoletta Sabadini, Ruben Van Belle, <i>Cyclic Causal Networks via Partial Markov Categories</i></td>
+              </tr>
+              <tr>
+                <td>16:30–17:00</td>
+                <td>Malin Altenmüller and Ross Duncan, <i>A Category of Plane Graphs</i></td>
+              </tr>
+              <tr>
+                <td>17:00–17:30</td>
+                <td>Sebastian Stengele, Tobias Reinhart, Tomáš Gonda and Gemma De Las Cuevas, <i>A Framework for Universality Across Disciplines</i></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="registration">Registration</h2>
 
         <p>Registration is now open. Pleas fill in <a href="https://forms.gle/NURaeCEVsfpfZTJp9">this form</a>.</p>
 
-	<h2 id="localInformation">Local information</h2> 
-	    <p>The local organisers are Nicoletta Sabadini (<a href="mailto:nicoletta.sabadini@uninsubria.it">nicoletta.sabadini@uninsubria.it</a>), Simone Tini (<a href="mailto:simone.tini@uninsubria.it">simone.tini@uninsubria.it</a>), <a href="https://elenadilavore.github.io/">Elena Di Lavore</a> (<a href="mailto:elendi@ttu.ee">elendi@ttu.ee</a>) and Joshua Wrigley (<a href="mailto:jwrigley@uninsubria.it">jwrigley@uninsubria.it</a>).</p>
-        	
-	    <h4>Conference venue</h4>
-        	
-        	<p>The meeting will take place in the beautiful Chiostro di Sant'Abbondio, in the center of Como.</p>
-        	
-        	<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11124.524613523121!2d9.073459984568625!3d45.80863169019905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47869c4834b58901%3A0x676fdf362833e5b1!2sVia%20Sant&#39;Abbondio%2C%2012%2C%2022100%20Como%20CO%2C%20Italia!5e0!3m2!1sit!2see!4v1653923135115!5m2!1sit!2see" width="640" height="480"></iframe>
-        	        	
-        	<h4>Getting there</h4>
-	    <p> By plane: fly to any of the airports close to Milano (Malpensa, Orio al Serio, Linate) and then: </p>
-	    <ul>
-		    <li> From Malpensa: Take the train to Saronno and then change to Como Borghi. Tickets are available on <a href="https://www.trenord.it/en/">Trenord website</a>.</li>
-		    <li> From Orio al Serio: Take the bus to Milano Centrale and then take the train to Como San Giovanni. Train tickets are available on <a href="https://www.trenord.it/en/">Trenord website</a>.</li>
-		    <li> From Linate: Take the bus to Milano Centrale and then take the train to Como San Giovanni. Train tickets are available on <a href="https://www.trenord.it/en/">Trenord website</a>.</li>
-	    </ul>
+        <h2 id="localInformation">Local information</h2>
+        <p>The local organisers are Nicoletta Sabadini (<a href="mailto:nicoletta.sabadini@uninsubria.it">nicoletta.sabadini@uninsubria.it</a>), Simone Tini (<a href="mailto:simone.tini@uninsubria.it">simone.tini@uninsubria.it</a>), <a href="https://elenadilavore.github.io/">Elena Di Lavore</a> (<a href="mailto:elendi@ttu.ee">elendi@ttu.ee</a>) and Joshua Wrigley (<a href="mailto:jwrigley@uninsubria.it">jwrigley@uninsubria.it</a>).</p>
 
-<h4>Accommodation</h4>
-<p>Some suggestions can be found below.</p>
+        <h4>Conference venue</h4>
 
-<ul>
-<li> <a href="https://www.lizardhotel.com/en-gb/">Lizard hotel</a>, 12 minutes walking.</li>
-<li> <a href="https://hotelduecorti.com/en/">Hotel Due Corti</a>, 8 minutes walking.</li>
-<li> <a href="https://www.hotelfirenzecomo.com/">Albergo Firenze</a>, 16 minutes walking.</li>
-<li> <a href="http://postadesignhotel.com/en/">Posta hotel</a>, 17 minutes walking.</li>
-<li> <a href="https://www.inrivaallago.com/">In riva al lago B&B</a>, 25 minutes walking.</li>
-<li> <a href="https://ostellobello.com/en/hostel/como/">Ostello bello</a>, 18 minutes walking.</li>
-<li> <a href="http://www.arcissa.com/">Agriturismo Cascina Arcissa</a>, 17 minutes driving or 40 minutes by bus.</li>
-</ul>
-	    <p>If the above suggestions are fully booked, try looking on Airbnb or Booking. Cheaper accommodation can be found in nearby towns. 
-		    There are buses to and from almost all nearby towns. In particular there are direct buses from Bellagio, Menaggio and Erba stopping in every town on the way to Como. 
-		    Timetables can be checked on Google maps and tickets selling points can be found in almost every town (check the list on the <a href="https://asfautolinee.it/en/where-to-buy">bus company website</a>).
-		    There are also regional trains from Milano stopping in some towns on the way (tickets and timetables on <a href="https://www.trenord.it/en/">Trenord website</a>).</p>
-	   
-	    <p>Como is a touristic city. Please consider booking your accommodation early.</p>
+        <p>The meeting will take place in the beautiful Chiostro di Sant'Abbondio, in the center of Como.</p>
 
-<h4>Online participation</h4>
-<p>It will be possible to follow all talks online. Registered online participants have been contacted by e-mail with the virtual coordinates. Please let us know if you haven't received this information.</p>
-        
-	<h4>Social events</h4>
-	    <p>There will be welcome drinks on Wednesday night from 20:00 at <a href="https://goo.gl/maps/tnDuBiCxfDKe8u7GA">Doppio Malto</a>, Piazza San Fedele.
-	    <p>There will be an informal conference dinner on Thursday night at 20:00 preceded by a walking tour of Como from the conference venue to the restaurant <a href="https://goo.gl/maps/Pdkb8ZLdHJxhmwRr6">La vita è bella, viale Lecco</a>.</p>
-	    <p>There will be a boat tour on Saturday, starting at 9:00 from Como and ending at around 20:00. The schedule is flexible, so there will be the possibility of going back to Como earlier from any of the intermediate stops. We will visit Bellagio (arrive at 9:50), Varenna (arrive at 10:58), Villa Carlotta (arrive at 12:40), Tremezzo, Villa del Balbianello (arrive at 15:09 in Lenno), and Cernobbio (arrive at 17:25 or 18:35).</p>
-	
-	    <h2 id="participants">Participants</h2>
-	    
-	    
-	<h2 id="sponsorship">Sponsorship</h2>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11124.524613523121!2d9.073459984568625!3d45.80863169019905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47869c4834b58901%3A0x676fdf362833e5b1!2sVia%20Sant&#39;Abbondio%2C%2012%2C%2022100%20Como%20CO%2C%20Italia!5e0!3m2!1sit!2see!4v1653923135115!5m2!1sit!2see" width="640" height="480"></iframe>
 
-	<p><img class="sponsor" src="uninsubria.png"/></p>
+        <h4>Getting there</h4>
+        <p> By plane: fly to any of the airports close to Milano (Malpensa, Orio al Serio, Linate) and then: </p>
+        <ul>
+          <li> From Malpensa: Take the train to Saronno and then change to Como Borghi. Tickets are available on <a href="https://www.trenord.it/en/">Trenord website</a>.</li>
+          <li> From Orio al Serio: Take the bus to Milano Centrale and then take the train to Como San Giovanni. Train tickets are available on <a href="https://www.trenord.it/en/">Trenord website</a>.</li>
+          <li> From Linate: Take the bus to Milano Centrale and then take the train to Como San Giovanni. Train tickets are available on <a href="https://www.trenord.it/en/">Trenord website</a>.</li>
+        </ul>
 
-          <h2 id="deferral">Deferral</h2>
+        <h4>Accommodation</h4>
+        <p>Some suggestions can be found below.</p>
 
-          <p>The intention is for <i>SYCO</i> to be a community meeting, where people have enough time to explain their ideas, and with a friendly and non-competitive atmosphere. To encourage this, in the event that more submissions are received of an acceptable standard than can be accommodated in the timetable, the programme committee may choose to <i>defer</i> some submissions to a future meeting, rather than reject them. This would be done based largely on submission order, giving an incentive for early submission, but would also take into account other requirements, such as ensuring a broad and inclusive scientific programme. Deferred submissions can then be re-submitted to any future <i>SYCO</i> meeting, where they will be prioritised for inclusion in the programme, and where they will not need to be re-reviewed. Meetings are held sufficiently frequently to avoid a backlog of deferred papers.</p>
+        <ul>
+          <li> <a href="https://www.lizardhotel.com/en-gb/">Lizard hotel</a>, 12 minutes walking.</li>
+          <li> <a href="https://hotelduecorti.com/en/">Hotel Due Corti</a>, 8 minutes walking.</li>
+          <li> <a href="https://www.hotelfirenzecomo.com/">Albergo Firenze</a>, 16 minutes walking.</li>
+          <li> <a href="http://postadesignhotel.com/en/">Posta hotel</a>, 17 minutes walking.</li>
+          <li> <a href="https://www.inrivaallago.com/">In riva al lago B&B</a>, 25 minutes walking.</li>
+          <li> <a href="https://ostellobello.com/en/hostel/como/">Ostello bello</a>, 18 minutes walking.</li>
+          <li> <a href="http://www.arcissa.com/">Agriturismo Cascina Arcissa</a>, 17 minutes driving or 40 minutes by bus.</li>
+        </ul>
+        <p>If the above suggestions are fully booked, try looking on Airbnb or Booking. Cheaper accommodation can be found in nearby towns.
+          There are buses to and from almost all nearby towns. In particular there are direct buses from Bellagio, Menaggio and Erba stopping in every town on the way to Como.
+          Timetables can be checked on Google maps and tickets selling points can be found in almost every town (check the list on the <a href="https://asfautolinee.it/en/where-to-buy">bus company website</a>).
+          There are also regional trains from Milano stopping in some towns on the way (tickets and timetables on <a href="https://www.trenord.it/en/">Trenord website</a>).</p>
 
-          <h2 id="submissions">Submissions</h2>
-	    
-	    <p>Submissions are by EasyChair, via the <i>SYCO 9</i> submission page: <a href="https://easychair.org/my/conference?conf=syco9">https://easychair.org/my/conference?conf=syco9</a>.
+        <p>Como is a touristic city. Please consider booking your accommodation early.</p>
 
-            <p>Submissions should present research results in sufficient detail to allow them to be properly considered by members of the programme committee, who will assess their interest to the <i>SYCO</i> community. We encourage the submission of work in progress, as well as mature results. There are no proceedings, so work can be submitted even if it has been previously published, or has been submitted for consideration elsewhere. There is no specific formatting requirement, and no page limit, although for long submissions authors should be aware that reviewers will not be able to read the entire document in detail. Think creatively&mdash;you could submit a recent paper, draft notes of a project in progress, or even a recent Masters or PhD thesis.</p>
+        <h4>Online participation</h4>
+        <p>It will be possible to follow all talks online. Registered online participants have been contacted by e-mail with the virtual coordinates. Please let us know if you haven't received this information.</p>
 
-            <p>If you have a submission which was deferred from a previous <i>SYCO</i> meeting, it will not automatically be considered for this event; if you would like to present it, you must submit it again through EasyChair. Such a submission will be prioritised for inclusion in the scientific programme. When submitting, append the words "DEFERRED FROM SYCO X" to the title of your paper, replacing "X" with the appropriate meeting number. There is no need to attach any documents.</p>
+        <h4>Social events</h4>
+        <p>There will be welcome drinks on Wednesday night from 20:00 at <a href="https://goo.gl/maps/tnDuBiCxfDKe8u7GA">Doppio Malto</a>, Piazza San Fedele.
+        <p>There will be an informal conference dinner on Thursday night at 20:00 preceded by a walking tour of Como from the conference venue to the restaurant <a href="https://goo.gl/maps/Pdkb8ZLdHJxhmwRr6">La vita è bella, viale Lecco</a>.</p>
+        <p>There will be a boat tour on Saturday, starting at 9:00 from Como and ending at around 20:00. The schedule is flexible, so there will be the possibility of going back to Como earlier from any of the intermediate stops. We will visit Bellagio (arrive at 9:50), Varenna (arrive at 10:58), Villa Carlotta (arrive at 12:40), Tremezzo, Villa del Balbianello (arrive at 15:09 in Lenno), and Cernobbio (arrive at 17:25 or 18:35).</p>
 
-            <h2 id="pc">Programme committee</h2>
+        <h2 id="participants">Participants</h2>
+        <p>Participants, in person or online, include:</p>
+        <ul>
+          <li>Amar Hadzihasanovic, Tallinn University of Technology</li>
+          <li>Amartya Shekhar Dubey, National Institute of Science Education and Research, India</li>
+          <li>Andrée Ehresmann, Université de Picardie Jule Verne, LAMFA</li>
+          <li>Andrew Slattery, University of Leeds</li>
+          <li>Calin Tataru, University of Cambridge</li>
+          <li>César Leonardo, ufpe</li>
+          <li>Chandan Singh, Universiy of Melbourne</li>
+          <li>Chiara Sarti, Computer Laboratory, University of Cambridge</li>
+          <li>Dave Bowman, University of Edinburgh</li>
+          <li>David Dalrymple, Oxford University</li>
+          <li>Davide Castelnovo, Università di Udine</li>
+          <li>Dylan Braithwaite, University of Strathclyde</li>
+          <li>Dylan McDermott, Reykjavik University</li>
+          <li>Elena Di Lavore, Tallinn University of Technology</li>
+          <li>Elif Uskuplu, University of Southern California</li>
+          <li>Francesca Guffanti, Università degli Studi di Milano</li>
+          <li>Gabriele Lobbia, Masaryk University</li>
+          <li>George Kaye, University of Birmingham</li>
+          <li>Greta Coraglia, University of Genoa</li>
+          <li>Ioannis Markakis, University of Cambrdige</li>
+          <li>Ishan Dasgupta Samarendra, Shiv Nadar Unversity</li>
+          <li>Ishan Gunjal, Indian Institute of Space Science and Technology</li>
+          <li>Jakob von Raumer, Karlsruhe Institute of Technology</li>
+          <li>Jamie Vicary, University of Cambridge</li>
+          <li>Jeremy Gibbons, University of Oxford</li>
+          <li>John Power, Macquarie University</li>
+          <li>John Stell, University of Leeds</li>
+          <li>John van de Wetering, University of Oxford</li>
+          <li>Joshua Wrigley, University of Insubria</li>
+          <li>Layla Sorkatti, University of Khartoum</li>
+          <li>Leo Lobski, University College London</li>
+          <li>Lia Yeh, University of Oxford</li>
+          <li>Lukas Heidemann, University of Oxford</li>
+          <li>Makoto Hamana, Gunma University, Japan</li>
+          <li>Manuel Araújo, University of Cambridge</li>
+          <li>Mario Román, Tallinn University of Technology</li>
+          <li>Marius Henry, ETH Zürich</li>
+          <li>Mateo Carmona, Independent</li>
+          <li>Matt Earnshaw, Tallinn University of Technology</li>
+          <li>Mattia Bergomi, None</li>
+          <li>Maximilian Doré, University of Oxford</li>
+          <li>Michael Wright, The Archive Trust for Research</li>
+          <li>Miloslav Štěpán, Masaryk University</li>
+          <li>Morgan Rogers, Université Sorbonne Paris Nord</li>
+          <li>Nathan Haydon, Tallinn University of Technology</li>
+          <li>Nesta van der Schaaf, University of Edinburgh</li>
+          <li>Nick Hu, University of Oxford</li>
+          <li>Niels van der Weide, Radboud University</li>
+          <li>Niels Voorneveld, Tallinn University of Technology</li>
+          <li>Olivia Caramello, University of Insubria</li>
+          <li>Paolo Perrone, University of Oxford</li>
+          <li>Pawel Sobocinski, Tallinn University of Technology</li>
+          <li>Peter Hines, University of York</li>
+          <li>Pietro Vertechi, Independent Researcher</li>
+          <li>Pim de Haan, University of Amsterdam / Qualcomm AI Research</li>
+          <li>Rob Allen, University of Bristol</li>
+          <li>Robert Paré, Dalhousie University</li>
+          <li>Ross Duncan, Quantinuum</li>
+          <li>Sebastian Stengele, University of Innsbruck</li>
+          <li>Simona Paoli, University of Aberdeen</li>
+          <li>Sina Hazratpour, Johns Hopkins University</li>
+          <li>Sofia Walters, Scuola Normale Superiore</li>
+          <li>Soichiro Fujii, Macquarie University</li>
+          <li>Sophie Bleau, University of Edinburgh</li>
+          <li>Suraj Dash, UT Austin</li>
+          <li>Takanori Adachi, Tokyo Metropolitan University</li>
+          <li>Tom Hirschowitz, CNRS and Université Savoie Mont Blanc</li>
+          <li>Tomáš Gonda, University of Innsbruck</li>
+          <li>Valeria de Paiva, Topos Institute</li>
+          <li>Vikraman Choudhury, University of Glasgow</li>
+          <li>Vincent Wang, Oxford & Quantinuum</li>
+          <li>VitalyR, Beijing Jiaotong University</li>
+          <li>Yiqi Xu, Universität Stuttgart</li>
+          <li>Ze'ev Shirazi, University of Oxford</li>
+        </ul>
 
-	    <ul>
-	      <li><a href="https://pages.cpsc.ucalgary.ca/~robin/">Robin Cockett</a>, University of Calgary</li>
-	      <li><a href="https://elenadilavore.github.io/">Elena Di Lavore</a>, Tallinn University of Technology</li>
-	      <li><a href="http://personal.strath.ac.uk/ross.duncan/">Ross Duncan</a>, University of Strathclyde</li>
-	      <li><a href="https://homepages.inf.ed.ac.uk/rfurber/">Robert Furber</a>, University of Edinburgh</li>
-	      <li><a href="https://ioc.ee/~amar/">Amar Hadzihasanovic</a>, Tallinn University of Technology</li>
-	      <li><a href="https://homepages.inf.ed.ac.uk/cheunen/">Chris Heunen</a>, University of Edinburgh</li>
-	      <li><a href="https://www.cs.ox.ac.uk/people/aleks.kissinger/">Alex Kissinger</a>, University of Oxford</li>
-	      <li><a href="https://research-information.bris.ac.uk/en/persons/martha-lewis">Martha Lewis</a>, University of Bristol</li>
-	      <li><a href="https://sites.google.com/view/jadeedenstarmaster/home?authuser=0">Jade Master</a>, University of Strathclyde</li>
-	      <li><a href="https://theory.leeds.ac.uk/konstantinos-meichanetzidis/">Konstantinos Meichanetzidis</a>, Quantinuum</li>
-	      <li><a href="https://www.lix.polytechnique.fr/Labo/Samuel.Mimram/">Samuel Mimram</a>, École Polytechnique</li>
-	      <li><a href="https://sites.google.com/view/simona-paoli-webpage">Simona Paoli</a>, University of Aberdeen</li>
-	      <li><a href="https://msadrzadeh.com/">Mehrnoosh Sadrzadeh</a>, University College London</li>
-	      <li><a href="https://www.ioc.ee/~pawel/">Pawel Sobocinski</a>, Tallinn University of Technology</li>
-              <li><a href="https://www.cl.cam.ac.uk/~jv258/">Jamie Vicary</a>, University of Cambridge</li>
-              <li><a href="https://vdwetering.name/">John van de Wetering</a>, Radboud University (chair)</li>
-	    </ul>
+        <h2 id="sponsorship">Sponsorship</h2>
 
-            <h2 id="sc">Steering committee</h2>
+        <p><img class="sponsor" src="uninsubria.png"/></p>
 
-            The symposium is managed by the following people. If you have a general question about SYCO, or if you want to propose to host a future version, please get in touch with a member of the steering committee.
-            <ul>
-              <li><a href="http://personal.strath.ac.uk/ross.duncan/">Ross Duncan</a>, University of Strathclyde</li>
-              <li><a href="http://homepages.inf.ed.ac.uk/cheunen/">Chris Heunen</a>, University of Edinburgh</li>
-              <li><a href="https://quantum.univ-grenoble-alpes.fr/fostering-the-ecosystem/our-chairs-of-excellence/quantum-computing/horsman-dominic-734445.htm">Dominic Horsman</a>, University of Grenoble</li>
-              <li><a href="https://www.cs.ox.ac.uk/people/aleks.kissinger/">Aleks Kissinger</a>, University of Oxford</li>
-              <li><a href="http://www.lix.polytechnique.fr/Labo/Samuel.Mimram//">Samuel Mimram</a>, &Eacute;cole Polytechnique</li>
-              <li><a href="https://www.abdn.ac.uk/people/Simona.Paoli">Simona Paoli</a>, University of Aberdeen</li>
-              <li><a href="https://msadrzadeh.com/">Mehrnoosh Sadrzadeh</a>, University College London</li>
-              <li><a href="https://www.ioc.ee/~pawel/">Pawel Sobocinski</a>, Tallinn University of Technology</li>
-              <li><a href="https://www.cl.cam.ac.uk/~jv258/">Jamie Vicary</a>, University of Cambridge</li>
-            </ul>
+        <h2 id="deferral">Deferral</h2>
 
-          </div>
-          <div id="d"></div>
-        </div>
-      </body>
+        <p>The intention is for <i>SYCO</i> to be a community meeting, where people have enough time to explain their ideas, and with a friendly and non-competitive atmosphere. To encourage this, in the event that more submissions are received of an acceptable standard than can be accommodated in the timetable, the programme committee may choose to <i>defer</i> some submissions to a future meeting, rather than reject them. This would be done based largely on submission order, giving an incentive for early submission, but would also take into account other requirements, such as ensuring a broad and inclusive scientific programme. Deferred submissions can then be re-submitted to any future <i>SYCO</i> meeting, where they will be prioritised for inclusion in the programme, and where they will not need to be re-reviewed. Meetings are held sufficiently frequently to avoid a backlog of deferred papers.</p>
+
+        <h2 id="submissions">Submissions</h2>
+
+        <p>Submissions are by EasyChair, via the <i>SYCO 9</i> submission page: <a href="https://easychair.org/my/conference?conf=syco9">https://easychair.org/my/conference?conf=syco9</a>.
+
+        <p>Submissions should present research results in sufficient detail to allow them to be properly considered by members of the programme committee, who will assess their interest to the <i>SYCO</i> community. We encourage the submission of work in progress, as well as mature results. There are no proceedings, so work can be submitted even if it has been previously published, or has been submitted for consideration elsewhere. There is no specific formatting requirement, and no page limit, although for long submissions authors should be aware that reviewers will not be able to read the entire document in detail. Think creatively&mdash;you could submit a recent paper, draft notes of a project in progress, or even a recent Masters or PhD thesis.</p>
+
+        <p>If you have a submission which was deferred from a previous <i>SYCO</i> meeting, it will not automatically be considered for this event; if you would like to present it, you must submit it again through EasyChair. Such a submission will be prioritised for inclusion in the scientific programme. When submitting, append the words "DEFERRED FROM SYCO X" to the title of your paper, replacing "X" with the appropriate meeting number. There is no need to attach any documents.</p>
+
+        <h2 id="pc">Programme committee</h2>
+
+        <ul>
+          <li><a href="https://pages.cpsc.ucalgary.ca/~robin/">Robin Cockett</a>, University of Calgary</li>
+          <li><a href="https://elenadilavore.github.io/">Elena Di Lavore</a>, Tallinn University of Technology</li>
+          <li><a href="http://personal.strath.ac.uk/ross.duncan/">Ross Duncan</a>, University of Strathclyde</li>
+          <li><a href="https://homepages.inf.ed.ac.uk/rfurber/">Robert Furber</a>, University of Edinburgh</li>
+          <li><a href="https://ioc.ee/~amar/">Amar Hadzihasanovic</a>, Tallinn University of Technology</li>
+          <li><a href="https://homepages.inf.ed.ac.uk/cheunen/">Chris Heunen</a>, University of Edinburgh</li>
+          <li><a href="https://www.cs.ox.ac.uk/people/aleks.kissinger/">Alex Kissinger</a>, University of Oxford</li>
+          <li><a href="https://research-information.bris.ac.uk/en/persons/martha-lewis">Martha Lewis</a>, University of Bristol</li>
+          <li><a href="https://sites.google.com/view/jadeedenstarmaster/home?authuser=0">Jade Master</a>, University of Strathclyde</li>
+          <li><a href="https://theory.leeds.ac.uk/konstantinos-meichanetzidis/">Konstantinos Meichanetzidis</a>, Quantinuum</li>
+          <li><a href="https://www.lix.polytechnique.fr/Labo/Samuel.Mimram/">Samuel Mimram</a>, École Polytechnique</li>
+          <li><a href="https://sites.google.com/view/simona-paoli-webpage">Simona Paoli</a>, University of Aberdeen</li>
+          <li><a href="https://msadrzadeh.com/">Mehrnoosh Sadrzadeh</a>, University College London</li>
+          <li><a href="https://www.ioc.ee/~pawel/">Pawel Sobocinski</a>, Tallinn University of Technology</li>
+          <li><a href="https://www.cl.cam.ac.uk/~jv258/">Jamie Vicary</a>, University of Cambridge</li>
+          <li><a href="https://vdwetering.name/">John van de Wetering</a>, Radboud University (chair)</li>
+        </ul>
+
+        <h2 id="sc">Steering committee</h2>
+
+        The symposium is managed by the following people. If you have a general question about SYCO, or if you want to propose to host a future version, please get in touch with a member of the steering committee.
+        <ul>
+          <li><a href="http://personal.strath.ac.uk/ross.duncan/">Ross Duncan</a>, University of Strathclyde</li>
+          <li><a href="http://homepages.inf.ed.ac.uk/cheunen/">Chris Heunen</a>, University of Edinburgh</li>
+          <li><a href="https://quantum.univ-grenoble-alpes.fr/fostering-the-ecosystem/our-chairs-of-excellence/quantum-computing/horsman-dominic-734445.htm">Dominic Horsman</a>, University of Grenoble</li>
+          <li><a href="https://www.cs.ox.ac.uk/people/aleks.kissinger/">Aleks Kissinger</a>, University of Oxford</li>
+          <li><a href="http://www.lix.polytechnique.fr/Labo/Samuel.Mimram//">Samuel Mimram</a>, &Eacute;cole Polytechnique</li>
+          <li><a href="https://www.abdn.ac.uk/people/Simona.Paoli">Simona Paoli</a>, University of Aberdeen</li>
+          <li><a href="https://msadrzadeh.com/">Mehrnoosh Sadrzadeh</a>, University College London</li>
+          <li><a href="https://www.ioc.ee/~pawel/">Pawel Sobocinski</a>, Tallinn University of Technology</li>
+          <li><a href="https://www.cl.cam.ac.uk/~jv258/">Jamie Vicary</a>, University of Cambridge</li>
+        </ul>
+
+      </div>
+      <div id="d"></div>
+    </div>
+  </body>
