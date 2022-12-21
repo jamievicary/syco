@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <style>
+
+  * {
+   font-family: Verdana, Geneva, sans-serif;
+ }
+
+body {
+	background-color: #9ddcc3;
+}
+
+ #grid {
+   width: 100%;
+   display: grid;
+   grid-column-gap: 10px;
+   grid-template-columns: auto 1000px auto;
+ }
+
+ #logo {
+   width: 200px;
+   margin-right: -50px;
+   border-width: 1px;
+   border-color: black;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+
+ #c {
+   overflow: auto;
+   text-align: justify;
+ }
+
+ #title {
+
+ }
+
+ #alert {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+ 
+ #table.logoTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+	margin: 5px
+}
+
+td {
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+img.speaker {
+	height: 400px;
+}
+
+img.sponsor {
+	height: 80px;
+	padding: 8px;
+	/*background-color: white;*/
+}
+
+h2 {
+	margin-top: 30px;
+}
+
+#iframe.gmap {
+  border: none;
+  overflow: hidden;
+}
+
+#schedule>tbody>tr>td {
+	text-align: left;
+}
+
+#schedule>tbody>tr>td, #schedule>tbody>tr>th {
+	padding-left: 5px;
+}
+
+#schedule>tbody>tr>td {
+	border: 1px solid black;
+	border-spacing: 0px;
+}
+
+#schedule {
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+#schedule>tbody>tr {
+	height: 50px;
+}
+
+#schedule>tbody>tr>td {
+	width: 500px;
+  background-color: #6CCEA3;
+}
+
+#schedule .session {
+  text-align: right;
+  background-color: #5BC894;
+}
+
+#schedule .invited {
+  background-color: #5BC894;
+}
+
+#schedule .break {
+  font-weight: bold;
+  text-align: center;
+  background-color: #267345;
+}
+
+.emphasise {
+  color: red;
+  font-weight: bold;
+}
+	  
+@media only screen and (max-width: 1020px) {
+	#grid {
+		display: table-cell;
+		width: 100%;
+		padding: 0 1em;
+	}
+}
+
+.talk {
+  position: relative;
+  display: inline-block;
+}
+.abstract {
+  width: 475px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: #bfdfbf;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+.abstract:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  right: calc(50% - 10px);
+  top: -8px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #bfdfbf transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.talk:hover .abstract {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+}
+
+</style>
+<title>SYCO 10</title>
+</head>
+<body>
+  <div id="grid">
+    <div id="a"></div>
+    <div id="c">
+      <table id="logoTable">
+        <tr>
+          <td><a href="index.html"><img id="logo" src="logo_web.svg" alt="SYCO logo"></a></td>
+          <td>
+           <h1><a href="index.html">Tenth Symposium on Compositional Structures (SYCO 10)</a></h1>
+           <p><b><i>Edinburgh, UK<br><span>19-20 December 2022</span></i></b></p>
+         </td>
+       </tr>
+     </table>
+
+     <p>
+      <img style="width:100%" src="pictures/lunch.jpg" alt="Lunch" title="Lunch">
+      <img style="width:100%" src="pictures/baez.jpg" alt="John Baez" title="John Baez">
+      <img style="width:100%" src="pictures/chanavat.jpg" alt="Clemence Chanavat" title="Clemence Chanavat">
+      <img style="width:100%" src="pictures/gavranovic.jpg" alt="Bruno Gavranovic" title="Bruno Gavranovic">
+      <img style="width:100%" src="pictures/gonda.jpg" alt="Tomas Gonda" title="Tomas Gonda">
+      <img style="width:100%" src="pictures/hamana.jpg" alt="Makoto Hamana" title="Makoto Hamana">
+      <img style="width:100%" src="pictures/hines.jpg" alt="Peter Hines" title="Peter Hines">
+      <img style="width:100%" src="pictures/kura.jpg" alt="Satoshi Kura" title="Satoshi Kura">
+      <img style="width:100%" src="pictures/lemonnier.jpg" alt="Louis Lemonnier" title="Louis Lemonnier">
+      <img style="width:100%" src="pictures/lobski.jpg" alt="Leo Lobski" title="Leo Lobski">
+      <img style="width:100%" src="pictures/master.jpg" alt="Jade Edenstar Master" title="Jade Edenstar Master">
+      <img style="width:100%" src="pictures/morehouse.jpg" alt="Edward Morehouse" title="Edward Morehose">
+      <img style="width:100%" src="pictures/omidvar.jpg" alt="Giti Omidvar" title="Giti Omidvar">
+      <img style="width:100%" src="pictures/rice.jpg" alt="Alex Rice" title="Alex Rice">
+      <img style="width:100%" src="pictures/roff.jpg" alt="Emily Roff" title="Emily Roff">
+      <img style="width:100%" src="pictures/tataru.jpg" alt="Calin Tataru" title="Calin Tataru">
+      <img style="width:100%" src="pictures/vicary.jpg" alt="Jamie Vicary" title="Jamie Vicary">
+      <img style="width:100%" src="pictures/zapata.jpg" alt="Carlos Zapata-Carratala" title="Carlos Zapata-Carratala">
+     </p>
+
+
+</div>
+<div id="d"></div>
+</div>
+</body>
