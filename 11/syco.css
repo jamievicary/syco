@@ -1,0 +1,158 @@
+* {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+body {
+  background-color: #9ddcc3;
+}
+
+#grid {
+  width: 100%;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto 1000px auto;
+}
+
+#logo {
+  width: 200px;
+  margin-right: -50px;
+  border-width: 1px;
+  border-color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#c {
+  overflow: auto;
+  text-align: justify;
+}
+
+#title {
+
+}
+
+#alert {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+#table.logoTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  margin: 5px
+}
+
+td {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img.speaker {
+  height: 400px;
+}
+
+img.sponsor {
+  height: 80px;
+  padding: 8px;
+  /*background-color: white;*/
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+#iframe.gmap {
+  border: none;
+  overflow: hidden;
+}
+
+#schedule>tbody>tr>td {
+  text-align: left;
+}
+
+#schedule>tbody>tr>td, #schedule>tbody>tr>th {
+  padding-left: 5px;
+}
+
+#schedule>tbody>tr>td {
+  border: 1px solid black;
+  border-spacing: 0px;
+}
+
+#schedule {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+#schedule>tbody>tr {
+  height: 50px;
+}
+
+#schedule>tbody>tr>td {
+  width: 500px;
+  background-color: #6CCEA3;
+}
+
+#schedule .session {
+  text-align: right;
+  background-color: #5BC894;
+}
+
+#schedule .invited {
+  background-color: #5BC894;
+}
+
+#schedule .break {
+  font-weight: bold;
+  text-align: center;
+  background-color: #267345;
+}
+
+.emphasise {
+  color: red;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1020px) {
+  #grid {
+    display: table-cell;
+    width: 100%;
+    padding: 0 1em;
+  }
+}
+
+.talk {
+  position: relative;
+  display: inline-block;
+}
+.abstract {
+  width: 475px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: #bfdfbf;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+.abstract:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  right: calc(50% - 10px);
+  top: -8px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #bfdfbf transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.talk:hover .abstract {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+}
