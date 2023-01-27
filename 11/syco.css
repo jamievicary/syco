@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #9ddcc3;
+  background-color: #FBEEE6;
 }
 
 #grid {
@@ -40,6 +40,14 @@ body {
 #table.logoTable {
   margin-left: auto;
   margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 li {
