@@ -59,7 +59,7 @@ SUBMISSION INSTRUCTIONS
 =======================
 
 Submissions are by OpenReview, via the SYCO 11 submission page:
-https://openreview.net/group?id=cl.cam.ac.uk/SYCO/2022/Symposium
+https://openreview.net/group?id=cl.cam.ac.uk/SYCO/2023/Symposium
 
 Submission is easy, with no format requirements or page restrictions. The
 meeting does not have proceedings, so work can be submitted even if it has been
