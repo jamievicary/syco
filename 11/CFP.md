@@ -83,7 +83,7 @@ number. There is no need to attach any documents.
 PROGRAMME COMMITTEE
 ===================
 
-The PC chair is Bryce Clarke, École Polytechnique. The Programme Committee will
+The PC chair is Bryce Clarke, Inria Saclay. The Programme Committee will
 be announced soon.
 
 STEERING COMMITTEE
