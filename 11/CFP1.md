@@ -80,13 +80,6 @@ again through OpenReview. When submitting, append the words "DEFERRED FROM SYCO
 X" to the title of your paper, replacing "X" with the appropriate meeting
 number. There is no need to attach any documents.
 
-INVITED SPEAKERS
-================
-
-The invited speakers are
-- Daniela Petrisan (IRIF, Université de Paris)
-- Morgan Rogers (LIPN, Université de Paris 13)
-
 PROGRAMME COMMITTEE
 ===================
 
