@@ -80,42 +80,42 @@ h2 {
   overflow: hidden;
 }
 
-#schedule>tbody>tr>td {
+.schedule>tbody>tr>td {
   text-align: left;
 }
 
-#schedule>tbody>tr>td, #schedule>tbody>tr>th {
+.schedule>tbody>tr>td, .schedule>tbody>tr>th {
   padding-left: 5px;
 }
 
-#schedule>tbody>tr>td {
+.schedule>tbody>tr>td {
   border: 1px solid black;
   border-spacing: 0px;
 }
 
-#schedule {
+.schedule {
   border-collapse: collapse;
   margin: 30px;
   width: 100%;
 }
 
-#schedule>tbody>tr {
+.schedule>tbody>tr {
   height: 50px;
 }
 
-#schedule>tbody>tr>td {
+.schedule>tbody>tr>td {
   width: 500px;
   background-color: #9CFED3;
 }
 
-#schedule .session {
+.schedule .session {
   text-align: right;
 }
 
-#schedule .invited {
+.schedule .invited {
 }
 
-#schedule .break {
+.schedule .break {
   font-weight: bold;
   text-align: center;
   background-color: #469365;
