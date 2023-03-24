@@ -65,7 +65,12 @@ img.speaker {
   height: 300px;
 }
 
-img.sponsor {
+#sponsors {
+  display: flex;
+  justify-content: center;
+}
+
+#sponsors>img {
   height: 80px;
   padding: 8px;
   /*background-color: white;*/
