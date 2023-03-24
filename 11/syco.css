@@ -95,9 +95,8 @@ h2 {
 
 #schedule {
   border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  margin: 30px;
+  width: 100%;
 }
 
 #schedule>tbody>tr {
@@ -106,22 +105,20 @@ h2 {
 
 #schedule>tbody>tr>td {
   width: 500px;
-  background-color: #6CCEA3;
+  background-color: #9CFED3;
 }
 
 #schedule .session {
   text-align: right;
-  background-color: #5BC894;
 }
 
 #schedule .invited {
-  background-color: #5BC894;
 }
 
 #schedule .break {
   font-weight: bold;
   text-align: center;
-  background-color: #267345;
+  background-color: #469365;
 }
 
 .emphasise {
@@ -138,7 +135,7 @@ h2 {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  background-color: #bfdfbf;
+  background-color: #dfffdf;
   padding: 0.5rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   text-align: justify;
@@ -151,7 +148,7 @@ h2 {
   top: -8px;
   border-style: solid;
   border-width: 0 10px 10px 10px;
-  border-color: transparent transparent #bfdfbf transparent;
+  border-color: transparent transparent #dfffdf transparent;
   transition-duration: 0.3s;
   transition-property: transform;
 }
