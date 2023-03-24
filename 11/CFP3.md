@@ -15,7 +15,7 @@ of meetings aiming to support the growing community of researchers interested in
 the phenomenon of compositionality, from both applied and abstract perspectives,
 and in particular where category theory serves as a unifying common
 language. Previous SYCO events have been held in Birmingham, Strathclyde,
-Oxford, Chapman, Leicester, Tallinn, and Como.
+Oxford, Chapman, Leicester, Tallinn, Como and Edinburgh.
 
 The program consists of 2 invited talks and 14 contributed talks. We will try to
 offer the possibility of following the talks online.
