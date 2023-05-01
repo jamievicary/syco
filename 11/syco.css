@@ -43,6 +43,10 @@ body {
   margin-right: auto;
 }
 
+#photos>img {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
