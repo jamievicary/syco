@@ -35,6 +35,22 @@ div.column {
   background-repeat: repeat-y;
 }
 
+#andrewpitts {
+  align: center;
+  font-size: 60px;
+}
+
+#name1 {
+  float: left;
+}
+#name2 {
+  float: left;
+  transform: scale(-1, 1);
+}
+#name3 {
+  float: left;
+}
+
 #logo {
   width: 200px;
   margin-right: -50px;
