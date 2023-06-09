@@ -36,19 +36,24 @@ div.column {
 }
 
 #andrewpitts {
-  align: center;
-  font-size: 60px;
+  text-align: center;
+  font-size: 70px;
 }
 
 #name1 {
-  float: left;
+  display:inline-block;
 }
 #name2 {
-  float: left;
+  display:inline-block;
   transform: scale(-1, 1);
 }
 #name3 {
-  float: left;
+  display:inline-block;
+}
+#name4 {
+  display:inline-block;
+  margin-left: 0px;
+  padding-left: 3px;
 }
 
 #logo {
@@ -162,8 +167,10 @@ td.extra.bottom {
 }
 
 #schedule>tbody>tr>td:first-child {
-    width: 90px;
-    font-size: small;
+    width: 130px;
+    margin-right: 0px;
+    padding-right: 0px;
+    xxfont-size: small;
 }
 
 #schedule>tbody>tr>td:not(:first-child) {
