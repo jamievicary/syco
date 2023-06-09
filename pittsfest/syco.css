@@ -160,6 +160,7 @@ td.extra.bottom {
 
 #schedule>thead>tr>th {
     padding-bottom: 10px;
+    padding-left: 7px;
 }
 
 #schedule>tbody>tr {
