@@ -5,6 +5,28 @@ body {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding: 25px;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  #header {
+    flex-direction: row;
+  }
+}
+
+#header h1 {
+  padding: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 #grid {
@@ -16,7 +38,6 @@ body {
 
 #logo {
   width: 200px;
-  margin-right: -50px;
   border-width: 1px;
   border-color: black;
   margin-top: 20px;
@@ -26,10 +47,6 @@ body {
 #c {
   overflow: auto;
   text-align: justify;
-}
-
-#title {
-
 }
 
 #alert {
@@ -119,9 +136,6 @@ h2 {
 
 .schedule .session {
   text-align: right;
-}
-
-.schedule .invited {
 }
 
 .schedule .break {
