@@ -1,0 +1,172 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: justify;
+  background-color: #9ecfff;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#grid {
+  width: 100%;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto 1000px auto;
+}
+
+#logo {
+  width: 200px;
+  margin-right: -50px;
+  border-width: 1px;
+  border-color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#c {
+  overflow: auto;
+  text-align: justify;
+}
+
+#title {
+
+}
+
+#alert {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+#table.logoTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#photos>img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  margin: 5px
+}
+
+td {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img.speaker {
+  height: 300px;
+}
+
+#sponsors {
+  display: flex;
+  justify-content: center;
+}
+
+#sponsors>img {
+  height: 80px;
+  padding: 8px;
+  /*background-color: white;*/
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+#iframe.gmap {
+  border: none;
+  overflow: hidden;
+}
+
+.schedule>tbody>tr>td {
+  text-align: left;
+}
+
+.schedule>tbody>tr>td, .schedule>tbody>tr>th {
+  padding-left: 5px;
+}
+
+.schedule>tbody>tr>td {
+  border: 1px solid black;
+  border-spacing: 0px;
+}
+
+.schedule {
+  border-collapse: collapse;
+  margin: 30px;
+  width: 100%;
+}
+
+.schedule>tbody>tr {
+  height: 50px;
+}
+
+.schedule>tbody>tr>td {
+  width: 500px;
+  background-color: #9CFED3;
+}
+
+.schedule .session {
+  text-align: right;
+}
+
+.schedule .invited {
+}
+
+.schedule .break {
+  font-weight: bold;
+  text-align: center;
+  background-color: #469365;
+}
+
+.emphasise {
+  color: red;
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.talk {
+  position: relative;
+  display: inline-block;
+}
+.abstract {
+  width: 475px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: #dfffdf;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  text-align: justify;
+}
+.abstract:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  right: calc(50% - 10px);
+  top: -8px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #dfffdf transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.talk:hover .abstract {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+}
