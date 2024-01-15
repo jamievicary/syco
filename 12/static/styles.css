@@ -33,7 +33,8 @@ body {
   padding-bottom: 0px;
 }
 
-#location, #dates {
+#location,
+#dates {
   font-weight: bold;
   font-style: italic;
   font-size: 1.1em;
@@ -70,7 +71,7 @@ body {
   margin-right: auto;
 }
 
-#photos>img {
+#photos > img {
   width: 100%;
 }
 
@@ -83,7 +84,7 @@ a:hover {
 }
 
 li {
-  margin: 5px
+  margin: 5px;
 }
 
 td {
@@ -101,7 +102,7 @@ img.speaker {
   justify-content: center;
 }
 
-#sponsors>img {
+#sponsors > img {
   height: 80px;
   padding: 8px;
   /*background-color: white;*/
@@ -116,15 +117,16 @@ h2 {
   overflow: hidden;
 }
 
-.schedule>tbody>tr>td {
+.schedule > tbody > tr > td {
   text-align: left;
 }
 
-.schedule>tbody>tr>td, .schedule>tbody>tr>th {
+.schedule > tbody > tr > td,
+.schedule > tbody > tr > th {
   padding-left: 5px;
 }
 
-.schedule>tbody>tr>td {
+.schedule > tbody > tr > td {
   border: 1px solid black;
   border-spacing: 0px;
 }
@@ -135,13 +137,13 @@ h2 {
   width: 100%;
 }
 
-.schedule>tbody>tr {
+.schedule > tbody > tr {
   height: 50px;
 }
 
-.schedule>tbody>tr>td {
+.schedule > tbody > tr > td {
   width: 500px;
-  background-color: #9CFED3;
+  background-color: #9cfed3;
 }
 
 .schedule .session {
@@ -193,4 +195,28 @@ h2 {
   z-index: 10;
   opacity: 1;
   visibility: visible;
+}
+
+#organisers {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+#organisers > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person {
+  width: 230px;
+  padding-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+.affiliation {
+  font-style: italic;
 }
