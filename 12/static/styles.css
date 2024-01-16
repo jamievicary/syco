@@ -19,7 +19,7 @@ body {
   padding: 0 25px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   #header {
     flex-direction: row;
   }
@@ -31,13 +31,14 @@ body {
   margin-top: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
+  font-size: 1.75rem;
 }
 
 #location,
 #dates {
   font-weight: bold;
   font-style: italic;
-  font-size: 1.1em;
+  font-size: 1.25rem;
 }
 
 #grid {
@@ -201,7 +202,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 15px;
 }
 
 #organisers > div {
@@ -211,10 +212,9 @@ h2 {
 }
 
 .person {
-  width: 230px;
+  width: 160px;
   padding-bottom: 10px;
 }
-
 .name {
   font-weight: bold;
 }
