@@ -198,14 +198,14 @@ h2 {
   visibility: visible;
 }
 
-#organisers {
+.people {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 15px;
 }
 
-#organisers > div {
+.people > div {
   display: flex;
   flex-direction: column;
   align-items: center;
