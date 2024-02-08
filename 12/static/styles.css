@@ -221,3 +221,10 @@ h2 {
 .affiliation {
   font-style: italic;
 }
+
+.event {
+  font-weight: bold;
+}
+.past {
+  text-decoration: line-through;
+}
