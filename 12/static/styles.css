@@ -228,3 +228,20 @@ h2 {
 .past {
   text-decoration: line-through;
 }
+
+.invited-speakers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.invited-speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 50px;
+}
+
+.invited-speaker > img {
+  margin-bottom: 10px;
+}
