@@ -203,12 +203,17 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 15px;
+  text-align: center;
 }
 
 .people > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.person-box {
+  width: 190px;
 }
 
 .person {
