@@ -6,6 +6,41 @@
     <link rel="icon" href="./static/logo.svg" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SYCO 12</title>
+    <script>
+      function toggleAbstract(talk) {
+        var abstractElem = document.getElementById(talk + "-abstract");
+        if (abstractElem.classList.contains("abstract-hidden")) {
+          abstractElem.classList.remove("abstract-hidden");
+          abstractElem.classList.add("abstract-visible");
+        } else {
+          abstractElem.classList.add("abstract-hidden");
+          abstractElem.classList.remove("abstract-visible");
+        }
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+      integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+      crossorigin="anonymous"
+    />
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+      integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
   </head>
   <body>
     <div id="content">
@@ -317,7 +352,756 @@
 
       <h2 id="programme">Schedule</h2>
 
-      To be announced.
+      <p>The author marked with an asterisk * will be presenting the talk.</p>
+
+      <div class="schedule">
+        <h3 class="schedule-section-title">Monday 15 April</h3>
+        <div class="schedule-day">
+          <div class="schedule-item schedule-break">
+            <div class="schedule-break-details">
+              <div class="schedule-time">10:30-11:00</div>
+              <div><b>REGISTRATION</b></div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">11:00-12:00</div>
+              <div class="talk-authors">
+                <b>Miriam Backens*</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                Graphical rewriting of quantum computations using the
+                ZX-calculus and flow properties
+              </div>
+              <button class="talk-button" onClick="toggleAbstract('backens')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="backens-abstract" class="abstract abstract-hidden">
+              <div>This is an invited talk.</div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('backens')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">12:00-12:30</div>
+              <div class="talk-authors">
+                <b>Alexei Lisitsa, Andrew Fish</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                Automated Reasoning for Tangles with Quantum Verification
+                Applications
+              </div>
+              <button class="talk-button" onClick="toggleAbstract('lisitsa')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="lisitsa-abstract" class="abstract abstract-hidden">
+              <div>
+                We demonstrate utility of generic automated reasoning (AR)
+                methods in the computational topology domain, evidencing the
+                benefit of the use of existing AR machinery within the domain on
+                the one hand, whilst providing a pathway into a rich playground
+                with potential to drive future AR requirements. We also
+                contribute towards quantum software verification, via a recent
+                proposal to use tangles as a representation of a certain class
+                of quantum programs. The general methodology is to transform
+                tasks of equivalence of topological objects (tangles) into
+                equivalence of algebraic objects (pointed quandles) and those in
+                turn translate into AR tasks. To enhance trust in automated
+                checks, this can be followed by interpretation of AR outputs as
+                human-readable output, either in symbolic algebraic form
+                suitable for domain experts or ideally in visual topological
+                form, potentially suitable for all. We provide formalisation via
+                an appropriate class of labelled tangles (suitable for Quantum
+                Verification) with associated algebraic invariants (pointed
+                involutory quandles) and translate equivalence checking of these
+                invariants to equational reasoning tasks that are realised by
+                Prover 9 and Prover X. Furthermore, subsequent to automated
+                proof creation for quantum verification (QV) examples, we
+                demonstrate manual extraction of visual proof rules and visual
+                equivalence, utilising proof graphs produced by Prover X as a
+                bridging step, progressing towards progressing towards the
+                automation of human-readable visual proofs.
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('lisitsa')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-break">
+            <div class="schedule-break-details">
+              <div class="schedule-time">12:30-13:30</div>
+              <div><b>LUNCH</b></div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">13:30-14:00</div>
+              <div class="talk-authors">
+                <b>Flavien Breuvart, Quan Long, Vladimir Zamdzhiev</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                On the Centre of Strong Graded Monads
+              </div>
+              <button class="talk-button" onClick="toggleAbstract('breuvart')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="breuvart-abstract" class="abstract abstract-hidden">
+              <div>
+                We introduce the notion of “centre” for pomonoid-graded strong
+                monads which generalizes some previous work that describes the
+                centre of (not graded) strong monads. We show that, whenever the
+                centre exists, this determines a pomonoid-graded commutative
+                submonad of the original one. We also discuss how this relates
+                to duoidally-graded strong monads.<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('breuvart')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">14:00-14:30</div>
+              <div class="talk-authors">
+                <b
+                  >Aloïs Rosset, Maaike Zwart, Helle Hvid Hansen, Jörg
+                  Endrullis</b
+                >
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                Correspondence between Composite Theories and Distributive Laws
+              </div>
+              <button class="talk-button" onClick="toggleAbstract('rosset')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="rosset-abstract" class="abstract abstract-hidden">
+              <div>
+                Composite theories are the algebraic equivalent of distributive
+                laws. In this paper, we delve into the details of this
+                correspondence and concretely show how to construct a composite
+                theory from a distributive law and vice versa. Using term
+                rewriting methods, we also describe when a minimal set of
+                equations axiomatises the composite theory.<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('rosset')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">14:30-15:00</div>
+              <div class="talk-authors">
+                <b>Adrián Doña Mateo</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">Pushing monads forward</div>
+              <button class="talk-button" onClick="toggleAbstract('mateo')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="mateo-abstract" class="abstract abstract-hidden">
+              <div>
+                Codensity monads are often thought of as the monad induced by a
+                functor and its left adjoint, even when the latter does not
+                exist. The same idea can be applied to the situation of pushing
+                a monad forward along an adjunction. Explicitly, if
+                \(\mathbf{T}\) is a monad on \(\mathcal{C}\) and \(U \colon
+                \mathcal{C} \to \mathcal{D}\) is right adjoint to \(F\), then
+                \(U\mathbf{T}F\) is a monad on \(\mathcal{D}\), which we denote
+                \(G_\ast\mathbf{T}\). Even when \(U\) is not a right adjoint, we
+                can define \(G_\ast\mathbf{T}\) subject to the existence of a
+                right Kan extension. In this note, we study the properties of
+                this construction, which we call the pushforward of monads, and
+                see a few examples. In particular, we examine the pushforwards
+                of several monads from the category of finite sets to
+                \(\mathbf{Set}\). Lastly, we find that the category of algebras
+                for the codensity monad of the inclusion of \(\mathbf{Field}\)
+                into \(\mathbf{Ring}\) is the free (small) product completion of
+                \(\mathbf{Field}\). This turns out to also be monadic over
+                \(\mathbf{Set}\).<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('mateo')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-break">
+            <div class="schedule-break-details">
+              <div class="schedule-time">15:00-15:30</div>
+              <div><b>BREAK</b></div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">15:30-16:00</div>
+              <div class="talk-authors">
+                <b>David Forsman</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">Monoidal Meta-Theorem</div>
+              <button class="talk-button" onClick="toggleAbstract('forsman')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="forsman-abstract" class="abstract abstract-hidden">
+              <div>
+                Some proofs of equations in (cartesian/symmetric) monoidal
+                categories reduce to proving them in the cartesian monoidal
+                category of sets. In the setting of cartesian monoidal
+                categories, this is very well known. As a corollary, the
+                Eckmann-Hilton argument generalizes from sets to all symmetric
+                monoidal categories. We define the theories of multi-sorted
+                universal algebra that can have interpretations in all monoidal,
+                symmetric monoidal and cartesian monoidal categories,
+                respectively. For these theories, we construct sound syntactic
+                deduction systems, which are complete in the cartesian monoidal
+                category of sets. This yields the meta-theorem:<br />
+                <br />
+                (Monoidal Meta-Theorem)<br />
+                <br />
+                Let C be a (cartesian/symmetric) monoidal category and let \(E
+                \cup \phi\) be a (cartesian/symmetric) monoidal theory of
+                universal algebra. Then<br />
+                <br />
+                \(E \vDash \phi\) in \(\mathbf{Set}\) implies that \(E \vDash
+                \phi\) ϕ in \(C\)<br />
+                <br />
+                This meta-theorem makes a modest connection from algebraic
+                structures in \(\mathbf{Set}\) to monoidally enriched algebraic
+                structures.<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('forsman')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">16:00-16:30</div>
+              <div class="talk-authors">
+                <b>Aziz Kharoof</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                Homotopical characterization of strong contextuality
+              </div>
+              <button class="talk-button" onClick="toggleAbstract('kharoof')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="kharoof-abstract" class="abstract abstract-hidden">
+              <div>
+                Simplicial distributions introduced in the paper “Simplicial
+                quantum contextuality” provide topological and categorical
+                approaches to the study of contextuality for collections of
+                probability distributions. Strong contextuality is a special
+                case of contextuality that help to find contextual vertices and
+                there are models coming from quantum mechanics which are
+                strongly contextual. We give a novel homotopical
+                characterization of strongly contextual simplicial distributions
+                with binary outcomes, specifically those defined on the cone of
+                a 1-dimensional space. To prove this result, we associate to a
+                simplicial distribution a category whose morphisms correspond to
+                conditional probability distributions. The composition in this
+                category is induced by the 0-order composition of the
+                compository (in the sense of the paper “Compositories and
+                gleaves”) that we get by applying the distribution monad on the
+                nerve of a small category. The result shows that the strong
+                contextuality depends only on loops in the associated category.
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('kharoof')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">16:30-17:00</div>
+              <div class="talk-authors">
+                <b>Joshua Wrigley</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                A topos-theoretic framework for reconstruction theorems in model
+                theory
+              </div>
+              <button class="talk-button" onClick="toggleAbstract('wrigley')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="wrigley-abstract" class="abstract abstract-hidden">
+              <div>
+                A classical result in model theory [1] asserts that an
+                atomic/countably categorical theory can be reconstructed, up to
+                bi-interpretability, from the topological automorphism group of
+                its unique countable model. Recent work by Ben Yaacov has shown
+                that the atomicity/countable categoricity assumption can be
+                dropped if, instead of a topological group, one uses a
+                topological groupoid. However, the groupoid considered in [2] is
+                not a groupoid of models for the theory.<br />
+                <br />
+                In this presentation, we will demonstrate how the theorem of
+                Ahlbrandt and Ziegler can be recovered and generalised by
+                topos-theoretic means, using the representation of classifying
+                toposes by topological groupoids (as in [3] and [4]). We will
+                show that two theories \(T_1\), \(T_2\) with representing
+                groupoids of models are Morita equivalent (which is equivalent
+                to bi-interpretability in the classical context, see [5]) if and
+                only if the representing groupoids \(\mathcal{X}\),
+                \(\mathcal{Y}\) admit a cospan<br />
+                <br />
+                \(\mathcal{X} \to \mathcal{W} \leftarrow \mathcal{Y}\)<br />
+                <br />
+                of weak equivalences. The work is based on the author’s PhD
+                thesis [6].<br />
+                <br />
+                [1] G. Ahlbrandt and M. Ziegler, “Quasi finitely axiomatizable
+                totally categorical theories,” Annals of Pure and Applied Logic,
+                vol. 30, no. 1, pp. 63–82, 1986.<br />
+                <br />
+                [2] I. Ben Yaacov, “Reconstruction of non-ℵ0-categorical
+                theories,” The Journal of Symbolic Logic, vol. 87, no. 1, pp.
+                159–187, 2022.<br />
+                <br />
+                [3] C. Butz and I. Moerdijk, “Representing topoi by topological
+                groupoids,” Journal of Pure and Applied Algebra, vol. 130, no.
+                3, pp. 223–235, 1998.<br />
+                <br />
+                [4] H. Forssell, “Topological representation of geometric
+                theories,” Mathematical Logic Quarterly vol. 58, no. 6, pp.
+                380–393, 2012.<br />
+                <br />
+                [5] P.A. McEldowney, “On Morita equivalence and
+                interpretability”, Review of Symbolic Logic, vol. 13, no. 2, pp.
+                388–393 (2012).<br />
+                <br />
+                [6] J. Wrigley, “Doctrinal and groupoidal representations of
+                classifying topoi,” Ph.D. dissertation, University of Insubria,
+                2024. Available at:
+                https://jlwrigley.github.io/thesis/thesis_wrigley.pdf<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('wrigley')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-break">
+            <div class="schedule-break-details">
+              <div class="schedule-time">18:00-22:00</div>
+              <div><b>EVENING SOCIAL AND MEAL AT CHERRY REDS</b></div>
+            </div>
+          </div>
+        </div>
+        <h3 class="schedule-section-title">Tuesday 16 April</h3>
+        <div class="schedule-day">
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">09:30-10:30</div>
+              <div class="talk-authors">
+                <b>Sean Moss*</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">TBA</div>
+              <button class="talk-button" onClick="toggleAbstract('moss')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="moss-abstract" class="abstract abstract-hidden">
+              <div>This is an invited talk.</div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('moss')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">10:30-11:00</div>
+              <div class="talk-authors">
+                <b>Grégoire Sergeant-Perthuis</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                Compositional statistical mechanics, entropy and variational
+                inference
+              </div>
+              <button
+                class="talk-button"
+                onClick="toggleAbstract('sergeant-pethuis')"
+              >
+                [Abstract]
+              </button>
+            </div>
+            <div
+              id="sergeant-pethuis-abstract"
+              class="abstract abstract-hidden"
+            >
+              <div>
+                In this document, we aim to gather various results related to a
+                compositional/categorical approach to rigorous Statistical
+                Mechanics. Rigorous Statistical Mechanics is centered on the
+                mathematical study of statistical systems. Central concepts in
+                this field have a natural expression in terms of diagrams in a
+                category that couples measurable maps and Markov kernels. We
+                showed that statistical systems are particular representations
+                of partially ordered sets (posets), that we call
+                -specifications, and expressed their phases, i.e., Gibbs
+                measures, as invariants of these representations. It opens the
+                way to the use of homological algebra to compute phases of
+                statistical systems. Two central results of rigorous Statistical
+                Mechanics are, firstly, the characterization of extreme Gibbs
+                measure as it relates to the zero–one law for extreme Gibbs
+                measures, and, secondly, their variational principle which
+                states that for translation invariant Hamiltonians, Gibbs
+                measures are the minima of the Gibbs free energy. We showed how
+                the characterization of extreme Gibbs measures extends to
+                -specifications; we proposed an Entropy functional for
+                -specifications and gave a message-passing algorithm, that
+                generalized the belief propagation algorithm of graphical models
+                (see O. Peltre's SYCO 8 talk), to minimize variations free
+                energy.<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('sergeant-pethuis')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-break">
+            <div class="schedule-break-details">
+              <div class="schedule-time">11:00-11:30</div>
+              <div><b>BREAK</b></div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">11:30-12:00</div>
+              <div class="talk-authors">
+                <b
+                  >Filippo Bonchi, Alessandro Di Giorgio, Nathan Haydon, Pawel
+                  Sobocinski</b
+                >
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                Diagrammatic Algebra of First Order Logic
+              </div>
+              <button class="talk-button" onClick="toggleAbstract('bonchi')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="bonchi-abstract" class="abstract abstract-hidden">
+              <div>
+                We introduce the calculus of neo-Peircean relations, a string
+                diagrammatic extension of the calculus of binary relations that
+                has the same expressivity as first order logic and comes with a
+                complete axiomatisation. The axioms are obtained by combining
+                two well known categorical structures: cartesian and linear
+                bicategories.<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('bonchi')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">12:00-12:30</div>
+              <div class="talk-authors">
+                <b
+                  >Bruno Gavranović, Paul Lessard, Andrew Joseph Dudzik, Tamara
+                  von Glehn, João Guilherme Madeira Araújo, Petar Veličković</b
+                >
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                Categorical Deep Learning: An Algebraic Theory of Architectures
+              </div>
+              <button
+                class="talk-button"
+                onClick="toggleAbstract('gavranovic')"
+              >
+                [Abstract]
+              </button>
+            </div>
+            <div id="gavranovic-abstract" class="abstract abstract-hidden">
+              <div>
+                We present our position on the elusive quest for a
+                general-purpose framework for specifying and studying deep
+                learning architectures. Our opinion is that the key attempts
+                made so far lack a coherent bridge between specifying
+                constraints which models must satisfy and specifying their
+                implementations. Focusing on building a such a bridge, we
+                propose to apply category theory— precisely, the universal
+                algebra of monads valued in a 2-category of parametric maps—as a
+                single theory elegantly subsuming both of these flavours of
+                neural network design. To defend our position, we show how this
+                theory recovers constraints induced by geometric deep learning,
+                as well as implementations of many architectures drawn from the
+                diverse landscape of neural networks, such as RNNs. We also
+                illustrate how the theory naturally encodes many standard
+                constructs in computer science and automata theory.<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('gavranovic')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">12:30-13:00</div>
+              <div class="talk-authors">
+                <b
+                  >Nathan Corbyn, Lukas Heidemann, Nick Hu, Chiara Sarti, Calin
+                  Tataru, Jamie Vicary</b
+                >
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                homotopy.io: a proof assistant for finitely-presented globular
+                n-categories
+              </div>
+              <button class="talk-button" onClick="toggleAbstract('corbyn')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="corbyn-abstract" class="abstract abstract-hidden">
+              <div>
+                We present the proof assistant homotopy.io for working with
+                finitely-presented semistrict higher categories. The tool runs
+                in the browser with a point-and-click interface, allowing direct
+                manipulation of proof objects via a graphical representation. We
+                describe the user interface and explain how the tool can be used
+                in practice. We also describe the essential subsystems of the
+                tool, including collapse, contraction, expansion, typechecking,
+                and layout, as well as key implementation details including data
+                structure encoding, memoisation, and rendering. These technical
+                innovations have been essential for achieving good performance
+                in a resource-constrained setting.<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('corbyn')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-break">
+            <div class="schedule-break-details">
+              <div class="schedule-time">13:00-14:00</div>
+              <div><b>LUNCH</b></div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">14:00-14:30</div>
+              <div class="talk-authors">
+                <b>Tanguy Massacrier, Philippe Malbos, Georg Struth</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">
+                Single-set cubical categories and their formalisation with a
+                proof assistant
+              </div>
+              <button
+                class="talk-button"
+                onClick="toggleAbstract('massacrier')"
+              >
+                [Abstract]
+              </button>
+            </div>
+            <div id="massacrier-abstract" class="abstract abstract-hidden">
+              <div>
+                We introduce a single-set axiomatisation of cubical
+                \(\omega\)-categories, including connections and inverses. We
+                justify these axioms by establishing a series of equivalences
+                between the category of single-set cubical
+                \(\omega\)-categories, and their variants with connections and
+                inverses, and the corresponding cubical \(\omega\)-categories.
+                We also report on the formalisation of cubical
+                \(\omega\)-categories with the Isabelle/HOL proof assistant,
+                which has been instrumental in finding the single-set axioms.<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('massacrier')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">14:30-15:00</div>
+              <div class="talk-authors">
+                <b>Pablo Donato</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">The Flower Calculus</div>
+              <button class="talk-button" onClick="toggleAbstract('donato')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="donato-abstract" class="abstract abstract-hidden">
+              <div>
+                We introduce the flower calculus, a deep inference proof system
+                for intuitionistic first-order logic inspired by Peirce’s
+                existential graphs. It works as a rewriting system over
+                inductive objects called “flowers”, that enjoy both a graphical
+                interpretation as topological diagrams, and a textual
+                presentation as nested sequents akin to coherent formulas.
+                Importantly, the calculus dispenses completely with the
+                traditional notion of symbolic connective, operating solely on
+                nested flowers containing atomic predicates. We prove both the
+                soundness of the full calculus and the completeness of an
+                analytic fragment with respect to Kripke semantics. This
+                provides to our knowledge the first analyticity result for a
+                proof system based on existential graphs, adapting semantic
+                cut-elimination techniques to a deep inference setting.
+                Furthermore, the kernel of rules targetted by completeness is
+                fully invertible, a desirable property for both automated and
+                interactive proof search.
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('donato')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-talk">
+            <div class="schedule-talk-details">
+              <div class="schedule-time">15:00-15:30</div>
+              <div class="talk-authors">
+                <b>Paul B Levy</b>
+              </div>
+            </div>
+            <div class="schedule-talk-second-row">
+              <div class="talk-title">Game-enriched categories</div>
+              <button class="talk-button" onClick="toggleAbstract('levy')">
+                [Abstract]
+              </button>
+            </div>
+            <div id="levy-abstract" class="abstract abstract-hidden">
+              <div>
+                Currently, game models of programming languages are presented as
+                mere categories. I suggest that, where possible, we should
+                instead present them as game-enriched categories. A potential
+                benefit is that this would make it easier to vary the notion of
+                strategy.<br />
+                <br />
+                (Presented at the GALOP 2024 workshop.)<br />
+              </div>
+              <div class="close-button-holder">
+                <button
+                  class="close-abstract-button talk-button"
+                  onClick="toggleAbstract('levy')"
+                >
+                  [Close abstract]
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-item schedule-break">
+            <div class="schedule-break-details">
+              <div class="schedule-time">15:30</div>
+              <div><b>END</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h2 id="localInformation">Local information</h2>
 
