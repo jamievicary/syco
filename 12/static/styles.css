@@ -269,13 +269,13 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 15px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .people > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .person-box {
@@ -307,7 +307,7 @@ h2 {
 .invited-speaker {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   margin: 10px 0;
   width: 230px;
 }
