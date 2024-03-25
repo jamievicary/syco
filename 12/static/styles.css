@@ -289,9 +289,6 @@ h2 {
 .name {
   font-weight: bold;
 }
-.affiliation {
-  font-style: italic;
-}
 
 .event {
   font-weight: bold;
@@ -312,8 +309,14 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin: 10px 0;
+  width: 230px;
 }
 
 .invited-speaker > img {
   margin-bottom: 10px;
+}
+
+.invited-talk {
+  text-align: center;
+  margin-top: 10px;
 }
