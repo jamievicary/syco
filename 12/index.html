@@ -370,12 +370,30 @@
             </div>
             <div class="schedule-talk-second-row">
               <div class="talk-title">
-                Graphical rewriting of quantum computations using the
-                ZX-calculus and flow properties
+                Flow-preserving rewriting in the ZX-calculus
               </div>
+              <button class="talk-button" onClick="toggleAbstract('backens')">
+                [Abstract]
+              </button>
             </div>
             <div id="backens-abstract" class="abstract abstract-hidden">
-              <div></div>
+              <div>
+                The ZX-calculus is a graphical formalism for reasoning about
+                quantum computations whose diagrams form a PROP. It is more
+                intuitive and 'flexible' than traditional formalisms for
+                expressing quantum computations, which makes it useful for
+                applications such as the optimisation of computations. Yet this
+                flexibility is also a disadvantage: turning a general ZX-diagram
+                into a form that can be implemented on a physical quantum
+                computer is computationally hard. Fortunately there is a
+                solution: ZX-diagrams satisfying a property called 'Pauli flow'
+                (or one of a several related properties) can be efficiently
+                transformed so they are implementable.<br />
+                <br />
+                In this talk I will introduce the ZX-calculus as well as the
+                flow properties, and discuss flow-preserving rewriting and some
+                of its applications.<br />
+              </div>
               <div class="close-button-holder">
                 <button
                   class="close-abstract-button talk-button"
