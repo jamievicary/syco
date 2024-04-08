@@ -228,6 +228,10 @@ h2 {
   display: block;
 }
 
+.schedule-session {
+  background-color: #72a6fa;
+}
+
 .schedule-break {
   background-color: #4d91ff;
 }
