@@ -153,7 +153,8 @@ h2 {
   margin-bottom: 10px;
 }
 
-.talk-button {
+.talk-button,
+.slides-button {
   background: none;
   color: inherit;
   border: none;
@@ -163,6 +164,10 @@ h2 {
   outline: inherit;
   text-decoration: underline;
   color: blue;
+}
+
+.talk-button {
+  margin-left: 5px;
 }
 
 .schedule-break-details {
