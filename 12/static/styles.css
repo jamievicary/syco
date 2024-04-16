@@ -4,14 +4,14 @@ body {
   margin: 0;
 }
 
-#content {
+.content {
   max-width: 1000px;
   padding: 25px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#header {
+.header {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -20,12 +20,16 @@ body {
 }
 
 @media (min-width: 800px) {
-  #header {
+  .header {
     flex-direction: row;
   }
 }
 
-#header h1 {
+h1 {
+  margin-bottom: 10px;
+}
+
+.header h1 {
   padding: 25px 0;
   margin-bottom: 10px;
   margin-top: 0px;
@@ -118,7 +122,8 @@ img.speaker {
 }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 #iframe.gmap {
@@ -339,4 +344,13 @@ h2 {
 
 .big-picture {
   width: 100%;
+}
+
+.picture {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.picture-caption {
+  margin-bottom: 10px;
 }
