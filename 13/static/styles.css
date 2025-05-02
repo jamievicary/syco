@@ -348,3 +348,8 @@ h2 {
 .picture-caption {
   margin-bottom: 10px;
 }
+
+.abstract-visible {
+  display: flex;
+  flex-direction: column;
+}
